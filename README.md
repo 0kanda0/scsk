@@ -1,7 +1,7 @@
 # scsk
 1. 好きなディレクトリに移動
 
-*git clone "https://github.com/0kanda0/scsk.git"*
+**git clone "https://github.com/0kanda0/scsk.git"**
 　
  →リモートリポジトリが自分のローカルフォルダにcloneされます
 
