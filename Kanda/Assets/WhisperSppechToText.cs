@@ -20,7 +20,7 @@ public class WhisperSppechToText : MonoBehaviour
     void Update()
     {
         if (IsRecording()) {
-            Debug.Log("成功");
+            //Debug.Log("成功");
 
             recordingTime += Time.deltaTime;
             
@@ -31,7 +31,7 @@ public class WhisperSppechToText : MonoBehaviour
             
         }
         else {
-            Debug.Log("失敗");
+            //Debug.Log("失敗");
         }
     }
 
@@ -68,12 +68,13 @@ public class WhisperSppechToText : MonoBehaviour
         Debug.Log($"Saved recording to: {path}");
         StartCoroutine(SendRequest(audioData));
     }
-
     
+    public string RecognizedText { get; private set; }
+ 
     IEnumerator SendRequest(byte[] audioData)
     {
         string url = "https://api.openai.com/v1/audio/transcriptions";
-        string accessToken = "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";
+        string accessToken = "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";
         
         var formData = new List<IMultipartFormSection>();
         formData.Add(new MultipartFormDataSection("model", "whisper-1"));
@@ -103,6 +104,9 @@ public class WhisperSppechToText : MonoBehaviour
             }
 
             Debug.Log("Input Text: " + recognizedText);
+
+            RecognizedText = recognizedText;
+
             
             //_textInterface.InputField.text = recognizedText;
             //_textInterface.OnSubmit();

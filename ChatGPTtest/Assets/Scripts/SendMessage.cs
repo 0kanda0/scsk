@@ -7,12 +7,14 @@ using AAA.OpenAI;
 public class SendMessage : MonoBehaviour
 {
     [SerializeField] private Text message;
+    [SerializeField] private WhisperSppechToText whisperSpeechToText;
 
-    public void OnClick()
+
+    public async void OnClick()
     {
-        var openAIApiKey = "OpenAIのAPIkey入力";
+        var openAIApiKey = "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";
         var chatGPTConnection = new ChatGPTConnection(openAIApiKey);
-        chatGPTConnection.RequestAsync("{{"+ message.text + "}}");
-       
+        await chatGPTConnection.RequestAsync("{{" + whisperSpeechToText.RecognizedText + "}}");
+ 
     }
 }
