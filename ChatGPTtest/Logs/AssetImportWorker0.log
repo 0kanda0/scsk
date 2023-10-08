@@ -217,3 +217,26 @@ Domain Reload Profiling:
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (63.8 KB). Loaded Objects now: 3715.
+Memory consumption went from 114.3 MB to 114.3 MB.
+Total: 3.245333 ms (FindLiveObjects: 0.398917 ms CreateObjectMapping: 0.154375 ms MarkObjects: 2.578542 ms  DeleteObjects: 0.112500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 30.034261 seconds.
+  path: Assets/Scripts/WhisperSppechToText.cs
+  artifactKey: Guid(c58579eae7e3848ebb53cfd2cd733838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/WhisperSppechToText.cs using Guid(c58579eae7e3848ebb53cfd2cd733838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57bd5d7d294f65c1489104c096df53ca') in 0.009826 seconds 
