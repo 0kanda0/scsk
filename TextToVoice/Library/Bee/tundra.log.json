@@ -291,6 +291,8 @@
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"Csc Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll (+2 others)","enqueuedNodeIndex":222,"enqueueingNodeAnnotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll","enqueueingNodeIndex":291}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp","enqueuedNodeIndex":221,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll (+2 others)","enqueueingNodeIndex":222}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb","enqueuedNodeIndex":292,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":4}
+<<<<<<< HEAD
+=======
 {"msg":"newNode","annotation":"WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.rsp","index":1}
 {"msg":"runNodeAction","annotation":"WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.rsp","index":1}
 {"msg":"newNode","annotation":"WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.rsp","index":90}
@@ -1166,3 +1168,4 @@
 {"msg":"noderesult","processed_node_count":290,"number_of_nodes_ever_queued":292,"annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb","index":292,"exitcode":0,"outputfile":"Library/ScriptAssemblies/Assembly-CSharp.pdb"}
 {"msg":"newNode","annotation":"ScriptAssemblies","index":4}
 {"msg":"runNodeAction","annotation":"ScriptAssemblies","index":4}
+>>>>>>> development
