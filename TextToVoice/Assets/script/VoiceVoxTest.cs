@@ -7,9 +7,9 @@ public class VoiceVoxTest : MonoBehaviour
     private AudioSource _audioSource;
 
 
-    //‚±‚±‚Å”­Œ¾‚ğŠi”[E–‘O‚Écmd‚Åƒ[ƒJƒ‹ƒT[ƒo—§‚¿ã‚°‚Ì•K—v‚ ‚è
-    public string AIresponse = "‚±‚ñ‚É‚¿‚Í";
-    //˜bÒ”Ô†Ši”[
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Å”ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½[ï¿½Eï¿½ï¿½ï¿½Oï¿½ï¿½cmdï¿½Åƒï¿½ï¿½[ï¿½Jï¿½ï¿½ï¿½Tï¿½[ï¿½oï¿½ï¿½ï¿½ï¿½ï¿½ã‚°ï¿½Ì•Kï¿½vï¿½ï¿½ï¿½ï¿½
+    public string AIresponse = "ã“ã‚“ã«ã¡ã¯";
+    //ï¿½bï¿½Ò”Ôï¿½ï¿½iï¿½[
     public int speaker = 8;
 
 
@@ -20,17 +20,17 @@ public class VoiceVoxTest : MonoBehaviour
 
     IEnumerator SpeakTest(string text)
     {
-        // VOICEVOX‚ÌREST-APIƒNƒ‰ƒCƒAƒ“ƒg
+        // VOICEVOXï¿½ï¿½REST-APIï¿½Nï¿½ï¿½ï¿½Cï¿½Aï¿½ï¿½ï¿½g
         VoiceVoxApiClient client = new VoiceVoxApiClient();
 
-        // ƒeƒLƒXƒg‚©‚çAudioClip‚ğ¶¬i˜bÒ‚Íu8:t“ú•”‚Â‚Ş‚¬vj
+        // ï¿½eï¿½Lï¿½Xï¿½gï¿½ï¿½ï¿½ï¿½AudioClipï¿½ğ¶ï¿½ï¿½iï¿½bï¿½Ò‚Íu8:ï¿½tï¿½ï¿½ï¿½ï¿½ï¿½Â‚Ş‚ï¿½ï¿½vï¿½j
         yield return client.TextToAudioClip(8, text);
 
         if (client.AudioClip != null)
         {
-            // AudioClip‚ğæ“¾‚µAAudioSource‚ÉƒAƒ^ƒbƒ`
+            // AudioClipï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½AAudioSourceï¿½ÉƒAï¿½^ï¿½bï¿½`
             _audioSource.clip = client.AudioClip;
-            // AudioSource‚ÅÄ¶
+            // AudioSourceï¿½ÅÄï¿½
             _audioSource.Play();
         }
     }
