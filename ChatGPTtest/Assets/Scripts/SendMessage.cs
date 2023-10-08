@@ -12,7 +12,7 @@ public class SendMessage : MonoBehaviour
 
     public async void OnClick()
     {
-        var openAIApiKey = "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";
+        var openAIApiKey = "";
         var chatGPTConnection = new ChatGPTConnection(openAIApiKey);
         await chatGPTConnection.RequestAsync("{{" + whisperSpeechToText.RecognizedText + "}}");
  
