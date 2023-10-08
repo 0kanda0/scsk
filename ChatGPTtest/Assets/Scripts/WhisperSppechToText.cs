@@ -59,12 +59,6 @@ public class WhisperSppechToText : MonoBehaviour
         Microphone.End(null);
         var audioData = WavUtility.FromAudioClip(clip);
         
-        
-        string dateTimeString = DateTime.Now.ToString("yyyyMMddHHmmss");
-        string fileName = $"recordedAudio_{dateTimeString}.wav";
-        string path = Path.Combine(Application.persistentDataPath, fileName);
-        File.WriteAllBytes(path, audioData);
-        
 
 
         //Debug.Log($"Saved recording to: {path}");
