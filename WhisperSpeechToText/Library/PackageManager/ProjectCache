@@ -5,7 +5,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638322896480000000
+=======
+      ticks: 638323598290000000
+>>>>>>> development
     m_Hash: 469929462
   m_LockFileStatus:
     m_FilePath: /Users/kandakoji/scsk/Kanda/Packages/packages-lock.json
@@ -13,7 +17,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638322896500000000
+=======
+      ticks: 638323598330000000
+>>>>>>> development
     m_Hash: 3785963218
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

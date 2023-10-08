@@ -353,6 +353,7 @@
 "Assets/Scripts/Comment.cs"
 "Assets/Scripts/SendMessage.cs"
 "Assets/Scripts/Settings.cs"
+<<<<<<< HEAD
 "Assets/Scripts/Test.cs"
 "Assets/Scripts/WhisperSppechToText.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
@@ -389,6 +390,8 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
+=======
+>>>>>>> development
 -langversion:9.0
 
 /deterministic
