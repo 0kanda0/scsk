@@ -70,7 +70,7 @@ public class WhisperSppechToText : MonoBehaviour
     IEnumerator SendRequest(byte[] audioData)
     {
         string url = "https://api.openai.com/v1/audio/transcriptions";
-        string accessToken = "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";
+        string accessToken = "";
         
         var formData = new List<IMultipartFormSection>();
         formData.Add(new MultipartFormDataSection("model", "whisper-1"));
