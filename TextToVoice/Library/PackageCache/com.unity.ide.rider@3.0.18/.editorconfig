@@ -1,6 +1,3 @@
-root = true
-
-[*]
-indent_style = space
-indent_size = 2
-end_of_line = lf
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a108f1cd77ab333d08642a70da1abab5852f42c269bdba79deeaa735e4ce1ee
+size 244

@@ -1,20 +1,3 @@
-using JetBrains.Annotations;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Check if a GameObject or ScriptMachine has a ScriptGraph
-    /// </summary>
-    [TypeIcon(typeof(FlowGraph))]
-    [UnitCategory("Graphs/Graph Nodes")]
-    public sealed class HasScriptGraph : HasGraph<FlowGraph, ScriptGraphAsset, ScriptMachine>
-    {
-        /// <summary>
-        /// The type of object that handles the graph.
-        /// </summary>
-        [Serialize, Inspectable, UnitHeaderInspectable, UsedImplicitly]
-        public ScriptGraphContainerType containerType { get; set; }
-
-        protected override bool isGameObject => containerType == ScriptGraphContainerType.GameObject;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:34a19ee2c6d61c3191a22756d65a4aac15d4c5fb1d7165e556a6796b088e3eba
+size 861

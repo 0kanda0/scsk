@@ -1,21 +1,3 @@
-AvatarMaskBodyPart
-UnityEditor
-Animations
-AvatarMask
-IAnimationJobPlayable
-UnityEngine
-Experimental
-IAnimationWindowPreview
-IAnimationJob
-AnimationStream
-MuscleHandle
-AnimationScriptPlayable
-CustomStreamPropertyType
-AnimatorJobExtensions
-AnimationHumanStream
-TransformStreamHandle
-PropertyStreamHandle
-TransformSceneHandle
-PropertySceneHandle
-AnimationSceneHandleUtility
-AnimationStreamHandleUtility
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe9ee7c0f2d06a901eeb1fa1520eb31e44ef1c1d4d0a2cc9740d563d7b238601
+size 569

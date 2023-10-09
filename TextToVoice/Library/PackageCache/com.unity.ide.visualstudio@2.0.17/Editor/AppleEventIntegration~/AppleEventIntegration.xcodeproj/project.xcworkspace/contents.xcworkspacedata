@@ -1,7 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Workspace
-   version = "1.0">
-   <FileRef
-      location = "self:AppleEventIntegration.xcodeproj">
-   </FileRef>
-</Workspace>
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f57d5ae973dfc3f350a1e0b916b04cd46c5b9e33d6b31b16343caee018fb131
+size 335

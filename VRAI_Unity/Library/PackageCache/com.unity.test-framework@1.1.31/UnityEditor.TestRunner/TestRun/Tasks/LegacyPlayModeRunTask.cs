@@ -1,26 +1,3 @@
-using System.Collections;
-using System.Linq;
-using UnityEngine.TestTools.TestRunner;
-
-namespace UnityEditor.TestTools.TestRunner.TestRun.Tasks
-{
-    internal class LegacyPlayModeRunTask : TestTaskBase
-    {
-        public LegacyPlayModeRunTask() : base(true)
-        {
-            
-        }
-        public override IEnumerator Execute(TestJobData testJobData)
-        {
-            var settings = PlaymodeTestsControllerSettings.CreateRunnerSettings(testJobData.executionSettings.filters.Select(filter => filter.ToRuntimeTestRunnerFilter(testJobData.executionSettings.runSynchronously)).ToArray());
-            var launcher = new PlaymodeLauncher(settings);
-            
-            launcher.Run();
-
-            while (PlaymodeLauncher.IsRunning)
-            {
-                yield return null;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cce2d2b41f216e4e74e94069611d95fc96a0dc4017ebf9376d639e21b31f965a
+size 1023

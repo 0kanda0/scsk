@@ -1,12 +1,3 @@
-using System;
-
-namespace UnityEditor.TestTools.TestRunner.Api
-{
-    internal interface ITestRunnerApi
-    {
-        string Execute(ExecutionSettings executionSettings);
-        void RegisterCallbacks<T>(T testCallbacks, int priority = 0) where T : ICallbacks;
-        void UnregisterCallbacks<T>(T testCallbacks) where T : ICallbacks;
-        void RetrieveTestList(TestMode testMode, Action<ITestAdaptor> callback);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac34b31d2e8856dba41f1b2be7e867c9c567237cac3102bd917b67a2493233f8
+size 605

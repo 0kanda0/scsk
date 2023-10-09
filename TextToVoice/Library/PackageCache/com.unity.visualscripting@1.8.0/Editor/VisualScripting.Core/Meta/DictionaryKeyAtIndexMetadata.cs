@@ -1,30 +1,3 @@
-using System;
-using System.Collections;
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    public sealed class DictionaryKeyAtIndexMetadata : DictionaryIndexMetadata
-    {
-        public DictionaryKeyAtIndexMetadata(int index, Metadata parent) : base(SubpathPrefix, index, parent) { }
-
-        protected override object rawValue
-        {
-            get
-            {
-                return ((IDictionary)parent.value).Keys.Cast<object>().ElementAt(index);
-            }
-            set
-            {
-                throw new InvalidOperationException();
-            }
-        }
-
-        protected override Type GetDefinedType(Type dictionaryType)
-        {
-            return TypeUtility.GetDictionaryKeyType(dictionaryType, true);
-        }
-
-        public const string SubpathPrefix = "__keyAt.";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e99e53a7042e50a315abd10ac10e5e0e3ed94cad3d280dcd98ebe1c71bf26c79
+size 986

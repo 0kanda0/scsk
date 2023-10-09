@@ -1,13 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public interface IGraphDebugData
-    {
-        IGraphElementDebugData GetOrCreateElementData(IGraphElementWithDebugData element);
-
-        IGraphDebugData GetOrCreateChildGraphData(IGraphParentElement element);
-
-        IEnumerable<IGraphElementDebugData> elementsData { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:df5356e5f3ea40fc4c2330e93739e042fe3bb794c16f431db10503ac05ae4cee
+size 528

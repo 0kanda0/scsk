@@ -1,36 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public interface IState : IGraphElementWithDebugData, IGraphElementWithData
-    {
-        new StateGraph graph { get; }
-
-        bool isStart { get; set; }
-
-        bool canBeSource { get; }
-
-        bool canBeDestination { get; }
-
-        void OnBranchTo(Flow flow, IState destination);
-
-        IEnumerable<IStateTransition> outgoingTransitions { get; }
-
-        IEnumerable<IStateTransition> incomingTransitions { get; }
-
-        IEnumerable<IStateTransition> transitions { get; }
-
-        void OnEnter(Flow flow, StateEnterReason reason);
-
-        void OnExit(Flow flow, StateExitReason reason);
-
-        #region Widget
-
-        Vector2 position { get; set; }
-
-        float width { get; set; }
-
-        #endregion
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8057a1699232bba43eb58e4edca1f17adf28ea94b9676de9aa47aab3173f33d
+size 988

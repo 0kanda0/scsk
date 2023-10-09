@@ -1,8 +1,3 @@
----
-title: open-new-external-code
----
-
-Double-click the new C# file. Unity opens the file in the program you specified in your preferences, under **External Script Editor**. 
-
-> [!NOTE]
-> For more information on script editors in Unity, see the [Integrated development environment (IDE) support](https://docs.unity3d.com/Manual/ScriptingToolsIDEs.html) in the Unity User Manual.
+version https://git-lfs.github.com/spec/v1
+oid sha256:b907d01edf5077432960fb03583874a69625ce05f6243d74e173f0d691248838
+size 548

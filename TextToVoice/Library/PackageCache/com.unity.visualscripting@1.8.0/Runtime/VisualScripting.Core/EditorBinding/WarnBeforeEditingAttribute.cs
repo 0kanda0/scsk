@@ -1,23 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public sealed class WarnBeforeEditingAttribute : Attribute
-    {
-        public WarnBeforeEditingAttribute(string warningTitle, string warningMessage)
-        {
-            this.warningTitle = warningTitle;
-            this.warningMessage = warningMessage;
-        }
-
-        public WarnBeforeEditingAttribute(string warningTitle, string warningMessage, params object[] emptyValues) : this(warningTitle, warningMessage)
-        {
-            this.emptyValues = emptyValues;
-        }
-
-        public string warningTitle { get; }
-        public string warningMessage { get; }
-        public object[] emptyValues { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66bc885cf2c80c9762117c6ebfa90faced379cb9ac0704ad35df35cb3ef37081
+size 964

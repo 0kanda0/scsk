@@ -1,12 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine.TestTools;
-using UnityEngine.TestTools.Utils;
-
-namespace UnityEditor.TestTools.TestRunner
-{
-    internal interface IEditorLoadedTestAssemblyProvider
-    {
-        List<IAssemblyWrapper> GetAssembliesGroupedByType(TestPlatform mode);
-        IEnumerator<IDictionary<TestPlatform, List<IAssemblyWrapper>>> GetAssembliesGroupedByTypeAsync(TestPlatform mode);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c3481eeda326038fa5522c1ee1c98dd86d2c93081aed245dfb8eb3eccdbffd73
+size 596

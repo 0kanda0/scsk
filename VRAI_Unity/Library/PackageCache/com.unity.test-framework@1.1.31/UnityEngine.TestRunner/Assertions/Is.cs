@@ -1,17 +1,3 @@
-namespace UnityEngine.TestTools.Constraints
-{
-    /// <summary>
-    /// Extension of the `Is` class in NUnit.Framework, see [Is](https://docs.microsoft.com/en-us/dotnet/api/nunit.framework.is?view=xamarin-ios-sdk-12). 
-    /// </summary>
-    public class Is : NUnit.Framework.Is
-    {
-        /// <summary>
-        /// Creates a new instance of `AllocatingGCMemoryConstraint`.
-        /// </summary>
-        /// <returns>A new AllocatingGCMemoryConstraint object.</returns>
-        public static AllocatingGCMemoryConstraint AllocatingGCMemory()
-        {
-            return new AllocatingGCMemoryConstraint();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c676cb9cc956ccd99c914673c6dd54c0e22ba2101828e85d63d83ed289b92748
+size 815

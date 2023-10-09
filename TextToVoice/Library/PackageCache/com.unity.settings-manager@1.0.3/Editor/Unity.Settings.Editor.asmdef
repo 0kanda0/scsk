@@ -1,14 +1,3 @@
-{
-    "name": "Unity.Settings.Editor",
-    "references": [],
-    "optionalUnityReferences": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": false,
-    "defineConstraints": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7632bf20c6fdd7fac22ff82d7ca2499e3780d14e62ba523bacfa495c861e7376
+size 511

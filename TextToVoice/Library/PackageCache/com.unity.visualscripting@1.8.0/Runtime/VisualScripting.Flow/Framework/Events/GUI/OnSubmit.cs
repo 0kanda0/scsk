@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the submit button is pressed.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [UnitOrder(24)]
-    public sealed class OnSubmit : GenericGuiEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnSubmitMessageListener);
-        protected override string hookName => EventHooks.OnSubmit;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b40ac27abee3402d2217a92139487abc5fd8a0753399bdced459843506d5df86
+size 584

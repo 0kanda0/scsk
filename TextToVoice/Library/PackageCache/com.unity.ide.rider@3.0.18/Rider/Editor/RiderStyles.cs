@@ -1,23 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-namespace Packages.Rider.Editor
-{
-  internal static class RiderStyles
-  {
-    static RiderStyles()
-    {
-      LinkLabelStyle = new GUIStyle(EditorStyles.linkLabel)
-      {
-        padding = GUI.skin.label.padding,
-        margin = GUI.skin.label.margin
-      };
-      LinkLabelStyle.padding.left = 0;
-      LinkLabelStyle.padding.right = 0;
-      LinkLabelStyle.margin.left = 0;
-      LinkLabelStyle.margin.right = 0;
-    }
-
-    public static readonly GUIStyle LinkLabelStyle;
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7b9ece903227bc5edd6264777365e042873ce5e3e6f6f71b928b88631c5db84
+size 714

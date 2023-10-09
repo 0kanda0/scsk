@@ -1,19 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(ForEach))]
-    public class ForEachDescriptor : UnitDescriptor<ForEach>
-    {
-        public ForEachDescriptor(ForEach unit) : base(unit) { }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            if (unit.dictionary && port == unit.currentItem)
-            {
-                description.label = "Value";
-                description.summary = "The value of the current item of the loop.";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b29a69d9234bafe6eab83512d5df5b66deed08b8a9f0bcb440ca60cebe5d823f
+size 758

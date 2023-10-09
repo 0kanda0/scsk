@@ -1,36 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltState.ID)]
-    public sealed class BoltStateResources : PluginResources
-    {
-        private BoltStateResources(BoltState plugin) : base(plugin)
-        {
-            icons = new Icons(this);
-        }
-
-        public Icons icons { get; private set; }
-
-        public override void LateInitialize()
-        {
-            icons.Load();
-        }
-
-        public class Icons
-        {
-            public Icons(BoltStateResources resources)
-            {
-                this.resources = resources;
-            }
-
-            private readonly BoltStateResources resources;
-            public EditorTexture graph { get; private set; }
-            public EditorTexture state { get; private set; }
-
-            public void Load()
-            {
-                graph = typeof(StateGraph).Icon();
-                state = typeof(State).Icon();
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f8ed64ab9ed399df989e5cab615478b76c5aa7519517e2e07b18bdc04eb85bc
+size 1087

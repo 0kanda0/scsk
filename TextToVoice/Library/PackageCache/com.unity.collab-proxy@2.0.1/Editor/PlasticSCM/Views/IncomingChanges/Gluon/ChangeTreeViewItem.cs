@@ -1,19 +1,3 @@
-﻿using UnityEditor.IMGUI.Controls;
-
-using PlasticGui.Gluon.WorkspaceWindow.Views.IncomingChanges;
-
-namespace Unity.PlasticSCM.Editor.Views.IncomingChanges.Gluon
-{
-    internal class ChangeTreeViewItem : TreeViewItem
-    {
-        internal IncomingChangeInfo ChangeInfo { get; private set; }
-
-        internal ChangeTreeViewItem(int id, IncomingChangeInfo change)
-            : base(id, 1)
-        {
-            ChangeInfo = change;
-
-            displayName = change.GetPathString();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6842c0725831302e6ae2c5a255cd3143c704c3cc81c01933a8d5627ad4ba3f4b
+size 672

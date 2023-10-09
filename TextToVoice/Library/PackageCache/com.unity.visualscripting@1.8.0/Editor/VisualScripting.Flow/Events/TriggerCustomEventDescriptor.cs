@@ -1,20 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(TriggerCustomEvent))]
-    public class TriggerCustomEventDescriptor : UnitDescriptor<TriggerCustomEvent>
-    {
-        public TriggerCustomEventDescriptor(TriggerCustomEvent trigger) : base(trigger) { }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            var index = unit.arguments.IndexOf(port as ValueInput);
-
-            if (index >= 0)
-            {
-                description.label = "Arg. " + index;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5cf89e2b6bd9c18128dd8236b06ea9dd9dfcc73439c2092eccf448a1fc4f56f4
+size 779

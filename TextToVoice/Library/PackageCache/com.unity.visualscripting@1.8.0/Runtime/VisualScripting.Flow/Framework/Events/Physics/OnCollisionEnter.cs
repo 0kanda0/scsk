@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_EXISTS
-    /// <summary>
-    /// Called when this collider / rigidbody has begun touching another rigidbody / collider.
-    /// </summary>
-    public sealed class OnCollisionEnter : CollisionEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnCollisionEnterMessageListener);
-        protected override string hookName => EventHooks.OnCollisionEnter;
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a36a452f16590b23947e4ac9800c29403d56d2c38b8c54c5f6574531956a9c98
+size 632

@@ -1,16 +1,3 @@
-{
-    "name": "Unity.VisualScripting.State.Editor",
-    "references": [
-        "Unity.VisualScripting.Core",
-        "Unity.VisualScripting.Flow",
-        "Unity.VisualScripting.State",
-        "Unity.VisualScripting.Core.Editor",
-        "Unity.VisualScripting.Flow.Editor"
-    ],
-    "optionalUnityReferences": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:91cd9aa0b9ef2c79a722d6d6681793af2e770decd652f89aefead4798cd85918
+size 596

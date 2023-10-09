@@ -1,28 +1,3 @@
-{
-    "name": "UnityEditor.UI",
- 
-    "references": [
-      "UnityEngine.UI"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-	"versionDefines": [
-        {
-            "name": "com.unity.modules.physics",
-            "expression": "1.0.0",
-            "define": "PACKAGE_PHYSICS"
-        },
-        {
-            "name": "com.unity.modules.physics2d",
-            "expression": "1.0.0",
-            "define": "PACKAGE_PHYSICS2D"
-        },
-        {
-            "name": "com.unity.modules.animation",
-            "expression": "1.0.0",
-            "define": "PACKAGE_ANIMATION"
-        }
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a000404d8da0fa17196d19607f32cd0d5b4ea812ff65873067ded386e1640844
+size 829

@@ -1,19 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Codice.Utils;
-
-namespace Unity.PlasticSCM.Editor.AssetsOverlays.Cache
-{
-    internal static class BuildPathDictionary
-    {
-        internal static Dictionary<string, T> ForPlatform<T>()
-        {
-            if (PlatformIdentifier.IsWindows())
-                return new Dictionary<string, T>(
-                    StringComparer.OrdinalIgnoreCase);
-
-            return new Dictionary<string, T>();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0287c5240b75068ca35fc19a66ee2f907a4e023c2f300f9574a741e929d884cc
+size 644

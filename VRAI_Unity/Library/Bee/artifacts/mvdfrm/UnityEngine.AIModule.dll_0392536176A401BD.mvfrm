@@ -1,13 +1,3 @@
-NavMeshPathStatus
-UnityEngine
-NavMeshPath
-NavMeshHit
-NavMeshTriangulation
-NavMesh
-ObstacleAvoidanceType
-NavMeshAgent
-OffMeshLinkType
-OffMeshLinkData
-OffMeshLink
-NavMeshObstacleShape
-NavMeshObstacle
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bfbe61a5430cefd6c1abf02332523f483e14d6a30b88516ae3cdbcf4ce513a9
+size 367

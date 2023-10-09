@@ -1,31 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public sealed class AnimationCurveCloner : Cloner<AnimationCurve>
-    {
-        public override bool Handles(Type type)
-        {
-            return type == typeof(AnimationCurve);
-        }
-
-        public override AnimationCurve ConstructClone(Type type, AnimationCurve original)
-        {
-            return new AnimationCurve();
-        }
-
-        public override void FillClone(Type type, ref AnimationCurve clone, AnimationCurve original, CloningContext context)
-        {
-            for (int i = 0; i < clone.length; i++)
-            {
-                clone.RemoveKey(i);
-            }
-
-            foreach (var key in original.keys)
-            {
-                clone.AddKey(key);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b3d01c489bddb01235f0932f8133ed1daddd56c2812f42bfa876d3b0200b146d
+size 964

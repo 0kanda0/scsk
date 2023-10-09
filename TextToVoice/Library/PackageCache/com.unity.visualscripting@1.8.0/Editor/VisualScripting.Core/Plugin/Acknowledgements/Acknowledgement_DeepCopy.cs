@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Acknowledgement_DeepCopy : PluginAcknowledgement
-    {
-        public Acknowledgement_DeepCopy(Plugin plugin) : base(plugin) { }
-
-        public override string title => "Deep Copy";
-        public override string author => "Alexey Burtsev";
-        public override int? copyrightYear => 2014;
-        public override string url => "https://github.com/Burtsev-Alexey/net-object-deep-copy";
-        public override string licenseName => "MIT";
-        public override string licenseText => CommonLicenses.MIT;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:961131bec9480a29b2871511abc05c3f1c91070f38e4af155bf989382df8baf7
+size 765

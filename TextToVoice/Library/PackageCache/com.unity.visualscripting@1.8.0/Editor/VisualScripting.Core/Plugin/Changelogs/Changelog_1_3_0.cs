@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Changelog_1_3_0 : PluginChangelog
-    {
-        public Changelog_1_3_0(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.3.0";
-        public override DateTime date => new DateTime(2018, 04, 06);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Refactored] Moved Variables and Events to core assembly";
-                yield return "[Fixed] Error when merging a saved variable to a null initial variable";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:43f70613aa4470d978010e26127ec438fa55e6d0c4ed0322573d60711d97e311
+size 849

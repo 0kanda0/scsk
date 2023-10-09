@@ -1,20 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public sealed class DecrementHandler : UnaryOperatorHandler
-    {
-        public DecrementHandler() : base("Decrement", "Decrement", "--", "op_Decrement")
-        {
-            Handle<byte>(a => --a);
-            Handle<sbyte>(a => --a);
-            Handle<short>(a => --a);
-            Handle<ushort>(a => --a);
-            Handle<int>(a => --a);
-            Handle<uint>(a => --a);
-            Handle<long>(a => --a);
-            Handle<ulong>(a => --a);
-            Handle<float>(a => --a);
-            Handle<decimal>(a => --a);
-            Handle<double>(a => --a);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7b505ee4c82e18d71270b0b3e3a9e667b148f9f3c157cae3b8d466c6300b6509
+size 796

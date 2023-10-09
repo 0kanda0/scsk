@@ -1,15 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_EXISTS
-    [AddComponentMenu("")]
-    public sealed class UnityOnControllerColliderHitMessageListener : MessageListener
-    {
-        private void OnControllerColliderHit(ControllerColliderHit hit)
-        {
-            EventBus.Trigger(EventHooks.OnControllerColliderHit, gameObject, hit);
-        }
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bc132116d222a1ae9421005e784be5c7e7b72fa7fb5f893b95d78ae7ce2516e1
+size 558

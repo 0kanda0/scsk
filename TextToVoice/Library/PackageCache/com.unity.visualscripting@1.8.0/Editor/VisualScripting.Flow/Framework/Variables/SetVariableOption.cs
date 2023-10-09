@@ -1,23 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(SetVariable))]
-    public class SetVariableOption : UnifiedVariableUnitOption<SetVariable>
-    {
-        [Obsolete(Serialization.ConstructorWarning)]
-        public SetVariableOption() : base() { }
-
-        public SetVariableOption(VariableKind kind, string defaultName = null) : base(kind, defaultName) { }
-
-        protected override string NamedLabel(bool human)
-        {
-            return $"Set {name}";
-        }
-
-        protected override string UnnamedLabel(bool human)
-        {
-            return $"Set {kind} Variable";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ab4d57413b8254005dbe588828679a276cf93b7b638a0f25ee60c60d139d699a
+size 793

@@ -1,36 +1,3 @@
-using System;
-using Unity.VisualScripting.FullSerializer.Internal;
-
-namespace Unity.VisualScripting.FullSerializer
-{
-    /// <summary>
-    /// The reflected converter will properly serialize nullable types. However,
-    /// we do it here instead as we can emit less serialization data.
-    /// </summary>
-    public class fsNullableConverter : fsConverter
-    {
-        public override bool CanProcess(Type type)
-        {
-            return
-                type.Resolve().IsGenericType &&
-                type.GetGenericTypeDefinition() == typeof(Nullable<>);
-        }
-
-        public override fsResult TrySerialize(object instance, out fsData serialized, Type storageType)
-        {
-            // null is automatically serialized
-            return Serializer.TrySerialize(Nullable.GetUnderlyingType(storageType), instance, out serialized);
-        }
-
-        public override fsResult TryDeserialize(fsData data, ref object instance, Type storageType)
-        {
-            // null is automatically deserialized
-            return Serializer.TryDeserialize(data, Nullable.GetUnderlyingType(storageType), ref instance);
-        }
-
-        public override object CreateInstance(fsData data, Type storageType)
-        {
-            return storageType;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:71ac836d5ddb8935ec2f356649574ab297de917850871c021cd6293f1289fc08
+size 1441

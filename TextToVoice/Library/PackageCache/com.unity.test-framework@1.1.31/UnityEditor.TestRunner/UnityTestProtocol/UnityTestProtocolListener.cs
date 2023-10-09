@@ -1,35 +1,3 @@
-using UnityEditor.TestTools.TestRunner.Api;
-using UnityEngine;
-
-namespace UnityEditor.TestTools.TestRunner.UnityTestProtocol
-{
-    internal class UnityTestProtocolListener : ScriptableObject, ICallbacks
-    {
-        private IUtpMessageReporter m_UtpMessageReporter;
-
-        public UnityTestProtocolListener()
-        {
-            m_UtpMessageReporter = new UtpMessageReporter(new UtpDebugLogger());
-        }
-
-        public void RunStarted(ITestAdaptor testsToRun)
-        {
-            m_UtpMessageReporter.ReportTestRunStarted(testsToRun);
-        }
-
-        public void RunFinished(ITestResultAdaptor testResults)
-        {
-            // Apparently does nothing :)
-        }
-
-        public void TestStarted(ITestAdaptor test)
-        {
-            m_UtpMessageReporter.ReportTestStarted(test);
-        }
-
-        public void TestFinished(ITestResultAdaptor result)
-        {
-            m_UtpMessageReporter.ReportTestFinished(result);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bf6f5793fa85f2e18836241e9c117c779dd753caffb231aa2c17e841886f2f7
+size 1167

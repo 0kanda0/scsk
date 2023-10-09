@@ -1,4 +1,3 @@
-# Code Editor Package for Rider
-
-This package is not intended to be modified by users.
-Nor does it provide any api intended to be included in user projects.
+version https://git-lfs.github.com/spec/v1
+oid sha256:187206c867af6d626d4466ff13d3abf6541099693a25fbe00efe5a8499a40cb9
+size 329

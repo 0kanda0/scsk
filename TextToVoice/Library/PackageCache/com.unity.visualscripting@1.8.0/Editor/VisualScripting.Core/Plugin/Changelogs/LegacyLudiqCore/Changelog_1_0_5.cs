@@ -1,25 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqCoreChangelog_1_0_5 : PluginChangelog
-    {
-        public LudiqCoreChangelog_1_0_5(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.0.5";
-        public override DateTime date => new DateTime(2017, 10, 16);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Missing modular assemblies in 2017.2+";
-                yield return "[Added] In-memory deep cloning system";
-                yield return "[Optimized] Custom exception handling memory allocation";
-                yield return "[Optimized] Custom collections memory allocation";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:df1f9b73ea9048c12f2b6dc5b8898bbb4f41cd5230f1f4e0be020d0e6ca70a55
+size 992

@@ -1,24 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqGraphsChangelog_1_0_1 : PluginChangelog
-    {
-        public LudiqGraphsChangelog_1_0_1(Plugin plugin) : base(plugin) { }
-
-        public override string description => null;
-        public override SemanticVersion version => "1.0.1";
-        public override DateTime date => new DateTime(2017, 07, 29);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Legibility and resolution issues on pro skin";
-                yield return "[Changed] Ctrl bindings to Cmd on OSX";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1feda1386ff195ad91ca9a07e40cc4098ff65e57db59324aaf8966f66e81ec63
+size 886

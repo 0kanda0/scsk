@@ -1,28 +1,3 @@
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(GraphOutput))]
-    public class GraphOutputDescriptor : UnitDescriptor<GraphOutput>
-    {
-        public GraphOutputDescriptor(GraphOutput unit) : base(unit) { }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            var definition = unit.graph.validPortDefinitions.OfType<IUnitOutputPortDefinition>().SingleOrDefault(d => d.key == port.key);
-
-            if (definition != null)
-            {
-                description.label = definition.Label();
-                description.summary = definition.summary;
-
-                if (definition.hideLabel)
-                {
-                    description.showLabel = false;
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f66dd145d43ea58070e9ba06d57a51d84d7ffaa633ca1fb25752775639dbc7b7
+size 1027

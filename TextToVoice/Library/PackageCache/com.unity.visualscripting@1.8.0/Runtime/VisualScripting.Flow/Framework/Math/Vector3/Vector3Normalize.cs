@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the node length version of a 3D vector.
-    /// </summary>
-    [UnitCategory("Math/Vector 3")]
-    [UnitTitle("Normalize")]
-    public sealed class Vector3Normalize : Normalize<UnityEngine.Vector3>
-    {
-        public override UnityEngine.Vector3 Operation(UnityEngine.Vector3 input)
-        {
-            return UnityEngine.Vector3.Normalize(input);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6eaa44a6277472fd3b2beab1611ccc6bb64071f699a48d1c2c2b619637baafd8
+size 607

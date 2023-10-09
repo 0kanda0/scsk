@@ -1,33 +1,3 @@
-﻿using System.Collections.Generic;
-
-using Codice.Utils;
-using PlasticGui.WorkspaceWindow.Diff;
-
-namespace Unity.PlasticSCM.Editor.Views.Diff
-{
-    internal static class GetClientDiffInfos
-    {
-        internal static List<ClientDiffInfo> FromCategories(List<IDiffCategory> categories)
-        {
-            List<ClientDiffInfo> result = new List<ClientDiffInfo>();
-
-            foreach (ITreeViewNode node in categories)
-                AddClientDiffInfos(node, result);
-
-            return result;
-        }
-
-        static void AddClientDiffInfos(ITreeViewNode node, List<ClientDiffInfo> result)
-        {
-            if (node is ClientDiffInfo)
-            {
-                result.Add((ClientDiffInfo)node);
-                return;
-            }
-
-            for (int i = 0; i < node.GetChildrenCount(); i++)
-                AddClientDiffInfos(node.GetChild(i), result);
-
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a6bfd168e22bd327c3cbc5462f8f89c56959b47324a91ec4bfc1e2771601bdd
+size 1066

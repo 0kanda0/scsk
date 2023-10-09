@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqCoreChangelog_1_4_9 : PluginChangelog
-    {
-        public LudiqCoreChangelog_1_4_9(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.9";
-
-        public override DateTime date => new DateTime(2019, 11, 04);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Graphs failing to load when they included a newly created macro (the legendary 'undo bug')";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a227efb549c59f986ae0ffbc25d6e551e755259596250b74c3cb9d2a9ae5abfc
+size 807

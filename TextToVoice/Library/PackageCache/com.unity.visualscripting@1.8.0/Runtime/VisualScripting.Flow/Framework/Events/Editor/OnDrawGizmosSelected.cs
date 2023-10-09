@@ -1,11 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Use to draw gizmos that are drawn in the editor when the object is selected.
-    /// </summary>
-    [UnitCategory("Events/Editor")]
-    public sealed class OnDrawGizmosSelected : ManualEventUnit<EmptyEventArgs>
-    {
-        protected override string hookName => EventHooks.OnDrawGizmosSelected;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f076e6e8b282320fbf4d90351651f963ba1e0545856677aa08972fdaae34b14
+size 533

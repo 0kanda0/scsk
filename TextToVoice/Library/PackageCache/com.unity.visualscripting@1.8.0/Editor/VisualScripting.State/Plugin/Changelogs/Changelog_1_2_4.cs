@@ -1,22 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltState.ID)]
-    internal class Changelog_1_2_4 : PluginChangelog
-    {
-        public Changelog_1_2_4(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.2.4";
-        public override DateTime date => new DateTime(2018, 02, 26);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Manual events not triggering in state units";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3873c6306e9a38afb8b85d833fefc321d2198ab4d4cdfb2512bb397ef0a18bc6
+size 742

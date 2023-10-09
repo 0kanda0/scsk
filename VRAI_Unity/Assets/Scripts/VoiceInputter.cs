@@ -1,27 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class VoiceInputter : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    /// <summary>
-    /// スマホのマイクから音声を得る
-    /// </summary>
-    public AudioClip InputVoice()
-    {
-        AudioClip hoge = null; //仮置き
-        return hoge;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ece145be114c20b85257a1bc9af2b62435d2b8f43689f0952c78c3fb49b7379c
+size 479

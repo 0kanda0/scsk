@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the difference between two objects.
-    /// </summary>
-    [UnitCategory("Math/Generic")]
-    [UnitTitle("Subtract")]
-    public sealed class GenericSubtract : Subtract<object>
-    {
-        public override object Operation(object a, object b)
-        {
-            return OperatorUtility.Subtract(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0cf946e417bcdf949a97f48af903b65df3273feeb90eb5fdfbaff43bc8aee87a
+size 560

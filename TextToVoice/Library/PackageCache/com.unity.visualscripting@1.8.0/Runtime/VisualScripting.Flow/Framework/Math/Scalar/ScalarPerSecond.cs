@@ -1,17 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the framerate-normalized value of a scalar.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Per Second")]
-    public sealed class ScalarPerSecond : PerSecond<float>
-    {
-        public override float Operation(float input)
-        {
-            return input * Time.deltaTime;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:019a138eed3a1b978e476ebf65b2fd94ac096dfdaa9e3b31165e21606d054842
+size 573

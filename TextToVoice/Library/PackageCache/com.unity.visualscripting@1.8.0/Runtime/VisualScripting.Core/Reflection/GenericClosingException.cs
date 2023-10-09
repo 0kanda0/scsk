@@ -1,10 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public sealed class GenericClosingException : Exception
-    {
-        public GenericClosingException(string message) : base(message) { }
-        public GenericClosingException(Type open, Type closed) : base($"Open-constructed type '{open}' is not assignable from closed-constructed type '{closed}'.") { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8051c577faccc014cbd49d4db72164b79f0c7b6b437d8213d87b502df2010bd3
+size 535

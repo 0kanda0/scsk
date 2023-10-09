@@ -1,20 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the sum of two objects.
-    /// </summary>
-    [UnitCategory("Math/Generic")]
-    [UnitTitle("Add")]
-    [RenamedFrom("Bolt.GenericAdd")]
-    [RenamedFrom("Unity.VisualScripting.GenericAdd")]
-    [Obsolete("Use the new \"Add (Math/Generic)\" node instead.")]
-    public sealed class DeprecatedGenericAdd : Add<object>
-    {
-        public override object Operation(object a, object b)
-        {
-            return OperatorUtility.Add(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1ce4e37e26c0a7211429054e42cc88d53b0b32c2109a561e4d3ff639cc7ff3e8
+size 711

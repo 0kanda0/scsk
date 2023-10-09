@@ -1,11 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    // The dependency must always implement the receiver,
-    // because it must always notify the dependency manager of its deserialization.
-    public interface ISerializationDependency : ISerializationCallbackReceiver
-    {
-        internal bool IsDeserialized { set; get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c99050db8be237e9aa9ae9a4fdd710226fa2b2a54125769c105393cccc97038
+size 509

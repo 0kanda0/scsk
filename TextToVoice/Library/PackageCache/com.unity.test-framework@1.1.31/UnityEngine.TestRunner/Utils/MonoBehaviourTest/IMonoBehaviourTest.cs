@@ -1,11 +1,3 @@
-namespace UnityEngine.TestTools
-{
-    /// <summary>
-    /// An interface implemented by a MonoBehaviour test.
-    /// </summary>
-    public interface IMonoBehaviourTest
-    {
-        /// <summary>True when the test is considered finished.</summary>
-        bool IsTestFinished {get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f69be4770471e0e989c96621dca4be667217cc0e7292a45bbb17ead48491bac
+size 473

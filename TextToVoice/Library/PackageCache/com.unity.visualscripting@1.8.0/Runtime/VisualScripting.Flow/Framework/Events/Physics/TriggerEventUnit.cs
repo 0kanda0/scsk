@@ -1,28 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_EXISTS
-    [UnitCategory("Events/Physics")]
-    public abstract class TriggerEventUnit : GameObjectEventUnit<Collider>
-    {
-        /// <summary>
-        /// The other collider involved in the collision.
-        /// </summary>
-        [DoNotSerialize]
-        public ValueOutput collider { get; private set; }
-
-        protected override void Definition()
-        {
-            base.Definition();
-
-            collider = ValueOutput<Collider>(nameof(collider));
-        }
-
-        protected override void AssignArguments(Flow flow, Collider other)
-        {
-            flow.SetValue(collider, other);
-        }
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ffc0d5f43b29e90ecfc4662d1f240f73647111241f4eb215265e3537dcf607ca
+size 870

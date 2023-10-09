@@ -1,17 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public sealed class ExpectedTypeAttribute : Attribute
-    {
-        public ExpectedTypeAttribute(Type type)
-        {
-            Ensure.That(nameof(type)).IsNotNull(type);
-
-            this.type = type;
-        }
-
-        public Type type { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b4f8eb59ff50b2bb0b4e0c0506f97209ef1bd750d9c4feb7bc52f8888e454fd6
+size 593

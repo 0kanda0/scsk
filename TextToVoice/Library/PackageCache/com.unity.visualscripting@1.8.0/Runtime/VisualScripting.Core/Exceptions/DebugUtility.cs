@@ -1,15 +1,3 @@
-using System;
-using System.IO;
-
-namespace Unity.VisualScripting
-{
-    public static class DebugUtility
-    {
-        public static string logPath => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Ludiq.log");
-
-        public static void LogToFile(string message)
-        {
-            File.AppendAllText(logPath, message + Environment.NewLine);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:133d700140a2aec63adb1eb9fc194bbd5692cca0c3768215c3ebff4beceee7c9
+size 561

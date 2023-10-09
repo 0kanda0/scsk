@@ -1,22 +1,3 @@
-using System.Collections.Generic;
-using System.Reflection;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// A member info comparer that will ignore the ReflectedType
-    /// property by relying on the metadata token for comparison.
-    /// </summary>
-    public class MemberInfoComparer : EqualityComparer<MemberInfo>
-    {
-        public override bool Equals(MemberInfo x, MemberInfo y)
-        {
-            return x?.MetadataToken == y?.MetadataToken;
-        }
-
-        public override int GetHashCode(MemberInfo obj)
-        {
-            return obj.MetadataToken;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8142e272dbbcf6e4605d3512b4499dfbc227476e4f0a432ca2253e87b68c1fe9
+size 769

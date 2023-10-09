@@ -1,25 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [GraphContextExtension(typeof(FlowGraphContext))]
-    public sealed class FlowGraphContextStateExtension : GraphContextExtension<FlowGraphContext>
-    {
-        public FlowGraphContextStateExtension(FlowGraphContext context) : base(context) { }
-
-        public override bool AcceptsDragAndDrop()
-        {
-            return DragAndDropUtility.Is<StateGraphAsset>();
-        }
-
-        public override void PerformDragAndDrop()
-        {
-            var statemacro = DragAndDropUtility.Get<StateGraphAsset>();
-            var stateUnit = new StateUnit(statemacro);
-            context.canvas.AddUnit(stateUnit, DragAndDropUtility.position);
-        }
-
-        public override void DrawDragAndDropPreview()
-        {
-            GraphGUI.DrawDragAndDropPreviewLabel(DragAndDropUtility.offsetedPosition, DragAndDropUtility.Get<StateGraphAsset>().name, typeof(StateGraphAsset).Icon());
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d794f57ce880116cb97cc69991669793e1bc9838510fe3716e97d7f5690ec48
+size 1108

@@ -1,34 +1,3 @@
-using System;
-using JetBrains.Annotations;
-
-namespace Unity.VisualScripting
-{
-    public partial class EnsureThat
-    {
-        public void IsNull<T>([NoEnumeration] T value)
-        {
-            if (!Ensure.IsActive)
-            {
-                return;
-            }
-
-            if (value != null)
-            {
-                throw new ArgumentNullException(paramName, ExceptionMessages.Common_IsNull_Failed);
-            }
-        }
-
-        public void IsNotNull<T>([NoEnumeration] T value)
-        {
-            if (!Ensure.IsActive)
-            {
-                return;
-            }
-
-            if (value == null)
-            {
-                throw new ArgumentNullException(paramName, ExceptionMessages.Common_IsNotNull_Failed);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:546b4d3f082f943b699424186be1b4281bb896362850c021eae6d964527da550
+size 946

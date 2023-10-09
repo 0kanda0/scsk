@@ -1,13 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.TestTools.CodeCoverage
-{
-    [InitializeOnLoad]
-    internal class CompatibilityInitializer
-    {
-        static CompatibilityInitializer()
-        {
-            Debug.LogError("[Code Coverage] The Code Coverage package is not compatible with versions of Unity earlier than 2019.2.");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ca949d05e2d0693cc09fc8e577fd73bb23e97bb25896e9a01eb591eeb318cc5
+size 514

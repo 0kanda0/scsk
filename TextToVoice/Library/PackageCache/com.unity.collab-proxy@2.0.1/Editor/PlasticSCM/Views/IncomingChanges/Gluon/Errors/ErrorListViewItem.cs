@@ -1,19 +1,3 @@
-﻿using UnityEditor.IMGUI.Controls;
-
-using Codice.Client.BaseCommands;
-
-namespace Unity.PlasticSCM.Editor.Views.IncomingChanges.Gluon.Errors
-{
-    internal class ErrorListViewItem : TreeViewItem
-    {
-        internal ErrorMessage ErrorMessage { get; private set; }
-
-        internal ErrorListViewItem(int id, ErrorMessage errorMessage)
-            : base(id, 0)
-        {
-            ErrorMessage = errorMessage;
-
-            displayName = errorMessage.Path;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3638693279b08e627ad2765528aed4c95eed91dd4711bac0abd1533f07f40eec
+size 648

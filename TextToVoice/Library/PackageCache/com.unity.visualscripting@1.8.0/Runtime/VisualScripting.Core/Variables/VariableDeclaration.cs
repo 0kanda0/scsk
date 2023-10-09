@@ -1,26 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [SerializationVersion("A")]
-    public sealed class VariableDeclaration
-    {
-        [Obsolete(Serialization.ConstructorWarning)]
-        public VariableDeclaration() { }
-
-        public VariableDeclaration(string name, object value)
-        {
-            this.name = name;
-            this.value = value;
-        }
-
-        [Serialize]
-        public string name { get; private set; }
-
-        [Serialize, Value]
-        public object value { get; set; }
-
-        [Serialize]
-        public SerializableType typeHandle { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7b99249dc2c33754eb1e3ca8b2503edb6081fa832b625e5e19ae0dd56641bd1
+size 765

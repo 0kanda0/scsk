@@ -1,13 +1,3 @@
-using UnityEditor;
-
-namespace Unity.VisualScripting
-{
-    [CustomEditor(typeof(MessageListener), true)]
-    public class MessageListenerEditor : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-            EditorGUILayout.HelpBox("This component is automatically added to relay Unity messages to Visual Scripting.", MessageType.Info);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bbcd2809cedbdefc3ee30ad9be49037c30b9124cb3f24bf711673dccab961af0
+size 542

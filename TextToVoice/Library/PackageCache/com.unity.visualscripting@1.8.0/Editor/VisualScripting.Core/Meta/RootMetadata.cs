@@ -1,25 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public sealed class RootMetadata : Metadata
-    {
-        public RootMetadata() : base("Root", null) { }
-
-        protected override bool isRoot => true;
-
-        protected override object rawValue
-        {
-            get
-            {
-                return null;
-            }
-            set { }
-        }
-
-        public override Attribute[] GetCustomAttributes(bool inherit = true)
-        {
-            return Empty<Attribute>.array;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b5af67c95dc3c593d0d513d749ff06934357d55421c5ce91ac2cf9e97e92d34
+size 682

@@ -1,34 +1,3 @@
-PixelPerfectRendering
-UnityEngine
-Experimental
-U2D
-SpriteBone
-Profiler
-ConnectionTarget
-Networking
-PlayerConnection
-IConnectionState
-VideoCapture
-XR
-WSA
-WebCam
-CapturePixelFormat
-WebCamMode
-CameraParameters
-PhotoCaptureFileOutputFormat
-PhotoCapture
-PhotoCaptureFrame
-PlayerLoopSystemInternal
-LowLevel
-PlayerLoopSystem
-PlayerLoop
-Initialization
-EarlyUpdate
-FixedUpdate
-PreUpdate
-Update
-PreLateUpdate
-PostLateUpdate
-VertexAttribute
-Rendering
-RenderingThreadingMode
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e43fe053c89490559e38ee0f2fd0e326dbccf189b19aa4014c2c376d2521ef8
+size 632

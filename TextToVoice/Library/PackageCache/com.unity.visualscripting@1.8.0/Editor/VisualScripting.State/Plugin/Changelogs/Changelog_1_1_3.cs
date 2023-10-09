@@ -1,24 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltState.ID)]
-    internal class Changelog_1_1_3 : PluginChangelog
-    {
-        public Changelog_1_1_3(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.1.3";
-        public override DateTime date => new DateTime(2017, 10, 30);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Deserialization error due to nester owner being serialized";
-                yield return "[Fixed] Descriptor error with nested events";
-                yield return "[Fixed] Event listening state being serialized";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f4a20ced5806b09477f92f047cab52d7dc13f9a17aa24366b83559ce22556c91
+size 912

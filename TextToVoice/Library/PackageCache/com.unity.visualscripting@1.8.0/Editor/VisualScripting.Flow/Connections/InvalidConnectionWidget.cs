@@ -1,28 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Widget(typeof(InvalidConnection))]
-    public sealed class InvalidConnectionWidget : UnitConnectionWidget<InvalidConnection>
-    {
-        public InvalidConnectionWidget(FlowCanvas canvas, InvalidConnection connection) : base(canvas, connection) { }
-
-
-        #region Drawing
-
-        public override Color color => UnitConnectionStyles.invalidColor;
-
-        #endregion
-
-
-        #region Droplets
-
-        protected override bool showDroplets => false;
-
-        protected override Vector2 GetDropletSize() => Vector2.zero;
-
-        protected override void DrawDroplet(Rect position) { }
-
-        #endregion
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bb0f6bb7e609db118eaf273ea3774e730ef0a0d66caafcfeed947c4d10fb6a32
+size 844

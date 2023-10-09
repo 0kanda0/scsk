@@ -1,34 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public static class XFlowGraph
-    {
-        public static IEnumerable<IUnit> GetUnitsRecursive(this FlowGraph flowGraph, Recursion recursion)
-        {
-            Ensure.That(nameof(flowGraph)).IsNotNull(flowGraph);
-
-            if (!recursion?.TryEnter(flowGraph) ?? false)
-            {
-                yield break;
-            }
-
-            foreach (var unit in flowGraph.units)
-            {
-                yield return unit;
-
-                var nestedGraph = (unit as SubgraphUnit)?.nest.graph;
-
-                if (nestedGraph != null)
-                {
-                    foreach (var nestedUnit in GetUnitsRecursive(nestedGraph, recursion))
-                    {
-                        yield return nestedUnit;
-                    }
-                }
-            }
-
-            recursion?.Exit(flowGraph);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aee06cd3278b67ec8a4ce67bb5a7ecfb36ee4007a76f38c32be2937e0c53ed27
+size 1081

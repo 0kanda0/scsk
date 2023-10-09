@@ -1,20 +1,3 @@
-using System;
-using System.Collections;
-using NUnit.Framework.Interfaces;
-using UnityEngine;
-using UnityEngine.TestTools;
-
-namespace UnityEditor.TestTools.TestRunner.TestRun.Tasks
-{
-    internal class PrebuildSetupTask : BuildActionTaskBase<IPrebuildSetup>
-    {
-        public PrebuildSetupTask() : base(new PrebuildSetupAttributeFinder())
-        {
-        }
-
-        protected override void Action(IPrebuildSetup target)
-        {
-            target.Setup();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ac33296cf77aae18d0836e8fe894e1c44bf45d92f95f7f05262e5f94e4e93f2
+size 668

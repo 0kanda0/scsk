@@ -1,24 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.All, AllowMultiple = false, Inherited = true)]
-    public sealed class InspectorLabelAttribute : Attribute
-    {
-        public InspectorLabelAttribute(string text)
-        {
-            this.text = text;
-        }
-
-        public InspectorLabelAttribute(string text, string tooltip)
-        {
-            this.text = text;
-            this.tooltip = tooltip;
-        }
-
-        public string text { get; private set; }
-        public string tooltip { get; private set; }
-        public Texture image { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c15ae567f2cbc55a8079dbf090b8452d0e61bda5000c74921dac5307eee2fa29
+size 797

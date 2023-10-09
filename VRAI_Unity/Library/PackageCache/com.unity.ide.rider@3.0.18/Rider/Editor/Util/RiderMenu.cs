@@ -1,30 +1,3 @@
-using JetBrains.Annotations;
-using Packages.Rider.Editor;
-using Unity.CodeEditor;
-
-// ReSharper disable once CheckNamespace 
-namespace JetBrains.Rider.Unity.Editor
-{
-  /// <summary>
-  /// Is called via commandline from Rider Notification after checking out from source control.
-  /// </summary>
-  [UsedImplicitly]
-  public static class RiderMenu
-  {
-    /// <summary>
-    /// Is called via commandline from Rider Notification after checking out from source control.
-    /// </summary>
-    [UsedImplicitly]
-    public static void MenuOpenProject()
-    {
-      if (RiderScriptEditor.IsRiderInstallation(RiderScriptEditor.CurrentEditor))
-      {
-        // Force the project files to be sync
-        CodeEditor.CurrentEditor.SyncAll();
-
-        // Load Project
-        CodeEditor.CurrentEditor.OpenProject();
-      }
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fda147ef63af677f4a8553897b18ef139f01ac1ac54f7134bb4abf45605c4517
+size 1024

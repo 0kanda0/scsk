@@ -1,22 +1,3 @@
-{
-    "name": "Unity.Performance.Profile-Analyzer.EditorTests",
-    "references": [
-        "Unity.Performance.Profile-Analyzer.Editor"
-    ],
-    "optionalUnityReferences": [
-        "TestAssemblies"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-	"defineConstraints": [
-        "UNITY_INCLUDE_TESTS"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3fa68105db7fe161789b48a8969086fe0d0cbb5bfe74112c65df27083b5d5af3
+size 696

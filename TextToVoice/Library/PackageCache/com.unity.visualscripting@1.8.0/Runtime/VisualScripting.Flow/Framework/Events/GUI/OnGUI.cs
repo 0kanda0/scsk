@@ -1,15 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Use to draw immediate mode GUI components.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [TypeIcon(typeof(GUI))]
-    [UnitOrder(0)]
-    public sealed class OnGUI : GlobalEventUnit<EmptyEventArgs>
-    {
-        protected override string hookName => EventHooks.OnGUI;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ed5b92b41cbddcb9a4fa25c934cba3b9f431829ae37ded04bb2b0264be44597
+size 533

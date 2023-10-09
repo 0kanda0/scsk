@@ -1,28 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine;
-using UnityObject = UnityEngine.Object;
-
-namespace Unity.VisualScripting
-{
-    public interface IResourceProvider
-    {
-        IEnumerable<string> GetAllFiles();
-
-        IEnumerable<string> GetFiles(string path);
-
-        IEnumerable<string> GetDirectories(string path);
-
-        string GetPersonalPath(string path, float width);
-        string GetProfessionalPath(string path, float width);
-
-        bool FileExists(string path);
-
-        bool DirectoryExists(string path);
-
-        string DebugPath(string path);
-
-        T LoadAsset<T>(string path) where T : UnityObject;
-
-        Texture2D LoadTexture(string path, CreateTextureOptions options);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ce453c8ccfa6987b4ba7b043f321c385a80184801a9ef9e8aea7c6b5778978a
+size 882

@@ -1,24 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public class ListOption
-    {
-        public ListOption(object value)
-        {
-            this.value = value;
-            label = new GUIContent(value?.ToString() ?? "(null)");
-        }
-
-        public ListOption(object value, GUIContent label)
-        {
-            this.value = value;
-            this.label = label;
-        }
-
-        public ListOption(object value, string label) : this(value, new GUIContent(label)) { }
-
-        public object value { get; set; }
-        public GUIContent label { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bfcbf1191b3c97f8f5d449e04ffca43f3a01ee718a1eeb3380aa588e3ac779a0
+size 752

@@ -1,36 +1,3 @@
-﻿using System;
-
-namespace OpenCover.Framework
-{
-    internal static class HelperExtensions
-    {
-        public static TRet Maybe<T, TRet>(this T value, Func<T, TRet> action, TRet defValue = default(TRet))
-            where T : class
-        {
-            return (value != null) ? action(value) : defValue;
-        }
-
-        public static T Do<T>(this T value, Action<T> action)
-            where T : class
-        {
-            if (value != null) 
-                action(value);
-            return value;
-        }
-
-        public static T Try<T>(this T value, Action<T> action)
-            where T : class
-        {
-            try
-            {
-                if (value != null)
-                    action(value);
-            }
-            catch (Exception)
-            {
-                // ignore error
-            }
-            return value;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:53401639ef05c70a9dbbe228473e15c3df80f79fdbe8212607a64cd2c6839a02
+size 1038

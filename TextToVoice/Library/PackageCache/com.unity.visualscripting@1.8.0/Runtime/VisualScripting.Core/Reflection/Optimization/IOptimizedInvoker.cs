@@ -1,14 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public interface IOptimizedInvoker
-    {
-        void Compile();
-        object Invoke(object target);
-        object Invoke(object target, object arg0);
-        object Invoke(object target, object arg0, object arg1);
-        object Invoke(object target, object arg0, object arg1, object arg2);
-        object Invoke(object target, object arg0, object arg1, object arg2, object arg3);
-        object Invoke(object target, object arg0, object arg1, object arg2, object arg3, object arg4);
-        object Invoke(object target, params object[] args);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f330018c332b660b54662564f4dd93ab9ffada791196c452c4707087eabf76f9
+size 763

@@ -1,30 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Editor(typeof(INesterUnit))]
-    public class NesterUnitEditor : UnitEditor
-    {
-        public NesterUnitEditor(Metadata metadata) : base(metadata) { }
-
-        private Metadata nestMetadata => metadata[nameof(INesterUnit.nest)];
-
-        private Metadata graphMetadata => nestMetadata[nameof(IGraphNest.graph)];
-
-        protected override GraphReference headerReference => reference.ChildReference((INesterUnit)metadata.value, false);
-
-        protected override Metadata headerTitleMetadata => graphMetadata[nameof(IGraph.title)];
-
-        protected override Metadata headerSummaryMetadata => graphMetadata[nameof(IGraph.summary)];
-
-        protected override float GetInspectorHeight(float width)
-        {
-            return LudiqGUI.GetEditorHeight(this, nestMetadata, width);
-        }
-
-        protected override void OnInspectorGUI(Rect position)
-        {
-            LudiqGUI.Editor(nestMetadata, position);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c7c2bbf9a115dc901d04b46ad11def4e754f7c9f65ecb33b3f5c39201274856
+size 1167

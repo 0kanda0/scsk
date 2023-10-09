@@ -1,29 +1,3 @@
-namespace UnityEditor.TestTools.CodeCoverage
-{
-    /// <summary>
-    /// The verbosity level used in editor and console logs.
-    /// </summary>
-    public enum LogVerbosityLevel
-    {
-        /// <summary>
-        /// All logs will be printed in Verbose.
-        /// </summary>
-        Verbose = 0,
-        /// <summary>
-        /// Logs, Warnings and Errors will be printed in Info.
-        /// </summary>
-        Info = 1,
-        /// <summary>
-        /// Warnings and Errors will be printed in Warning.
-        /// </summary>
-        Warning = 2,
-        /// <summary>
-        /// Only Errors will be printed in Error.
-        /// </summary>
-        Error = 3,
-        /// <summary>
-        /// No logs will be printed in Off.
-        /// </summary>
-        Off = 4
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:27668c9962edbe4dccb53f4c049bca528b441945894f0199cfb20d8d08a6a3b8
+size 948

@@ -1,14 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Branches flow by switching over an integer.
-    /// </summary>
-    [UnitCategory("Control")]
-    [UnitTitle("Switch On Integer")]
-    [UnitShortTitle("Switch")]
-    [UnitSubtitle("On Integer")]
-    [UnitOrder(5)]
-    public class SwitchOnInteger : SwitchUnit<int>
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9f90e1926bd559245666d029b7d3e663581d9d89a62feba09483bdfa7f2940d
+size 507

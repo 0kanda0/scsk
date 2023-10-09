@@ -1,22 +1,3 @@
-﻿using Unity.PlasticSCM.Editor.AssetsOverlays.Cache;
-
-namespace Unity.PlasticSCM.Editor.AssetUtils.Processor
-{
-    internal static class AssetsProcessors
-    {
-        internal static void Enable(
-            string wkPath,
-            PlasticAssetsProcessor plasticAssetsProcessor,
-            IAssetStatusCache assetStatusCache)
-        {
-            AssetPostprocessor.Enable(wkPath, plasticAssetsProcessor);
-            AssetModificationProcessor.Enable(wkPath, assetStatusCache);
-        }
-
-        internal static void Disable()
-        {
-            AssetPostprocessor.Disable();
-            AssetModificationProcessor.Disable();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cfd9c89b5adc37f156b8424f900fa8bc6c83e6f04fe0950836a8ccaee30fc335
+size 826

@@ -1,11 +1,3 @@
-﻿<UXML xmlns="UnityEngine.UIElements">
-    <VisualElement class="flex-container main">
-        <VisualElement class="form">
-            <Label name="createdTitle" class="title" />
-            <Label name="createdExplanation" />
-        </VisualElement>
-    </VisualElement>
-    <VisualElement class="footer">
-        <Button name="continue" />
-    </VisualElement>
-</UXML>
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc07b083dc0101592c3d8a1730d80203fc47be380494e5240ee2466e2e73c406
+size 544

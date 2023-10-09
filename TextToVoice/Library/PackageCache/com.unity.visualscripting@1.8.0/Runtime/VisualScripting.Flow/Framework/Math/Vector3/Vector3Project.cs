@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the projection of a 3D vector on another.
-    /// </summary>
-    [UnitCategory("Math/Vector 3")]
-    [UnitTitle("Project")]
-    public sealed class Vector3Project : Project<UnityEngine.Vector3>
-    {
-        public override UnityEngine.Vector3 Operation(UnityEngine.Vector3 a, UnityEngine.Vector3 b)
-        {
-            return UnityEngine.Vector3.Project(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2bef547e588875ed072104df71d5cf9204a202ba4787451d047dc1389aeb3a5a
+size 619

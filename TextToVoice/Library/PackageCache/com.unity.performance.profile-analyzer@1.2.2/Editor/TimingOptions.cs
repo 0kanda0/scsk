@@ -1,19 +1,3 @@
-namespace UnityEditor.Performance.ProfileAnalyzer
-{
-    internal class TimingOptions
-    {
-        public enum TimingOption
-        {
-            Time,
-            Self,
-        };
-
-        public static string[] TimingOptionNames =
-        {
-            "Total",
-            "Self",
-        };
-
-        public static string Tooltip = "Marker timings :\n\nTotal : \tIncluding children\nSelf : \tExcluding children";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4d8b63aa58c498dcf1051cce23222a4bfbdfc61c5ebfe900ebe8e8cc1f5160a
+size 593

@@ -1,20 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using AAA.OpenAI;
-
-public class SendMessage : MonoBehaviour
-{
-    [SerializeField] private Text message;
-    [SerializeField] private WhisperSppechToText whisperSpeechToText;
-
-
-    public async void OnClick()
-    {
-        var openAIApiKey = "";
-        var chatGPTConnection = new ChatGPTConnection(openAIApiKey);
-        await chatGPTConnection.RequestAsync("{{" + whisperSpeechToText.RecognizedText + "}}");
- 
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:99c2a736933c7a6dda1f1a878a717ea3fe306a1cdc6b239fe970568eb14419de
+size 522

@@ -1,13 +1,3 @@
-using System;
-using System.Reflection;
-
-namespace UnityEditor.TestTools.TestRunner.GUI
-{
-    internal interface IGuiHelper
-    {
-        bool OpenScriptInExternalEditor(string stacktrace);
-        void OpenScriptInExternalEditor(Type type, MethodInfo method);
-        IFileOpenInfo GetFileOpenInfo(Type type, MethodInfo method);
-        string FilePathToAssetsRelativeAndUnified(string filePath);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c6d4e96a1d07bffd10baa061609ce61ea85c42e81a34aa4caeea08be48ba6874
+size 587

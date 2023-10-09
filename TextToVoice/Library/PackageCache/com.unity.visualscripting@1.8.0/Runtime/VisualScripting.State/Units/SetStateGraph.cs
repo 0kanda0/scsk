@@ -1,19 +1,3 @@
-using JetBrains.Annotations;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Set a StateGraphAsset to a StateMachine
-    /// </summary>
-    [TypeIcon(typeof(StateGraph))]
-    public class SetStateGraph : SetGraph<StateGraph, StateGraphAsset, StateMachine>
-    {
-        /// <summary>
-        /// The type of object that handles the graph.
-        /// </summary>
-        [Serialize, Inspectable, UnitHeaderInspectable, UsedImplicitly]
-        public StateGraphContainerType containerType { get; set; }
-
-        protected override bool isGameObject => containerType == StateGraphContainerType.GameObject;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:87b36681ad0489d3abe4e851b88a82e7f83449eab29620203a9083700f83d42b
+size 793

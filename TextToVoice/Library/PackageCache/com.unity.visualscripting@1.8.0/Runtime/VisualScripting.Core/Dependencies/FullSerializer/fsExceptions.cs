@@ -1,22 +1,3 @@
-// note: This file contains exceptions used by FullSerializer. Exceptions are
-//       never used at runtime in FullSerializer; they are only used when
-//       validating annotations and code-based models.
-
-using System;
-
-namespace Unity.VisualScripting.FullSerializer
-{
-    public sealed class fsMissingVersionConstructorException : Exception
-    {
-        public fsMissingVersionConstructorException(Type versionedType, Type constructorType) :
-            base(versionedType + " is missing a constructor for previous model type " + constructorType)
-        { }
-    }
-
-    public sealed class fsDuplicateVersionNameException : Exception
-    {
-        public fsDuplicateVersionNameException(Type typeA, Type typeB, string version) :
-            base(typeA + " and " + typeB + " have the same version string (" + version + "); please change one of them.")
-        { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bc8a4fe16fa19614215af0da8556d62c07611324ad3ca0600e3672fdaf1bb9ed
+size 1045

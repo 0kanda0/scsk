@@ -1,19 +1,3 @@
-using JetBrains.Annotations;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Set a ScriptGraph to a ScriptMachine
-    /// </summary>
-    [TypeIcon(typeof(FlowGraph))]
-    public sealed class SetScriptGraph : SetGraph<FlowGraph, ScriptGraphAsset, ScriptMachine>
-    {
-        /// <summary>
-        /// The type of object that handles the graph.
-        /// </summary>
-        [Serialize, Inspectable, UnitHeaderInspectable, UsedImplicitly]
-        public ScriptGraphContainerType containerType { get; set; }
-
-        protected override bool isGameObject => containerType == ScriptGraphContainerType.GameObject;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d03f2d6bca58f4b95e65a6db7d698a9231c2e2fabc7c6d0ccd912967dd56f7d5
+size 800

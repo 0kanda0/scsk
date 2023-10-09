@@ -1,19 +1,3 @@
-using System.Collections;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Delays flow by waiting until the next frame.
-    /// </summary>
-    [UnitTitle("Wait For Next Frame")]
-    [UnitOrder(4)]
-    public class WaitForNextFrameUnit : WaitUnit
-    {
-        protected override IEnumerator Await(Flow flow)
-        {
-            yield return null;
-
-            yield return exit;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fddfab172ff16b30c148fb853b09ff980397eedbcf15e0fd16a39540f26bf4ec
+size 580

@@ -1,24 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltFlow.ID)]
-    internal class Changelog_1_4_7 : PluginChangelog
-    {
-        public Changelog_1_4_7(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.7";
-
-        public override DateTime date => new DateTime(2019, 09, 26);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Graph stack error when Timer or Cooldown exited super units";
-                yield return "[Optimized] Unit options building by displaying fewer progress bar updates";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:20e6b459b91c6d8a7003dfbd944a814819e938b13b5945d9fb32cb475b877e92
+size 865

@@ -1,14 +1,3 @@
-{
-    "name": "Unity.TestTools.CodeCoverage.Editor.OpenCover.Model",
-    "references": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dcc8a9606a4a36759dd0fc9cec16ba630dfa750b849bbe82f421f10bf3780a03
+size 518

@@ -1,26 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public class FlexibleDictionary<TKey, TValue> : Dictionary<TKey, TValue>
-    {
-        public new TValue this[TKey key]
-        {
-            get
-            {
-                return base[key];
-            }
-            set
-            {
-                if (ContainsKey(key))
-                {
-                    base[key] = value;
-                }
-                else
-                {
-                    Add(key, value);
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea7c893377cef54dacff562ce16e0321719ea0fa614bfabb25daa2eab2b93731
+size 719

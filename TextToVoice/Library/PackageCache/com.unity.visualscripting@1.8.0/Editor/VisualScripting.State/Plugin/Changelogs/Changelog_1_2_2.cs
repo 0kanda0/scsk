@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltState.ID)]
-    internal class Changelog_1_2_2 : PluginChangelog
-    {
-        public Changelog_1_2_2(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.2.2";
-        public override DateTime date => new DateTime(2017, 12, 04);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Added] Any State";
-                yield return "[Added] Droplet animations for transitions";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8904b097e2baedab991baa6dcb067bc03a32b2b4a0481a6b4d60e18cbddfc057
+size 783

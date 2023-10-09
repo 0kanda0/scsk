@@ -1,22 +1,3 @@
-﻿/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-using System;
-
-namespace Microsoft.Unity.VisualStudio.Editor
-{
-	internal class SolutionProjectEntry
-	{
-		public string ProjectFactoryGuid { get; set; }
-		public string Name { get; set; }
-		public string FileName { get; set; }
-		public string ProjectGuid { get; set; }
-		public string Metadata { get; set; }
-
-		public bool IsSolutionFolderProjectFactory()
-		{
-			return ProjectFactoryGuid != null && ProjectFactoryGuid.Equals("2150E333-8FDC-42A3-9474-1A3956D46DE8", StringComparison.OrdinalIgnoreCase);
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:80f5227b59f871c04cae04c5602af9577fe8a4a2780d64a4cac1668ab3d1887a
+size 1035

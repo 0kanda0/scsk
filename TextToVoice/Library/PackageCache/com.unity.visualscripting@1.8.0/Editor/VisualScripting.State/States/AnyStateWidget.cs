@@ -1,18 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Widget(typeof(AnyState))]
-    public class AnyStateWidget : StateWidget<AnyState>
-    {
-        public AnyStateWidget(StateCanvas canvas, AnyState state) : base(canvas, state) { }
-
-        protected override NodeColorMix color => NodeColorMix.TealReadable;
-
-        protected override string summary => null;
-
-        public override bool canToggleStart => false;
-
-        public override bool canForceEnter => false;
-
-        public override bool canForceExit => false;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:70c1123379d7da692b977c973ba10e7d3123a9a13fa4b978e9005b4c15e9c162
+size 687

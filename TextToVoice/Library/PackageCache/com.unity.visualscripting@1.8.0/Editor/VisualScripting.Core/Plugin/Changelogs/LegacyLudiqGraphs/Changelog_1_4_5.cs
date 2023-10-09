@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqGraphsChangelog_1_4_5 : PluginChangelog
-    {
-        public LudiqGraphsChangelog_1_4_5(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.5";
-
-        public override DateTime date => new DateTime(2019, 07, 15);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Added] Warning message when converting embed graphs that contain scene references to macros";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:438f8babbc79a7022af8ed59bf60affb8d5af40edca749ff748ae770fd67e6b0
+size 805

@@ -1,19 +1,3 @@
-﻿/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-namespace Microsoft.Unity.VisualStudio.Editor.Messaging
-{
-	internal class MessageEventArgs
-	{
-		public Message Message
-		{
-			get;
-		}
-
-		public MessageEventArgs(Message message)
-		{
-			Message = message;
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb2aff219aa6dd96600bc8089e7c58951190db33f75cb1f6541cea80e3e2e85d
+size 738

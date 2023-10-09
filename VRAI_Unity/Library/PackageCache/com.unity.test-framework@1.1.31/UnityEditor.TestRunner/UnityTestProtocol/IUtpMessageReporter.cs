@@ -1,13 +1,3 @@
-using System.Collections.Generic;
-using UnityEditor.Compilation;
-using UnityEditor.TestTools.TestRunner.Api;
-
-namespace UnityEditor.TestTools.TestRunner.UnityTestProtocol
-{
-    internal interface IUtpMessageReporter
-    {
-        void ReportTestFinished(ITestResultAdaptor result);
-        void ReportTestRunStarted(ITestAdaptor testsToRun);
-        void ReportTestStarted(ITestAdaptor test);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:722dd9adccb8848d7a501bd4d2b24363e04706c79a025a1c5d26022822aefa82
+size 583

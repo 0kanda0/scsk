@@ -1,26 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public class CastMetadata : ProxyMetadata
-    {
-        public CastMetadata(Type newType, Metadata parent) : base(newType, parent, parent)
-        {
-            this.newType = newType;
-
-            definedType = newType;
-        }
-
-        public Type newType { get; private set; }
-
-        protected override string SubpathToString()
-        {
-            return "(" + newType.CSharpName(false) + ")";
-        }
-
-        public override Attribute[] GetCustomAttributes(bool inherit = true)
-        {
-            return parent.GetCustomAttributes(inherit);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2d1d88a393591d8ec3f7af52b73c7a28b150a95cafbf8b03c170738a6be70ac
+size 797

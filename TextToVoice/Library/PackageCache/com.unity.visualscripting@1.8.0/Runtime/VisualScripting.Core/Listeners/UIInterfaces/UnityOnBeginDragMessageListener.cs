@@ -1,13 +1,3 @@
-using UnityEngine.EventSystems;
-
-namespace Unity.VisualScripting
-{
-    [UnityEngine.AddComponentMenu("")]
-    public sealed class UnityOnBeginDragMessageListener : MessageListener, IBeginDragHandler
-    {
-        public void OnBeginDrag(PointerEventData eventData)
-        {
-            EventBus.Trigger(EventHooks.OnBeginDrag, gameObject, eventData);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4725436b2dff57f0b6441a3db6606a5257aaeb79168ded8c1167c2ef67ad4e5b
+size 539

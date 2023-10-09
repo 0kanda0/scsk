@@ -1,20 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(GetVariableUnit))]
-    public class GetVariableUnitOption<TVariableUnit> : VariableUnitOption<TVariableUnit> where TVariableUnit : GetVariableUnit
-    {
-        public GetVariableUnitOption() : base() { }
-
-        public GetVariableUnitOption(TVariableUnit unit) : base(unit) { }
-
-        public override string Kind()
-        {
-            return base.Kind().TrimStart("Get ");
-        }
-
-        protected override string DefaultNameLabel()
-        {
-            return $"Get {unit.defaultName}";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:33ad0e1ea62a3417a63f738be16e4d2c860dd4c8ffc398614740fbd3087c251c
+size 744

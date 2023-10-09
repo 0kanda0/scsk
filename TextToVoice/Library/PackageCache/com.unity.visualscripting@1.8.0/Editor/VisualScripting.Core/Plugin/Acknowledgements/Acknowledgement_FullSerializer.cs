@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Acknowledgement_FullSerializer : PluginAcknowledgement
-    {
-        public Acknowledgement_FullSerializer(Plugin plugin) : base(plugin) { }
-
-        public override string title => "Full Serializer";
-        public override string author => "Jacob Dufault";
-        public override int? copyrightYear => 2017;
-        public override string url => "https://www.fatcow.com/free-icons";
-        public override string licenseName => "MIT";
-        public override string licenseText => CommonLicenses.MIT;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e30edaccd5e2a61e20be617c88426c54ef59dd4fa552c0d9d8165210ac27bf7
+size 761

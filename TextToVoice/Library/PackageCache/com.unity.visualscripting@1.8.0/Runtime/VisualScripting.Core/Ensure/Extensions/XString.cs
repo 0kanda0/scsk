@@ -1,17 +1,3 @@
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    internal static class XString
-    {
-        internal static string Inject(this string format, params object[] formattingArgs)
-        {
-            return string.Format(format, formattingArgs);
-        }
-
-        internal static string Inject(this string format, params string[] formattingArgs)
-        {
-            return string.Format(format, formattingArgs.Select(a => a as object).ToArray());
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea7f2e19a673061a19d89e3de2fbb429a254e20721238b40b9ccb12efd1f97fa
+size 643

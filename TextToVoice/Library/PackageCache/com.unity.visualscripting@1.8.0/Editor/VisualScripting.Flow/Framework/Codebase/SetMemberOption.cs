@@ -1,17 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(SetMember))]
-    public class SetMemberOption : MemberUnitOption<SetMember>
-    {
-        public SetMemberOption() : base() { }
-
-        public SetMemberOption(SetMember unit) : base(unit) { }
-
-        protected override ActionDirection direction => ActionDirection.Set;
-
-        protected override bool ShowValueOutputsInFooter()
-        {
-            return false;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:08a77dae048182579e6b5feb45f0b562a0bdade586ec6ab343d40970472b713f
+size 612

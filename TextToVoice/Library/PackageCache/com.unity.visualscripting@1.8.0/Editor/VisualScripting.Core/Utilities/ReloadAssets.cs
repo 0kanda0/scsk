@@ -1,18 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-using Unity.VisualScripting;
-using UnityEditor.Callbacks;
-
-//TODO: Remove when the asset bundle is fixed
-public class ReloadAssets
-{
-    internal delegate void BuildCompleted();
-
-    internal static BuildCompleted OnBuildCompleted;
-
-    [PostProcessBuild(1)]
-    public static void OnPostprocessBuild(BuildTarget target, string pathToBuiltProject)
-    {
-        OnBuildCompleted?.Invoke();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f09bee260807199843e997e9555ab3956e2cb041cbe85580962b5b5d56e4475
+size 605

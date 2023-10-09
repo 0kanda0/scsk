@@ -1,11 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public class UnityEditorInternalException : Exception
-    {
-        public UnityEditorInternalException(Exception innerException) :
-            base("An error occured while accessing internal Unity Editor functions. This might happen if Unity makes backward-incompatible changes in their newer versions of the editor.", innerException)
-        { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8eb0805d761030bed42e360b9e76cc0a60b5a41210760d27b0df95cc10ab8c8d
+size 578

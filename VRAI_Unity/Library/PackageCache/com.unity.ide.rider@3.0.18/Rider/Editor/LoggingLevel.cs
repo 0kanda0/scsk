@@ -1,22 +1,3 @@
-namespace Packages.Rider.Editor
-{
-  internal enum LoggingLevel
-  {
-    /// <summary>
-    /// Do not use it in logging. Only in config to disable logging.
-    /// </summary>
-    OFF,
-    /// <summary>For errors that lead to application failure</summary>
-    FATAL,
-    /// <summary>For errors that must be shown in Exception Browser</summary>
-    ERROR,
-    /// <summary>Suspicious situations but not errors</summary>
-    WARN,
-    /// <summary>Regular level for important events</summary>
-    INFO,
-    /// <summary>Additional info for debbuging</summary>
-    VERBOSE,
-    /// <summary>Methods &amp; callstacks tracing, more than verbose</summary>
-    TRACE,
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9201315fe45a6ebdccdab77826f9a99c3551894a851ea3fd2602ae9bb0cc464
+size 855

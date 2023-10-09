@@ -1,24 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the minimum between two or more scalars.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Minimum")]
-    public sealed class ScalarMinimum : Minimum<float>
-    {
-        public override float Operation(float a, float b)
-        {
-            return Mathf.Min(a, b);
-        }
-
-        public override float Operation(IEnumerable<float> values)
-        {
-            return values.Min();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:626cc171e130b8f7ec120b1eba14c9eeb948a5cdfbf48f409d63a75293ead52b
+size 735

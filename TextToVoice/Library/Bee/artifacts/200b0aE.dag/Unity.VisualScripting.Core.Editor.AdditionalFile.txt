@@ -1,1 +1,3 @@
-/Users/kandakoji/scsk/TextToVoice
+version https://git-lfs.github.com/spec/v1
+oid sha256:b35906167d04465f3f3b68f2b0e19c271a42618109e22e5b0ac9dd77b842dd19
+size 401

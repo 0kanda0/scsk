@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = true)]
-    public class InspectorAttribute : Attribute, IDecoratorAttribute
-    {
-        public InspectorAttribute(Type type)
-        {
-            this.type = type;
-        }
-
-        public Type type { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7a6ee54570b2f024605edcebcac5498a5564b3d61f448ec6d8504ef24daf7c36
+size 530

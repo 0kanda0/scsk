@@ -1,35 +1,3 @@
-using UnityObject = UnityEngine.Object;
-
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(IMacro))]
-    public class MacroDescriptor<TMacro, TMacroDescription> : Descriptor<TMacro, TMacroDescription>
-        where TMacro : UnityObject, IMacro
-        where TMacroDescription : class, IMacroDescription, new()
-    {
-        protected MacroDescriptor(TMacro target) : base(target) { }
-
-        protected TMacro macro => target;
-
-        [Assigns(cache = false)]
-        [RequiresUnityAPI]
-        public override string Title()
-        {
-            return macro.name;
-        }
-
-        [Assigns]
-        [RequiresUnityAPI]
-        public override string Summary()
-        {
-            return null;
-        }
-
-        [Assigns]
-        [RequiresUnityAPI]
-        public override EditorTexture Icon()
-        {
-            return macro.GetType().Icon();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea748da7272aebc92b8fd317a81bd9ebba01d9929ed75f015ad94359229e6498
+size 1048

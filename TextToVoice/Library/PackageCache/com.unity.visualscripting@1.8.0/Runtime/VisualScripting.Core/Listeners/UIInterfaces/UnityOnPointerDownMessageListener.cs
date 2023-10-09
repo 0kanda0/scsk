@@ -1,13 +1,3 @@
-using UnityEngine.EventSystems;
-
-namespace Unity.VisualScripting
-{
-    [UnityEngine.AddComponentMenu("")]
-    public sealed class UnityOnPointerDownMessageListener : MessageListener, IPointerDownHandler
-    {
-        public void OnPointerDown(PointerEventData eventData)
-        {
-            EventBus.Trigger(EventHooks.OnPointerDown, gameObject, eventData);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:af3da93b481b4e16b924585a7acefe75fd75d44f141bb219b7ec46377cea5451
+size 547

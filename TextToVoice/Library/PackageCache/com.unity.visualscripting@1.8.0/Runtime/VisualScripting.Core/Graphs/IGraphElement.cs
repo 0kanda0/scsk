@@ -1,22 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public interface IGraphElement : IGraphItem, INotifiedCollectionItem, IDisposable, IPrewarmable, IAotStubbable, IIdentifiable, IAnalyticsIdentifiable
-    {
-        new IGraph graph { get; set; }
-
-        bool HandleDependencies();
-
-        int dependencyOrder { get; }
-
-        new Guid guid { get; set; }
-
-        void Instantiate(GraphReference instance);
-
-        void Uninstantiate(GraphReference instance);
-
-        IEnumerable<ISerializationDependency> deserializationDependencies { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:67843fc0d86bd5510b70e071ed140461d2b9aa77792c9004fc6480edce96308f
+size 760

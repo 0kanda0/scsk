@@ -1,17 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the positive version of a scalar.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Absolute")]
-    public sealed class ScalarAbsolute : Absolute<float>
-    {
-        protected override float Operation(float input)
-        {
-            return Mathf.Abs(input);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:17010108ad063749d30f171491e8a1ee7389c194c43d43083b83857ec1711237
+size 556

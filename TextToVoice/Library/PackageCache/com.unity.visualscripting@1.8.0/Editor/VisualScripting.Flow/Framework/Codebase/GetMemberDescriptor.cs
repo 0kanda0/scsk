@@ -1,20 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(GetMember))]
-    public class GetMemberDescriptor : MemberUnitDescriptor<GetMember>
-    {
-        public GetMemberDescriptor(GetMember unit) : base(unit) { }
-
-        protected override ActionDirection direction => ActionDirection.Get;
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            if (port == unit.value)
-            {
-                description.summary = unit.member.info.Summary();
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3b8a17bc814866df1d10935a768e674109636fb02788f33cf6f9007f37ddd74d
+size 764

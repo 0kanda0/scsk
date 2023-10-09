@@ -1,18 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = true)]
-    public sealed class GraphContextExtensionAttribute : Attribute, IDecoratorAttribute
-    {
-        public GraphContextExtensionAttribute(Type type)
-        {
-            Ensure.That(nameof(type)).IsNotNull(type);
-            Ensure.That(nameof(type)).IsOfType(type, typeof(IGraphContext));
-
-            this.type = type;
-        }
-
-        public Type type { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a58a616aabbcd118e5aa45369612679b035cfbd48338b6d8332342a14fb9a682
+size 680

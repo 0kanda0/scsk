@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.All, AllowMultiple = true, Inherited = true)]
-    public sealed class RenamedFromAttribute : Attribute
-    {
-        public RenamedFromAttribute(string previousName)
-        {
-            this.previousName = previousName;
-        }
-
-        public string previousName { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1dabf3fa3e5c1495903f2c844d681e6cb748ab924fa857addcac68f447629825
+size 540

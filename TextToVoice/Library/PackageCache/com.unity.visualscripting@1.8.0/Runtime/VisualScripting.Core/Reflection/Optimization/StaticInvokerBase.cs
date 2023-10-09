@@ -1,35 +1,3 @@
-using System;
-using System.Linq.Expressions;
-using System.Reflection;
-
-namespace Unity.VisualScripting
-{
-    public abstract class StaticInvokerBase : InvokerBase
-    {
-        protected StaticInvokerBase(MethodInfo methodInfo) : base(methodInfo)
-        {
-            if (OptimizedReflection.safeMode)
-            {
-                if (!methodInfo.IsStatic)
-                {
-                    throw new ArgumentException("The method isn't static.", nameof(methodInfo));
-                }
-            }
-        }
-
-        protected sealed override void CompileExpression()
-        {
-            var parameterExpressions = GetParameterExpressions();
-            var callExpression = Expression.Call(methodInfo, parameterExpressions);
-
-            CompileExpression(callExpression, parameterExpressions);
-        }
-
-        protected abstract void CompileExpression(MethodCallExpression callExpression, ParameterExpression[] parameterExpressions);
-
-        protected override void VerifyTarget(object target)
-        {
-            OptimizedReflection.VerifyStaticTarget(targetType, target);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb2b1b8d7a94c7fcffa586179c2ba545e78c7585ed049dcf4d2a6605ed7672bd
+size 1280

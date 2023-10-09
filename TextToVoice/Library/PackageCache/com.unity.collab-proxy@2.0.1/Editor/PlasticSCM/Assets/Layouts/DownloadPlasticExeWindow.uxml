@@ -1,14 +1,3 @@
-<UXML xmlns="UnityEngine.UIElements">
-    <VisualElement name="container">
-        <Label name="title" />
-        <Label name="requireMessage" text="This feature requires a Unity Version Control installation." />
-        <Label name="message" />
-        <VisualElement name="progressControlsContainer" />
-        <VisualElement name="footer">
-            <VisualElement class="flex-grow" />
-            <Button name="downloadCloudEdition" />
-            <Button name="downloadEnterpriseEdition" />
-            <Button name="cancel" />
-        </VisualElement>
-    </VisualElement>
-</UXML>
+version https://git-lfs.github.com/spec/v1
+oid sha256:2daf29deb2324366c54994d9b1a9ba3a92445c462e716b3d6df2ed47c5876061
+size 758

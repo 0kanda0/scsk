@@ -1,30 +1,3 @@
-﻿/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-using System;
-using System.IO;
-
-namespace Microsoft.Unity.VisualStudio.Editor
-{
-	internal static class Symbols
-	{
-		public static bool IsPortableSymbolFile(string pdbFile)
-		{
-			try
-			{
-				using (var stream = File.OpenRead(pdbFile))
-				{
-					return stream.ReadByte() == 'B'
-						   && stream.ReadByte() == 'S'
-						   && stream.ReadByte() == 'J'
-						   && stream.ReadByte() == 'B';
-				}
-			}
-			catch (Exception)
-			{
-				return false;
-			}
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:80360748d38095970953820e4f156870419839610f458749e0afaefc0070d206
+size 984

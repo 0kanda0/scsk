@@ -1,1 +1,3 @@
-/Users/kandakoji/scsk/VRAI_Unity
+version https://git-lfs.github.com/spec/v1
+oid sha256:2a243c832e33ee7fe5b218d2ada68939394f4e65f0362f8ef2603d92c774acd8
+size 372

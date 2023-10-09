@@ -1,26 +1,3 @@
-using UnityEngine.EventSystems;
-
-namespace Unity.VisualScripting
-{
-    public abstract class GenericGuiEventUnit : GameObjectEventUnit<BaseEventData>
-    {
-        /// <summary>
-        /// The event data.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ValueOutput data { get; private set; }
-
-        protected override void Definition()
-        {
-            base.Definition();
-
-            data = ValueOutput<BaseEventData>(nameof(data));
-        }
-
-        protected override void AssignArguments(Flow flow, BaseEventData data)
-        {
-            flow.SetValue(this.data, data);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e27f70d2668b27d1ce0d1324e2dd4b5241bf696786437f3c4c0545f49e60eecb
+size 814

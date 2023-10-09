@@ -1,21 +1,3 @@
-{
-    "name": "Unity.TestTools.CodeCoverage.Sample.Asteroids.Tests",
-    "references": [
-        "Unity.TestTools.CodeCoverage.Sample.Asteroids",
-        "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "nunit.framework.dll"
-    ],
-    "autoReferenced": false,
-    "defineConstraints": [
-        "UNITY_INCLUDE_TESTS"
-    ],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ba81cc0ec36f72277da5f905c291fe466f575321346594e1b7b08925fd25b35f
+size 728

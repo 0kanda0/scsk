@@ -1,20 +1,3 @@
-using System;
-
-namespace UnityEditor.TestTools.TestRunner.Api
-{
-    /// <summary>
-    /// A flag indicating whether to run Edit Mode or Play Mode tests.
-    /// </summary>
-    [Flags]
-    public enum TestMode
-    {
-        /// <summary>
-        /// Run EditMode tests.
-        /// </summary>
-        EditMode = 1 << 0,
-        /// <summary>
-        /// Run PlayMode tests.
-        /// </summary>
-        PlayMode = 1 << 1
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:43b0f4230884e3fb638af15312ac777393bc14e6c69676ce3c17281321745dfd
+size 619

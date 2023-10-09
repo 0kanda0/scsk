@@ -1,18 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Sets the value of a graph variable.
-    /// </summary>
-    [UnitSurtitle("Graph")]
-    public sealed class SetGraphVariable : SetVariableUnit, IGraphVariableUnit
-    {
-        public SetGraphVariable() : base() { }
-
-        public SetGraphVariable(string defaultName) : base(defaultName) { }
-
-        protected override VariableDeclarations GetDeclarations(Flow flow)
-        {
-            return Variables.Graph(flow.stack);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:246135382a7d316966519dbb8b1618043d7c8f7259753dea88d66e69d4179904
+size 673

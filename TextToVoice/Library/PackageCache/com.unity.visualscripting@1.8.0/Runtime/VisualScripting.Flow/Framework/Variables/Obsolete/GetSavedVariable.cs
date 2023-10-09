@@ -1,18 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Gets the value of a saved variable.
-    /// </summary>
-    [UnitSurtitle("Save")]
-    public sealed class GetSavedVariable : GetVariableUnit, ISavedVariableUnit
-    {
-        public GetSavedVariable() : base() { }
-
-        public GetSavedVariable(string defaultName) : base(defaultName) { }
-
-        protected override VariableDeclarations GetDeclarations(Flow flow)
-        {
-            return Variables.Saved;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6b6957ecf72c811aade7f853319562efa5a96977d25ed6798c45ca96dcb7174
+size 660

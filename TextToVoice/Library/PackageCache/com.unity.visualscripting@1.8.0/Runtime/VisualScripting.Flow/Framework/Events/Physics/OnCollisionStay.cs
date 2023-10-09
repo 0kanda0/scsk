@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_EXISTS
-    /// <summary>
-    /// Called once per frame for every collider / rigidbody that is touching rigidbody / collider.
-    /// </summary>
-    public sealed class OnCollisionStay : CollisionEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnCollisionStayMessageListener);
-        protected override string hookName => EventHooks.OnCollisionStay;
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2a14dbdf2865768dc4dcb2498e69cc59f64c733c88377dc3add8fde48f115e3c
+size 634

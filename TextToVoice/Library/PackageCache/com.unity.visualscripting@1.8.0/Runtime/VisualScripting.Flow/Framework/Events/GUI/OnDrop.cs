@@ -1,16 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called on a target that can accept a drop.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [TypeIcon(typeof(OnDrag))]
-    [UnitOrder(19)]
-    public sealed class OnDrop : PointerEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnDropMessageListener);
-        protected override string hookName => EventHooks.OnDrop;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bd19dc1db144c8e276ad6c29a3b63e152afff43ba2418d87c7c5c10b90f96d84
+size 607

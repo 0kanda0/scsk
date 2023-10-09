@@ -1,29 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Unity.VisualScripting.FullSerializer;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public sealed class FakeSerializationCloner : ReflectedCloner
-    {
-        public fsConfig config { get; set; } = new fsConfig();
-
-        public override void BeforeClone(Type type, object original)
-        {
-            (original as ISerializationCallbackReceiver)?.OnBeforeSerialize();
-        }
-
-        public override void AfterClone(Type type, object clone)
-        {
-            (clone as ISerializationCallbackReceiver)?.OnAfterDeserialize();
-        }
-
-        protected override IEnumerable<MemberInfo> GetMembers(Type type)
-        {
-            return fsMetaType.Get(config, type).Properties.Select(p => p._memberInfo);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1798854d060e73ad63a031aa96ca031defad31e282106affe3d55d3a86e2bcb6
+size 1015

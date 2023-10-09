@@ -1,28 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal abstract class BoltCoreMigration : PluginMigration
-    {
-        protected BoltCoreMigration(Plugin plugin) : base(plugin) { }
-
-        protected void AddDefaultTypeOption(Type typeOption)
-        {
-            if (!BoltCore.Configuration.typeOptions.Contains(typeOption))
-            {
-                BoltCore.Configuration.typeOptions.Add(typeOption);
-                BoltCore.Configuration.Save();
-            }
-        }
-
-        protected void AddDefaultAssemblyOption(string assemblyOption)
-        {
-            if (!BoltCore.Configuration.assemblyOptions.Contains(assemblyOption))
-            {
-                BoltCore.Configuration.assemblyOptions.Add(assemblyOption);
-                BoltCore.Configuration.Save();
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ee737141609100ae38e4ba4efae0b6c5c53434029926855c7d896225a7ca28c
+size 1016

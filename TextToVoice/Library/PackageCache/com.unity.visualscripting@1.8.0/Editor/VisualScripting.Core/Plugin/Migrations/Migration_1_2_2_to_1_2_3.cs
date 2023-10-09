@@ -1,19 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Migration_1_2_2_to_1_2_3 : BoltCoreMigration
-    {
-        public Migration_1_2_2_to_1_2_3(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion from => "1.2.2";
-
-        public override SemanticVersion to => "1.2.3";
-
-        public override void Run()
-        {
-            AddDefaultTypeOption(typeof(Screen));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbb9c40d12ffe8ce92a359af39c8ed53cc77c18e35015f6aa1fa477e707f6c25
+size 621

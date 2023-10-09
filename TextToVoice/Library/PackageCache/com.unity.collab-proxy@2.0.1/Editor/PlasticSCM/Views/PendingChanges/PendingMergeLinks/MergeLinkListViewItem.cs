@@ -1,22 +1,3 @@
-﻿using UnityEditor.IMGUI.Controls;
-
-using PlasticGui.WorkspaceWindow.PendingChanges;
-using Unity.PlasticSCM.Editor.UI;
-
-namespace Unity.PlasticSCM.Editor.Views.PendingChanges.PendingMergeLinks
-{
-    internal class MergeLinkListViewItem : TreeViewItem
-    {
-        internal MountPendingMergeLink MergeLink { get; private set; }
-
-        internal MergeLinkListViewItem(int id, MountPendingMergeLink mergeLink)
-            : base(id, 0)
-        {
-            MergeLink = mergeLink;
-
-            displayName = mergeLink.GetPendingMergeLinkText();
-            icon = Images.GetMergeLinkIcon();
-        }
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:57643efbd8fc2d0906dbc462cff9d514885071bb25f670c8aa05fee6911dc503
+size 780

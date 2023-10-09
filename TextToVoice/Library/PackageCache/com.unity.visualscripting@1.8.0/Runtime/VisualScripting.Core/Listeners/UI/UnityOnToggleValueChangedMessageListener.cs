@@ -1,11 +1,3 @@
-using UnityEngine.UI;
-
-namespace Unity.VisualScripting
-{
-    [UnityEngine.AddComponentMenu("")]
-    public sealed class UnityOnToggleValueChangedMessageListener : MessageListener
-    {
-        private void Start() => GetComponent<Toggle>()?.onValueChanged?.AddListener((value) =>
-            EventBus.Trigger(EventHooks.OnToggleValueChanged, gameObject, value));
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3971c16bb9406bbcd303e196f186867d97961bf5cfbfa5bc67feedfc31ddb0a
+size 540

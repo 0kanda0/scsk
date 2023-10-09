@@ -1,30 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Branches flow by switching over a string.
-    /// </summary>
-    [UnitCategory("Control")]
-    [UnitTitle("Switch On String")]
-    [UnitShortTitle("Switch")]
-    [UnitSubtitle("On String")]
-    [UnitOrder(4)]
-    public class SwitchOnString : SwitchUnit<string>
-    {
-        [Serialize]
-        [Inspectable, UnitHeaderInspectable("Ignore Case")]
-        [InspectorToggleLeft]
-        public bool ignoreCase { get; set; }
-
-        protected override bool Matches(string a, string b)
-        {
-            if (string.IsNullOrEmpty(a) && string.IsNullOrEmpty(b))
-            {
-                return true;
-            }
-
-            return string.Equals(a, b, ignoreCase ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3eee8a979a06eb533ed39b61360c09e9780b6f0e76f02c4c48d7970f4139e406
+size 998

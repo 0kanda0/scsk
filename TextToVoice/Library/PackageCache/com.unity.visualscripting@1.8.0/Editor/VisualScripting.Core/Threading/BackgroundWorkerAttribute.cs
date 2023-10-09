@@ -1,16 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = true)]
-    [Obsolete("Use BackgroundWorker.Schedule() directly instead of this attribute")]
-    public class BackgroundWorkerAttribute : Attribute
-    {
-        public BackgroundWorkerAttribute(string methodName = "BackgroundWork")
-        {
-            this.methodName = methodName;
-        }
-
-        public string methodName { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0525641a011a739980c4538ccede89ce4720046afd67792ab2c203b323cf4be4
+size 642

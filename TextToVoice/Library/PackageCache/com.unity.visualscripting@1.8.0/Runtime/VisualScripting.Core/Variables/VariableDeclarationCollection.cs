@@ -1,29 +1,3 @@
-using System.Collections.ObjectModel;
-
-namespace Unity.VisualScripting
-{
-    [SerializationVersion("A")]
-    public sealed class VariableDeclarationCollection : KeyedCollection<string, VariableDeclaration>, IKeyedCollection<string, VariableDeclaration>
-    {
-        protected override string GetKeyForItem(VariableDeclaration item)
-        {
-            return item.name;
-        }
-
-        public void EditorRename(VariableDeclaration item, string newName)
-        {
-            ChangeItemKey(item, newName);
-        }
-
-        public new bool TryGetValue(string key, out VariableDeclaration value)
-        {
-            if (Dictionary == null)
-            {
-                value = default(VariableDeclaration);
-                return false;
-            }
-
-            return Dictionary.TryGetValue(key, out value);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:21043054edd797f485eeffd2d7543878deee1722e6a645ac0da05f8632360c68
+size 1006

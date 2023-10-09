@@ -1,9 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public class GraphItemDescriptor<TItem, TDescription> : Descriptor<TItem, TDescription>
-        where TItem : class, IGraphItem
-        where TDescription : class, IDescription, new()
-    {
-        protected GraphItemDescriptor(TItem item) : base(item) { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d492c38606f876a870605aa108e3983c8f204505932aaa3d6f7fc8f969188f87
+size 472

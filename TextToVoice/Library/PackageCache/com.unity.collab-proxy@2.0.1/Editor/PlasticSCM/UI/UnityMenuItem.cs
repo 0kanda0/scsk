@@ -1,18 +1,3 @@
-﻿namespace Unity.PlasticSCM.Editor.UI
-{
-    internal static class UnityMenuItem
-    {
-        internal static string GetText(string menuName, string subMenuName)
-        {
-            return string.Format("{0}{1}{2}", menuName, SEPARATOR, subMenuName);
-        }
-
-        internal static string EscapedText(string menuName)
-        {
-            return menuName.Replace(SEPARATOR, ESCAPED_SEPARATOR);
-        }
-
-        const string SEPARATOR = "/";
-        const string ESCAPED_SEPARATOR = "\u200A\u2215\u200A";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7e6e8b6b1489d4b66404e137472d46f95f69fe77e35ec923c469f6e593f612bd
+size 692

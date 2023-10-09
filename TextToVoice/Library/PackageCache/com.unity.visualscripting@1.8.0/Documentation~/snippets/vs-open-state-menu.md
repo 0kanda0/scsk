@@ -1,5 +1,3 @@
----
-title: open-state-menu
----
-
-With a State Graph [open in the Graph window](../vs-open-graph-edit.md), right-click on an empty space in the Graph Editor to open the context menu.
+version https://git-lfs.github.com/spec/v1
+oid sha256:720c42226e8a3993ae00b9c4e0a58b7e43d49d2578f84022c7819cfa877d43e3
+size 350

@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_EXISTS
-    /// <summary>
-    /// Called when this collider / rigidbody has stopped touching another rigidbody / collider.
-    /// </summary>
-    public sealed class OnCollisionExit : CollisionEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnCollisionExitMessageListener);
-        protected override string hookName => EventHooks.OnCollisionExit;
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7b819e89631d017d3b8d8f680e7c9176df84b4043fe56bb879adf225e566cef9
+size 631

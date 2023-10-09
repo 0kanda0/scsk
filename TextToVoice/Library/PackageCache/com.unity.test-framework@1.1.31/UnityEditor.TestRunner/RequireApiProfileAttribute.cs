@@ -1,32 +1,3 @@
-using System;
-using System.Linq;
-using NUnit.Framework;
-using NUnit.Framework.Interfaces;
-using NUnit.Framework.Internal;
-
-namespace UnityEditor.TestTools
-{
-    [AttributeUsage(AttributeTargets.Assembly | AttributeTargets.Class | AttributeTargets.Method)]
-    internal class RequireApiProfileAttribute : NUnitAttribute, IApplyToTest
-    {
-        public ApiCompatibilityLevel[] apiProfiles { get; private set; }
-
-        public RequireApiProfileAttribute(params ApiCompatibilityLevel[] apiProfiles)
-        {
-            this.apiProfiles = apiProfiles;
-        }
-
-        void IApplyToTest.ApplyToTest(Test test)
-        {
-            test.Properties.Add(PropertyNames.Category, string.Format("ApiProfile({0})", string.Join(", ", apiProfiles.Select(p => p.ToString()).OrderBy(p => p).ToArray())));
-            ApiCompatibilityLevel testProfile = PlayerSettings.GetApiCompatibilityLevel(EditorUserBuildSettings.activeBuildTargetGroup);
-
-            if (!apiProfiles.Contains(testProfile))
-            {
-                string skipReason = "Skipping test as it requires a compatible api profile set: " + string.Join(", ", apiProfiles.Select(p => p.ToString()).ToArray());
-                test.RunState = RunState.Skipped;
-                test.Properties.Add(PropertyNames.SkipReason, skipReason);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:52ecbf567ed359b06a3f693f0905fc3107f70298fa2c7f7dcfaf0a77e3770775
+size 1529

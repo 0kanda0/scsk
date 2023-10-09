@@ -1,4 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public delegate TResult Func<T1, T2, T3, T4, T5, T6, TResult>(T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1900e2ffd8ab7fb67188ce624893459c9659020ccaf69cfb27277605592312cc
+size 326

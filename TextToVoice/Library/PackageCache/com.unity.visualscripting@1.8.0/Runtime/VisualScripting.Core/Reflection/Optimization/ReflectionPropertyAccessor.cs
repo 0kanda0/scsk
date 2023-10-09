@@ -1,31 +1,3 @@
-using System.Reflection;
-
-namespace Unity.VisualScripting
-{
-    public sealed class ReflectionPropertyAccessor : IOptimizedAccessor
-    {
-        public ReflectionPropertyAccessor(PropertyInfo propertyInfo)
-        {
-            if (OptimizedReflection.safeMode)
-            {
-                Ensure.That(nameof(propertyInfo)).IsNotNull(propertyInfo);
-            }
-
-            this.propertyInfo = propertyInfo;
-        }
-
-        private readonly PropertyInfo propertyInfo;
-
-        public void Compile() { }
-
-        public object GetValue(object target)
-        {
-            return propertyInfo.GetValue(target, null);
-        }
-
-        public void SetValue(object target, object value)
-        {
-            propertyInfo.SetValue(target, value, null);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:65dd4a410dcd7028b19145cdcd5d8e35bc0f09be330db6e6fd63f3a01b4999a3
+size 946

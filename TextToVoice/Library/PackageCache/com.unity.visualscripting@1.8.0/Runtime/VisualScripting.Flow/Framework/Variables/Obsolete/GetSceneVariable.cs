@@ -1,22 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Gets the value of a scene variable.
-    /// </summary>
-    [UnitSurtitle("Scene")]
-    public sealed class GetSceneVariable : GetVariableUnit, ISceneVariableUnit
-    {
-        public GetSceneVariable() : base() { }
-
-        public GetSceneVariable(string defaultName) : base(defaultName) { }
-
-        protected override VariableDeclarations GetDeclarations(Flow flow)
-        {
-            var scene = flow.stack.scene;
-
-            if (scene == null) return null;
-
-            return Variables.Scene(scene.Value);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:731fce10250baf74ce1f426b2c6d2e0e2074a599a85be6aca0060fcfee28c157
+size 762

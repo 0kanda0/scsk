@@ -1,25 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqGraphsChangelog_1_2_3 : PluginChangelog
-    {
-        public LudiqGraphsChangelog_1_2_3(Plugin plugin) : base(plugin) { }
-
-        public override string description => null;
-        public override SemanticVersion version => "1.2.3";
-        public override DateTime date => new DateTime(2018, 01, 25);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Refactored] Canvas code to use control IDs";
-                yield return "[Fixed] Quick window dragging causing lasso";
-                yield return "[Fixed] Mouse issues in canvas";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:51fbf181ed2834190dc8b146f8611c3aae58f0d1a4390172522486d237b4f45f
+size 946

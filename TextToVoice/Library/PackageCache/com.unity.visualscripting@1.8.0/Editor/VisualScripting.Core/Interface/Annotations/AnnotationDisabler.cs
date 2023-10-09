@@ -1,27 +1,3 @@
-using System.Linq;
-using UnityEditor;
-
-namespace Unity.VisualScripting
-{
-    public class AnnotationDisabler
-    {
-#if VISUAL_SCRIPT_INTERNAL
-        [MenuItem("Tools/Bolt/Internal/Disable Gizmos", priority = LudiqProduct.DeveloperToolsMenuPriority + 502)]
-#endif
-        public static void DisableGizmos()
-        {
-            foreach (var type in Codebase.types.Where(type => type.HasAttribute<DisableAnnotationAttribute>()))
-            {
-                var attribute = type.GetAttribute<DisableAnnotationAttribute>();
-
-                var annotation = AnnotationUtility.GetAnnotation(type);
-
-                if (annotation != null)
-                {
-                    annotation.iconEnabled = !attribute.disableIcon;
-                    annotation.gizmoEnabled = !attribute.disableGizmo;
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a52a1942dfccabb22fd74757f037fa349a2e0fa6020f4b3d8c3fdfb3ca315925
+size 1015

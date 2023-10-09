@@ -1,17 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltState.ID)]
-    internal class Changelog_1_0_0 : PluginChangelog
-    {
-        public Changelog_1_0_0(Plugin plugin) : base(plugin) { }
-
-        public override string description => "Initial Release";
-        public override SemanticVersion version => "1.0.0";
-        public override DateTime date => new DateTime(2017, 07, 26);
-        public override IEnumerable<string> changes => Enumerable.Empty<string>();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ef86fef32f0aa7f65d063f5bed98080e429e9e745a7b9c48f92fdf6ab0f950c1
+size 708

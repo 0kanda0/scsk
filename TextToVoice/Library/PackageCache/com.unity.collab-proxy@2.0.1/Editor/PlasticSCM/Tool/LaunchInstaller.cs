@@ -1,23 +1,3 @@
-﻿using System.Diagnostics;
-
-using Codice.Utils;
-
-namespace Unity.PlasticSCM.Editor.Tool
-{
-    internal static class LaunchInstaller
-    {
-        internal static Process ForPlatform(string installerPath)
-        {
-            if (PlatformIdentifier.IsMac())
-            {
-                return Process.Start(
-                    ToolConstants.Installer.INSTALLER_MACOS_OPEN,
-                    string.Format(ToolConstants.Installer.INSTALLER_MACOS_OPEN_ARGS, installerPath));
-            }
-
-            return Process.Start(
-                installerPath,
-                ToolConstants.Installer.INSTALLER_WINDOWS_ARGS);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1de11e96600a5a9f7777b22b3f7fe8c9e2338f9a7100ba14057518fc0f0da66
+size 812

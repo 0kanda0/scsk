@@ -1,23 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the average of two or more scalars.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Average")]
-    public sealed class ScalarAverage : Average<float>
-    {
-        public override float Operation(float a, float b)
-        {
-            return (a + b) / 2;
-        }
-
-        public override float Operation(IEnumerable<float> values)
-        {
-            return values.Average();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a8d244ebca5ba8749b3caba1c70ec75b2bf0340fecb3278e34cdd24cd2367fe
+size 711

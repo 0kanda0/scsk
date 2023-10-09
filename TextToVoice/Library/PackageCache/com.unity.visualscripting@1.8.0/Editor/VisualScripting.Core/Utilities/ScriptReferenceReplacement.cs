@@ -1,35 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public struct ScriptReferenceReplacement
-    {
-        public ScriptReference previousReference;
-
-        public ScriptReference newReference;
-
-        public ScriptReferenceReplacement(ScriptReference previousReference, ScriptReference newReference)
-        {
-            this.previousReference = previousReference;
-            this.newReference = newReference;
-        }
-
-        public static ScriptReferenceReplacement From<T>(ScriptReference previous)
-        {
-            return new ScriptReferenceReplacement(previous, ScriptReference.Existing(typeof(T)));
-        }
-
-        public static ScriptReferenceReplacement FromDll<T>(string dllGuid)
-        {
-            return new ScriptReferenceReplacement(ScriptReference.Dll(dllGuid, typeof(T)), ScriptReference.Existing(typeof(T)));
-        }
-
-        public static ScriptReferenceReplacement FromCs<T>(string csGuid)
-        {
-            return new ScriptReferenceReplacement(ScriptReference.Cs(csGuid), ScriptReference.Existing(typeof(T)));
-        }
-
-        public override string ToString()
-        {
-            return previousReference + " => " + newReference;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:288692fb21194c365ea27a7ca96bd90a4e6cc9a786f1341cd1b8b88539ca7d7d
+size 1353

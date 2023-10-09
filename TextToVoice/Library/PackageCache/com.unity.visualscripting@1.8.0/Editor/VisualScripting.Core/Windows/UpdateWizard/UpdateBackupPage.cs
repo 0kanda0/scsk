@@ -1,21 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public class UpdateBackupPage : BackupPage
-    {
-        protected override string incentive { get; } = "Just in case anything goes wrong during the update process, we strongly suggest you create a backup of your project.";
-
-        protected override void OnCloseButtonGUI()
-        {
-            if (GUILayout.Button(createdBackup ? completeLabel : "Skip", Styles.closeButton))
-            {
-                if (createdBackup || EditorUtility.DisplayDialog("Skip Backup", "Are you sure you want to skip backup creation?\n\nIf project data gets corrupted, there is no other way to easily recover.", "Skip", "Cancel"))
-                {
-                    Complete();
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f53db7ae16871227f7cdc6fb93e30a0f8c72ad6bd17b0f0db23ee76ddc3e49b1
+size 965

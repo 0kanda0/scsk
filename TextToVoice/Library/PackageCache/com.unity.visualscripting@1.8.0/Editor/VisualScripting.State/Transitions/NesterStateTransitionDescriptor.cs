@@ -1,21 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(INesterStateTransition))]
-    public class NesterStateTransitionDescriptor<TNesterStateTransition> : StateTransitionDescriptor<TNesterStateTransition>
-        where TNesterStateTransition : class, INesterStateTransition
-    {
-        public NesterStateTransitionDescriptor(TNesterStateTransition transition) : base(transition) { }
-
-        [RequiresUnityAPI]
-        public override string Title()
-        {
-            return GraphNesterDescriptor.Title(transition);
-        }
-
-        [RequiresUnityAPI]
-        public override string Summary()
-        {
-            return GraphNesterDescriptor.Summary(transition);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b34ac9432a9cc8ded295e917edeca34d64f3a7a300d9921c8455a4dbd0db8c79
+size 863

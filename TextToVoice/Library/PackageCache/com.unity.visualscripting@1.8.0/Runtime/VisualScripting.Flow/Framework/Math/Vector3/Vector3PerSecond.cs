@@ -1,17 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the framerate-normalized value of a 3D vector.
-    /// </summary>
-    [UnitCategory("Math/Vector 3")]
-    [UnitTitle("Per Second")]
-    public sealed class Vector3PerSecond : PerSecond<Vector3>
-    {
-        public override Vector3 Operation(Vector3 input)
-        {
-            return input * Time.deltaTime;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4dc45245f267413fa0526dcc56c8fe65acae93019a54c4485e8c9c6d575b612
+size 585

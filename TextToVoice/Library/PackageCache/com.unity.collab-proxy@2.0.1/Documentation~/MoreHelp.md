@@ -1,6 +1,3 @@
-# More help
-
-To find more information on working with the Unity version control plug-in, see [Getting started with Unity Version control](https://docs.unity3d.com/2022.1/Documentation/Manual/PlasticSCMPluginGettingStarted.html).
-
-You can also post and find questions related to Unity version control in the [Unity forum](https://forum.unity.com/forums/plastic-scm.605/).
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:f7d5cabbc8c7bd3fa4f9e67dc0b95a9519553237edd7c330f883a9effe8c2b87
+size 541

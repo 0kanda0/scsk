@@ -1,25 +1,3 @@
-using NUnit.Framework;
-
-public class ProfileAnalyzerAPITests : ProfileAnalyzerBaseTest
-{
-    [Test]
-    public void ProfileAnalyzer_EmptyAnalysis_HasNoThreads()
-    {
-        var analyzer = m_SetupData.analyzer;
-        Assert.IsTrue(0 == analyzer.GetThreadNames().Count);
-    }
-
-    [Test]
-    public void ProfileAnalyzer_EmptyAnalysis_HasNoProgress()
-    {
-        var analyzer = m_SetupData.analyzer;
-        Assert.IsTrue(0 == analyzer.GetProgress());
-    }
-
-    [Test]
-    public void ProfileAnalyzer_EmptyAnalysis_ReturnsNullForAnalysis()
-    {
-        var analysis = GetAnalysisFromFrameData(null);
-        Assert.IsNull(analysis);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d66aa40017fd70662db21b342d91d029e22f41de3882ac4db1dc10603df8fa3a
+size 816

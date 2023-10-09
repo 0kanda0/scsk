@@ -1,22 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Editor(typeof(VariablesAsset))]
-    public sealed class VariablesAssetEditor : Inspector
-    {
-        public VariablesAssetEditor(Metadata metadata) : base(metadata) { }
-
-        private Metadata declarationsMetadata => metadata[nameof(VariablesAsset.declarations)];
-
-        protected override float GetHeight(float width, GUIContent label)
-        {
-            return LudiqGUI.GetInspectorHeight(this, declarationsMetadata, width, GUIContent.none);
-        }
-
-        protected override void OnGUI(Rect position, GUIContent label)
-        {
-            LudiqGUI.Inspector(declarationsMetadata, position, GUIContent.none);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7416834510ea411f1771e756d096fcfd48b62d317f775f9ae9bcc6c5aabdddc1
+size 872

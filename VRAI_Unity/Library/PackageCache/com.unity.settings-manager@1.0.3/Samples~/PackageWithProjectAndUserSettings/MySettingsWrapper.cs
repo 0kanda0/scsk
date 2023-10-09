@@ -1,16 +1,3 @@
-﻿using UnityEditor.SettingsManagement;
-
-namespace UnityEditor.SettingsManagement.Examples
-{
-    // Usually you will only have a single Settings instance, so it is convenient to define a UserSetting<T> implementation
-    // that points to your instance. In this way you avoid having to pass the Settings parameter in setting field definitions.
-    class MySetting<T> : UserSetting<T>
-    {
-        public MySetting(string key, T value, SettingsScope scope = SettingsScope.Project)
-            : base(MySettingsManager.instance, key, value, scope)
-        {}
-
-        MySetting(Settings settings, string key, T value, SettingsScope scope = SettingsScope.Project)
-            : base(settings, key, value, scope) { }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c65ec47d053e155e9d6347783b5441306f77ea9b1685c4278f6f4fc4da4a6b42
+size 908

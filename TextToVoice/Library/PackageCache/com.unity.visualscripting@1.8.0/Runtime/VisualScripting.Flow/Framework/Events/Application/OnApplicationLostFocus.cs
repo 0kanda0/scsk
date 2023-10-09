@@ -1,11 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the application loses focus.
-    /// </summary>
-    [UnitCategory("Events/Application")]
-    public sealed class OnApplicationLostFocus : GlobalEventUnit<EmptyEventArgs>
-    {
-        protected override string hookName => EventHooks.OnApplicationLostFocus;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a87573f6d5f8f034bf00e0b4c708715fdf8bfb1b35512bab30cc23ac9ba230f2
+size 506

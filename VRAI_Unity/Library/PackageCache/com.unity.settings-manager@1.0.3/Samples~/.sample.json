@@ -1,5 +1,3 @@
-{
-	"displayName":"User Settings Example",
-	"description": "Example code showing use of the Settings Manager attributes.",
-	"createSeparatePackage": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a0525bcc687c50f393eb1f46389c48ac7b89e9c04ca00851caf6fb97403bd43f
+size 330

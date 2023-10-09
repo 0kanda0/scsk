@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the remainder of the division of two objects.
-    /// </summary>
-    [UnitCategory("Math/Generic")]
-    [UnitTitle("Modulo")]
-    public sealed class GenericModulo : Modulo<object>
-    {
-        public override object Operation(object a, object b)
-        {
-            return OperatorUtility.Modulo(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae14a700a8e4203b92e510e5fd766d8dfbc787fb43d74a2bd6da9e943960ddc9
+size 562

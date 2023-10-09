@@ -1,18 +1,3 @@
-using System.Reflection;
-using UnityEngine.TestTools.Utils;
-
-namespace UnityEditor.TestTools.TestRunner
-{
-    internal class EditorAssemblyWrapper : AssemblyWrapper
-    {
-        public EditorAssemblyWrapper(Assembly assembly)
-            : base(assembly) {}
-
-        public override AssemblyName[] GetReferencedAssemblies()
-        {
-            return Assembly.GetReferencedAssemblies();
-        }
-
-        public override string Location { get { return Assembly.Location; } }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:604a840edb0cc4ad4a4699cb0f9f79965015361ea491e77f4eb3d927b673127e
+size 674

@@ -1,34 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public static class ObjectVariables
-    {
-        public static VariableDeclarations Declarations(GameObject source, bool autoAddComponent, bool throwOnMissing)
-        {
-            Ensure.That(nameof(source)).IsNotNull(source);
-
-            var variables = source.GetComponent<Variables>();
-
-            if (variables == null && autoAddComponent)
-            {
-                variables = source.AddComponent<Variables>();
-            }
-
-            if (variables != null)
-            {
-                return variables.declarations;
-            }
-
-            if (throwOnMissing)
-            {
-                throw new InvalidOperationException($"Game object '{source.name}' does not have variables.");
-            }
-            else
-            {
-                return null;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e7ec35c44c7a378c4082b5da34e302f3505927923ca933bcb4bce7b267c4271
+size 1054

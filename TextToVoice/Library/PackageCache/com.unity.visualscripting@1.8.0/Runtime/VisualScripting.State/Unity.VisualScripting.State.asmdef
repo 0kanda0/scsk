@@ -1,11 +1,3 @@
-{
-    "name": "Unity.VisualScripting.State",
-    "references": [
-        "Unity.VisualScripting.Core",
-        "Unity.VisualScripting.Flow"
-    ],
-    "optionalUnityReferences": [],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5144003611a6c866763d3dbb90b9174b75ea01931154b19a5a6aff27e18c477
+size 438

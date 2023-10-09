@@ -1,12 +1,3 @@
-namespace Unity.VisualScripting.Dependencies.NCalc
-{
-    public abstract class LogicalExpressionVisitor
-    {
-        public abstract void Visit(TernaryExpression ternary);
-        public abstract void Visit(BinaryExpression binary);
-        public abstract void Visit(UnaryExpression unary);
-        public abstract void Visit(ValueExpression value);
-        public abstract void Visit(FunctionExpression function);
-        public abstract void Visit(IdentifierExpression identifier);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a77c6bde4dc4a6f2eec5eb41df97aa962290b69cb718c9d7bb376ab12333041
+size 663

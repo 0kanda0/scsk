@@ -1,22 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public interface IGettable
-    {
-        object GetValue();
-    }
-
-    public static class XGettable
-    {
-        public static object GetValue(this IGettable gettable, Type type)
-        {
-            return ConversionUtility.Convert(gettable.GetValue(), type);
-        }
-
-        public static T GetValue<T>(this IGettable gettable)
-        {
-            return (T)gettable.GetValue(typeof(T));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:47a09ffe796b7245d4bc8d8d86d7a6518ec55eabc94b9f2fd7c8e1d981cc05f3
+size 638

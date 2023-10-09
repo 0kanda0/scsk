@@ -1,18 +1,3 @@
-{
-    "name": "Unity.PlasticSCM.Editor",
-    "references": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "unityplastic.dll",
-        "Unity.Plastic.Newtonsoft.Json.dll"
-    ],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a18438c241663af3d7ffc49c8183e2b50b6800f87dda161b9c3c5ad8315ad95
+size 599

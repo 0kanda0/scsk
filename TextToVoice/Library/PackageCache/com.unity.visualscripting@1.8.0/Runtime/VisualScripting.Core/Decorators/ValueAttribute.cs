@@ -1,12 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Allows the customisation of the SystemObjectInspector by displaying just the value
-    /// </summary>
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
-    public class ValueAttribute : Attribute
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:94e1bfa69a353fae72593d3e383fa229d26b28dd78b07ece99ba398a0dce1c82
+size 477

@@ -1,26 +1,3 @@
-using UnityEngine.EventSystems;
-
-namespace Unity.VisualScripting
-{
-    public abstract class PointerEventUnit : GameObjectEventUnit<PointerEventData>
-    {
-        /// <summary>
-        /// The pointer event data.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ValueOutput data { get; private set; }
-
-        protected override void Definition()
-        {
-            base.Definition();
-
-            data = ValueOutput<PointerEventData>(nameof(data));
-        }
-
-        protected override void AssignArguments(Flow flow, PointerEventData data)
-        {
-            flow.SetValue(this.data, data);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4fafeac546a3bf2baa408d4319234d3e904843d4a49f3be55df37fa197db3472
+size 828

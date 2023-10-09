@@ -1,17 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false, Inherited = false)]
-    public class PortKeyAttribute : Attribute
-    {
-        public PortKeyAttribute(string key)
-        {
-            Ensure.That(nameof(key)).IsNotNull(key);
-
-            this.key = key;
-        }
-
-        public string key { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2569fe2d107247f7a18e756179c87a3c236fff82445ba41605bdefe3b84bea89
+size 575

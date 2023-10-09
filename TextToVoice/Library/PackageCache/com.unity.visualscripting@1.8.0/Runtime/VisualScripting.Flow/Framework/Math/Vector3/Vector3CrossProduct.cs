@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the cross product of two 3D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 3")]
-    [UnitTitle("Cross Product")]
-    public sealed class Vector3CrossProduct : CrossProduct<UnityEngine.Vector3>
-    {
-        public override UnityEngine.Vector3 Operation(UnityEngine.Vector3 a, UnityEngine.Vector3 b)
-        {
-            return UnityEngine.Vector3.Cross(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:962f5d8a14202879b786c64e3a3542fa688a0c275d3fc34f94d4628488b52df3
+size 628

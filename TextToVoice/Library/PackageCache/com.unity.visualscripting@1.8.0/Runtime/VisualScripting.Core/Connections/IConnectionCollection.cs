@@ -1,13 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public interface IConnectionCollection<TConnection, TSource, TDestination> : ICollection<TConnection>
-        where TConnection : IConnection<TSource, TDestination>
-    {
-        IEnumerable<TConnection> this[TSource source] { get; }
-        IEnumerable<TConnection> this[TDestination destination] { get; }
-        IEnumerable<TConnection> WithSource(TSource source);
-        IEnumerable<TConnection> WithDestination(TDestination destination);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e3063d63a3ee832502226d3daff3dae2efc5b0bf6b28ac2f91c54a7019502f8
+size 694

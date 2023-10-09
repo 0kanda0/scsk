@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = true)]
-    public sealed class AotStubWriterAttribute : Attribute, IDecoratorAttribute
-    {
-        public AotStubWriterAttribute(Type type)
-        {
-            this.type = type;
-        }
-
-        public Type type { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d68e29ed1c2f694a7955e99aaa68afc2e929ec4f6fc4b0d01ec9619ff57c3100
+size 545

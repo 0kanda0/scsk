@@ -1,22 +1,3 @@
-﻿namespace UnityEditor.TestTools.CodeCoverage.Analytics
-{
-    internal enum EventName
-    {
-        codeCoverage
-    }
-
-    internal enum ActionID
-    {
-        Other = 0,
-        DataOnly = 1,
-        ReportOnly = 2,
-        DataReport = 3   
-    }
-
-    internal enum CoverageModeID
-    {
-        None = 0,
-        TestRunner = 1,
-        Recording = 2
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:01a05d21a025dc8146147f23f66d240359b639a282939a33634d70820f912b38
+size 533

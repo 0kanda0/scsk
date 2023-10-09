@@ -1,5 +1,3 @@
----
-title: open-project-window
----
-
-Go to **Window** &gt; **General** &gt; **Project**, or press Ctrl+5 (macOS: Cmd+5) to open the [Project window](https://docs.unity3d.com/Manual/ProjectView.html).
+version https://git-lfs.github.com/spec/v1
+oid sha256:3074cb4b5d2d6848a7d342c8d4c2f9354242558246900884321fb8fbf79bcc67
+size 368

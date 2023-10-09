@@ -1,26 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [InitializeAfterPlugins]
-    public class GraphDebugDataProvider
-    {
-        static GraphDebugDataProvider()
-        {
-            GraphPointer.fetchRootDebugDataBinding = FetchRootDebugData;
-        }
-
-        private static IGraphDebugData FetchRootDebugData(IGraphRoot root)
-        {
-            if (!rootDatas.TryGetValue(root, out var rootData))
-            {
-                rootData = new GraphDebugData(root.childGraph);
-                rootDatas.Add(root, rootData);
-            }
-
-            return rootData;
-        }
-
-        private static Dictionary<IGraphRoot, IGraphDebugData> rootDatas = new Dictionary<IGraphRoot, IGraphDebugData>();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6e92b475fe5b7e0b8b804b259af7251d9981951672bb74cd1a96534f21fb73c7
+size 906

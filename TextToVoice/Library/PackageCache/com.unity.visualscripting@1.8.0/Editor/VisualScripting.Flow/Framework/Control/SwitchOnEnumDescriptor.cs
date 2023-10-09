@@ -1,23 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(SwitchOnEnum))]
-    public class SwitchOnEnumDescriptor : UnitDescriptor<SwitchOnEnum>
-    {
-        public SwitchOnEnumDescriptor(SwitchOnEnum unit) : base(unit) { }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            foreach (var branch in unit.branches)
-            {
-                if (branch.Value == port)
-                {
-                    var enumValue = branch.Key;
-                    description.label = enumValue.DisplayName();
-                    description.summary = $"The action to execute if the enum has the value '{enumValue}'.";
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ec46c979260a12391e5873e7b3c77acf379807c8dd92d65d4cb141dbdacffcc
+size 943

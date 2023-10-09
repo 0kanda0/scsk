@@ -1,29 +1,3 @@
-using UnityEditor.TestTools.TestRunner.Api;
-
-namespace UnityEditor.TestTools.TestRunner.CommandLineTest
-{
-    internal class RunSettings : ITestRunSettings
-    {
-        private ITestSettings m_TestSettings;
-        public RunSettings(ITestSettings testSettings)
-        {
-            this.m_TestSettings = testSettings;
-        }
-
-        public void Apply()
-        {
-            if (m_TestSettings != null)
-            {
-                m_TestSettings.SetupProjectParameters();
-            }
-        }
-
-        public void Dispose()
-        {
-            if (m_TestSettings != null)
-            {
-                m_TestSettings.Dispose();
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b92823a7da7aa3a4180fcf5a6e8bb2a20167c8ce93a2fa6438a3b6a06f974ec0
+size 872

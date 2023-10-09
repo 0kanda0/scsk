@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Acknowledgement_SQLite : PluginAcknowledgement
-    {
-        public Acknowledgement_SQLite(Plugin plugin) : base(plugin) { }
-
-        public override string title => "SQLite .NET";
-        public override string author => "Roberto Huertas";
-        public override int? copyrightYear => 2014;
-        public override string url => "https://github.com/codecoding/SQLite4Unity3d";
-        public override string licenseName => "MIT";
-        public override string licenseText => CommonLicenses.MIT;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2fdffbafc8c60b1a7dc1af4802304721127a3a38ed14f9967a078bd12240637c
+size 754

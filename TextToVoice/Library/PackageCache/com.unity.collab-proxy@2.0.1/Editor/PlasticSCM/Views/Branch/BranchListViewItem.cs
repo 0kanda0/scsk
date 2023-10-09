@@ -1,17 +1,3 @@
-﻿using UnityEditor.IMGUI.Controls;
-
-namespace Unity.PlasticSCM.Editor.Views.Branches
-{
-    class BranchListViewItem : TreeViewItem
-    {
-        internal object ObjectInfo { get; private set; }
-
-        internal BranchListViewItem(int id, object objectInfo)
-            : base(id, 1)
-        {
-            ObjectInfo = objectInfo;
-
-            displayName = id.ToString();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6aea6b1b497ec8ea7f5735f3579ae77a1161f8c43dfe8a693f078a7d48240ed7
+size 562

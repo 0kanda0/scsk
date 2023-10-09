@@ -1,16 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [Obsolete("Set VariableKind via VariableDeclarations.Kind")]
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public sealed class VariableKindAttribute : Attribute
-    {
-        public VariableKindAttribute(VariableKind kind)
-        {
-            this.kind = kind;
-        }
-
-        public VariableKind kind { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b7f17807117ee1efa227d49c25c7b26c65369cd8900dfb5e1865457ebeba70f1
+size 618

@@ -1,26 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Compares two inputs to determine whether the first is greater than the second.
-    /// </summary>
-    [UnitCategory("Logic")]
-    [UnitOrder(11)]
-    public sealed class Greater : BinaryComparisonUnit
-    {
-        /// <summary>
-        /// Whether A is greater than B.
-        /// </summary>
-        [PortLabel("A > B")]
-        public override ValueOutput comparison => base.comparison;
-
-        protected override bool NumericComparison(float a, float b)
-        {
-            return a > b;
-        }
-
-        protected override bool GenericComparison(object a, object b)
-        {
-            return OperatorUtility.GreaterThan(a, b);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce920cd3015ccfa06d6e14c6884a7fff695e7df4f8f2cfe9a3d4961350182fce
+size 886

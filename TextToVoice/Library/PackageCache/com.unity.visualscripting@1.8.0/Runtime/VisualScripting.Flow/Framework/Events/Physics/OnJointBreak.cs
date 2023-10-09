@@ -1,32 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when a joint attached to the same game object broke.
-    /// </summary>
-    [UnitCategory("Events/Physics")]
-    public sealed class OnJointBreak : GameObjectEventUnit<float>
-    {
-        public override Type MessageListenerType => typeof(UnityOnJointBreakMessageListener);
-        protected override string hookName => EventHooks.OnJointBreak;
-
-        /// <summary>
-        /// The force that was applied for this joint to break.
-        /// </summary>
-        [DoNotSerialize]
-        public ValueOutput breakForce { get; private set; }
-
-        protected override void Definition()
-        {
-            base.Definition();
-
-            breakForce = ValueOutput<float>(nameof(breakForce));
-        }
-
-        protected override void AssignArguments(Flow flow, float breakForce)
-        {
-            flow.SetValue(this.breakForce, breakForce);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9de670a1844c2981a8d63dc92597919493520287df6b5ab441d324dafe805dad
+size 1117

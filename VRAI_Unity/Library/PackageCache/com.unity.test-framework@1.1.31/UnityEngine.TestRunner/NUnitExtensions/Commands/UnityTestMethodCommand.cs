@@ -1,19 +1,3 @@
-﻿using System;
-using NUnit.Framework.Internal;
-using NUnit.Framework.Internal.Commands;
-using Unity.Profiling;
-
-namespace UnityEngine.TestTools
-{
-    internal class UnityTestMethodCommand : TestMethodCommand
-    {
-        public UnityTestMethodCommand(TestMethod testMethod)
-            : base(testMethod) { }
-
-        public override TestResult Execute(ITestExecutionContext context)
-        {
-            using (new ProfilerMarker(Test.FullName).Auto())
-                return base.Execute(context);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d0a32cf92edda9025e0fe6f87c561893fd945a440755b1be96752d35cebf7c4
+size 710

@@ -1,12 +1,3 @@
-﻿/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-namespace Microsoft.Unity.VisualStudio.Editor
-{
-	internal class Solution
-	{
-		public SolutionProjectEntry[] Projects { get; set; }
-		public SolutionProperties[] Properties { get; set; }
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:97417fa850fd9641873c17782eb2584b7e6907f866ae006f1f7106d29a866873
+size 715

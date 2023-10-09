@@ -1,27 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public abstract class StateTransitionAnalyser<TStateTransition> : Analyser<TStateTransition, StateTransitionAnalysis>
-        where TStateTransition : IStateTransition
-    {
-        protected StateTransitionAnalyser(GraphReference reference, TStateTransition target) : base(reference, target) { }
-
-        public TStateTransition transition => target;
-
-        [Assigns]
-        protected virtual bool IsTraversed()
-        {
-            return true;
-        }
-
-        [Assigns]
-        protected virtual IEnumerable<Warning> Warnings()
-        {
-            if (!IsTraversed())
-            {
-                yield return Warning.Info("Transition is never traversed.");
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:58b82db9ce4f71e445e3a90346f6f86432d19f13e3b5b5cf473f25edd914867e
+size 945

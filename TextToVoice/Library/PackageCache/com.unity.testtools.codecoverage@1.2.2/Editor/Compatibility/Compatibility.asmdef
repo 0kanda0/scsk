@@ -1,16 +1,3 @@
-{
-    "name": "Unity.TestTools.CodeCoverage.Editor.Compatibility",
-    "references": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [
-        "!UNITY_2019_2_OR_NEWER"
-    ],
-    "versionDefines": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fd4855d10f7599d8c8f8fb04b5feaa024b660e28edf0815d3a295da5d91771bd
+size 553

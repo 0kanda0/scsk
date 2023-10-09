@@ -1,17 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns a version of a 2D vector where each component is positive.
-    /// </summary>
-    [UnitCategory("Math/Vector 2")]
-    [UnitTitle("Absolute")]
-    public sealed class Vector2Absolute : Absolute<Vector2>
-    {
-        protected override Vector2 Operation(Vector2 input)
-        {
-            return new Vector2(Mathf.Abs(input.x), Mathf.Abs(input.y));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:145cd15737a755cdd4b04207a7b565063ed434ddf7f8bb6943dd6e817c8ff6ec
+size 625

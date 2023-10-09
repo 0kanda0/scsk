@@ -1,24 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class LudiqGraphsChangelog_1_0_2 : PluginChangelog
-    {
-        public LudiqGraphsChangelog_1_0_2(Plugin plugin) : base(plugin) { }
-
-        public override string description => null;
-        public override SemanticVersion version => "1.0.2";
-        public override DateTime date => new DateTime(2017, 08, 01);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Error when entering nested graphs after a paste operation";
-                yield return "[Fixed] Error when converting from macro to embed graph";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:734cd849f104cec27873c9985dad46cbf82da7a1430ea7a5801257bca9774c82
+size 917

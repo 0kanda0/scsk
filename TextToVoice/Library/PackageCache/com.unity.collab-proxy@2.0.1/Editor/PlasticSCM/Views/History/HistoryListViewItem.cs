@@ -1,20 +1,3 @@
-﻿
-using UnityEditor.IMGUI.Controls;
-
-using Codice.CM.Common;
-
-namespace Unity.PlasticSCM.Editor.Views.History
-{
-    internal class HistoryListViewItem : TreeViewItem
-    {
-        internal RepObjectInfo Revision { get; private set; }
-
-        internal HistoryListViewItem(int id, RepObjectInfo revision)
-            : base(id, 1)
-        {
-            Revision = revision;
-
-            displayName = id.ToString();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aceab65e704a554fca93d628e4b638041cd3ef65ce59997cab6998bc4fe8dff2
+size 604

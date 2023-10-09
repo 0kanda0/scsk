@@ -1,25 +1,3 @@
-.organization-section {
-    margin: 10px 0px;
-}
-
-.organization-button {
-    width: 15%;
-}
-
-.align-end {
-    align-items: flex-end;
-}
-
-#organizationDropdown {
-    width: 85%;
-    margin-top: 3px;
-}
-
-#createOrganization {
-    margin: 25px 0px;
-}
-
-#createOrganizationLabel {
-    width: 83%;
-    margin-top: 3px;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2ccc8102013829e7c0f48712e41b4413d290172b611b17c715ba33d662727db8
+size 480

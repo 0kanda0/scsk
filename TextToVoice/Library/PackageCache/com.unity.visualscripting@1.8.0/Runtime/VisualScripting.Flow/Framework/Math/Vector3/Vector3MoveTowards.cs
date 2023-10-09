@@ -1,21 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Moves a 3D vector towards a target.
-    /// </summary>
-    [UnitCategory("Math/Vector 3")]
-    [UnitTitle("Move Towards")]
-    public sealed class Vector3MoveTowards : MoveTowards<Vector3>
-    {
-        protected override Vector3 defaultCurrent => Vector3.zero;
-
-        protected override Vector3 defaultTarget => Vector3.one;
-
-        public override Vector3 Operation(Vector3 current, Vector3 target, float maxDelta)
-        {
-            return Vector3.MoveTowards(current, target, maxDelta);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb7f0d94cd6a2e712d9c0c89405e01cfe3f274b7e3f0ff50a71a6acca2b9e8ef
+size 764

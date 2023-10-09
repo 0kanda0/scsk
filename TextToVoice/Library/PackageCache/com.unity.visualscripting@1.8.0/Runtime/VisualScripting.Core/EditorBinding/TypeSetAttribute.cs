@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public class TypeSetAttribute : Attribute
-    {
-        public TypeSetAttribute(TypeSet typeSet)
-        {
-            this.typeSet = typeSet;
-        }
-
-        public TypeSet typeSet { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8df56cf0a9dafca9eb59be5c25c1c7083c30fdc7c247bfbf24c8f8b4f79838a2
+size 538

@@ -1,7 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Parameter, AllowMultiple = false, Inherited = true)]
-    public sealed class InspectorDelayedAttribute : Attribute { }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a398ac5b7af64ba8cb4c4750763545171c835c59de3094e88cce70cdb85f46ca
+size 429

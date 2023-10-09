@@ -1,14 +1,3 @@
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    // For some reason, Enumerable.Empty<T>() seems to allocate 240b in Unity,
-    // even though Mono source seems to use a shared 0-length array instance.
-    // Maybe it's an old version's bug?
-    public static class Empty<T>
-    {
-        public static readonly T[] array = new T[0];
-        public static readonly List<T> list = new List<T>(0);
-        public static readonly HashSet<T> hashSet = new HashSet<T>();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:42e3a6526f11b1a0dd12dc59a040e5e4d2251ace8d0d000ae7b7fe428500a3c7
+size 667

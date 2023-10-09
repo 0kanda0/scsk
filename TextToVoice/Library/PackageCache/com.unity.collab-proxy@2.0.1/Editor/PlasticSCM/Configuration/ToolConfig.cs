@@ -1,26 +1,3 @@
-﻿using System.IO;
-
-using Codice.Utils;
-
-namespace Unity.PlasticSCM.Editor.Configuration
-{
-    internal static class ToolConfig
-    {
-        internal static string GetUnityPlasticLogConfigFile()
-        {
-            return GetConfigFilePath(LOG_CONFIG_FILE);
-        }
-
-        static string GetConfigFilePath(string configfile)
-        {
-            string file = Path.Combine(ApplicationLocation.GetAppPath(), configfile);
-
-            if (File.Exists(file))
-                return file;
-
-            return UserConfigFolder.GetConfigFile(configfile);
-        }
-
-        const string LOG_CONFIG_FILE = "unityplastic.log.conf";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe12d476672667296e40110af8d3c116f40b99236f8328ca14b35a640ad3b356
+size 809

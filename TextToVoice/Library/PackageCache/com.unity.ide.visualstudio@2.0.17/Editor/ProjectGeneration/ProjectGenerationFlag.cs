@@ -1,23 +1,3 @@
-﻿/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Unity Technologies.
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-using System;
-
-namespace Microsoft.Unity.VisualStudio.Editor
-{
-	[Flags]
-	public enum ProjectGenerationFlag
-	{
-		None = 0,
-		Embedded = 1,
-		Local = 2,
-		Registry = 4,
-		Git = 8,
-		BuiltIn = 16,
-		Unknown = 32,
-		PlayerAssemblies = 64,
-		LocalTarBall = 128,
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4454603404e5d1e5bc51363ad1d6b3e675e2f8e16c8773d79727b371fa930e8
+size 824

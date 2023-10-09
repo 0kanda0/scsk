@@ -1,12 +1,3 @@
-using System.Collections.ObjectModel;
-
-namespace Unity.VisualScripting
-{
-    public class ProfiledSegmentCollection : KeyedCollection<string, ProfiledSegment>
-    {
-        protected override string GetKeyForItem(ProfiledSegment item)
-        {
-            return item.name;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd4abfc1b2dcf4f81036de239faf22b1b30b683d613ced86a45579ebc099fff5
+size 462

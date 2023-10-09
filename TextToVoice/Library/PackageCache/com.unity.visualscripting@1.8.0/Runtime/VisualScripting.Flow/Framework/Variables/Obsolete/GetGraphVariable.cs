@@ -1,18 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Gets the value of a graph variable.
-    /// </summary>
-    [UnitSurtitle("Graph")]
-    public sealed class GetGraphVariable : GetVariableUnit, IGraphVariableUnit
-    {
-        public GetGraphVariable() : base() { }
-
-        public GetGraphVariable(string defaultName) : base(defaultName) { }
-
-        protected override VariableDeclarations GetDeclarations(Flow flow)
-        {
-            return Variables.Graph(flow.stack);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f8684fbb1607be4339cde28d7400e64f4915aec6d63c45a6db01224cea7ea72e
+size 673

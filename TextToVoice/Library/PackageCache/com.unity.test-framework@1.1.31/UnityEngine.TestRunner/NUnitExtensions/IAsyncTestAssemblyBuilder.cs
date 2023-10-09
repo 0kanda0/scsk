@@ -1,12 +1,3 @@
-using System.Collections.Generic;
-using System.Reflection;
-using NUnit.Framework.Api;
-using NUnit.Framework.Interfaces;
-
-namespace UnityEngine.TestTools.NUnitExtensions
-{
-    internal interface IAsyncTestAssemblyBuilder : ITestAssemblyBuilder
-    {
-        IEnumerator<ITest> BuildAsync(Assembly[] assemblies, TestPlatform[] testPlatforms, IDictionary<string, object> options);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ffd41e01f6b848ef54ed0e82dd8adde3e87dc9f5a5032b29d662de620bcb4d8
+size 566

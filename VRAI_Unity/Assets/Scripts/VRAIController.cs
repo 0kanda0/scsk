@@ -1,36 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class VRAIController : MonoBehaviour
-{
-    [SerializeField] VoiceInputter voiceInputer;
-    //[SerializeField] WhisperSpeechToText whisperSpeechToText;
-    [SerializeField] ChatGPTManager chatGPTManager;
-    [SerializeField] VoiceVoxManager voiceVoxManager;
-    [SerializeField] VoiceOutputter voiceOutputer;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    /// <summary>
-    /// �}�C�N�̉������� �� ���͂𕶎���֕ϊ� �� �ԓ��쐬 �� �ԓ��������֕ϊ� �� �������o��
-    /// </summary>
-    void Talk()
-    {
-        AudioClip inputAudio = voiceInputer.InputVoice();
-        //string inputText = whisperSpeechToText.SpeechToText(inputAudio);
-        //string outputText = chatGPTManager.MakeResponse(inputText);
-        //AudioClip voiceVox = voiceVoxManager.TextToSpeech(outputText);
-        //voiceOutputer.OutputVoice(voiceVox);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:da411ff1b20febc0d5cfc3ad45aff789c846e43de474d4bb43c47366e37f07e4
+size 1316

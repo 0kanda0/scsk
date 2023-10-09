@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_EXISTS
-    /// <summary>
-    /// Called when a collider enters the trigger.
-    /// </summary>
-    public sealed class OnTriggerEnter : TriggerEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnTriggerEnterMessageListener);
-        protected override string hookName => EventHooks.OnTriggerEnter;
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e2541bcb45b33de8e8c1095e633e465c7d6cc35f7522dee74789041fac243d5
+size 580

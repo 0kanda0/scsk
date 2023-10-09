@@ -1,33 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public partial class EnsureThat
-    {
-        public void IsTrue(bool value)
-        {
-            if (!Ensure.IsActive)
-            {
-                return;
-            }
-
-            if (!value)
-            {
-                throw new ArgumentException(ExceptionMessages.Booleans_IsTrueFailed, paramName);
-            }
-        }
-
-        public void IsFalse(bool value)
-        {
-            if (!Ensure.IsActive)
-            {
-                return;
-            }
-
-            if (value)
-            {
-                throw new ArgumentException(ExceptionMessages.Booleans_IsFalseFailed, paramName);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:224e6a5c70c69934e39da0a71088d757f4bec286777c0330bf0ca49ec77bb9a1
+size 860

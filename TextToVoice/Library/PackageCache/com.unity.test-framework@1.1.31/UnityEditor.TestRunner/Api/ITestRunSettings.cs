@@ -1,16 +1,3 @@
-using System;
-
-namespace UnityEditor.TestTools.TestRunner.Api
-{
-    /// <summary>
-    /// ITestRunSettings lets you set any of the global settings right before building a Player for a test run and then reverts the settings afterward. ITestRunSettings implements 
-    /// [IDisposable](https://docs.microsoft.com/en-us/dotnet/api/system.idisposable?view=netframework-4.8), and runs after building the Player with tests.
-    /// </summary>
-    public interface ITestRunSettings : IDisposable
-    {
-        /// <summary>
-        /// A method called before building the Player.
-        /// </summary>
-        void Apply();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f5af7aa1400a9370b8d76a8ab500b4647ff02847646deb79639c9d9e873d270a
+size 812

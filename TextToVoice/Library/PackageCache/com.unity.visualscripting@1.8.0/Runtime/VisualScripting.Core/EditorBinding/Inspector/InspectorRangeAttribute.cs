@@ -1,17 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Parameter, AllowMultiple = false, Inherited = true)]
-    public sealed class InspectorRangeAttribute : Attribute
-    {
-        public InspectorRangeAttribute(float min, float max)
-        {
-            this.min = min;
-            this.max = max;
-        }
-
-        public float min { get; private set; }
-        public float max { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:65423c34adc4720c128e8b8923c854200307436d801a82858e0ba4f8ab07bd92
+size 667

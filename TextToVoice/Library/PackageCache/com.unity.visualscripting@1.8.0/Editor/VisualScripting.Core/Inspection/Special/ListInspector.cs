@@ -1,29 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public class ListInspector : Inspector
-    {
-        public ListInspector(Metadata metadata) : base(metadata)
-        {
-            adaptor = new MetadataListAdaptor(metadata, this);
-        }
-
-        protected MetadataListAdaptor adaptor { get; private set; }
-
-        protected override float GetHeight(float width, GUIContent label)
-        {
-            return adaptor.GetHeight(width, label);
-        }
-
-        protected override void OnGUI(Rect position, GUIContent label)
-        {
-            adaptor.Field(position, label);
-        }
-
-        public override float GetAdaptiveWidth()
-        {
-            return adaptor.GetAdaptiveWidth();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:541905096f205d70de434e3a6314b20b1767beb9224dd8d9884a103cdbb31d86
+size 897

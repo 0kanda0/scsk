@@ -1,23 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the sum of two 2D vectors.
-    /// </summary>
-    [UnitCategory("Math/Vector 2")]
-    [UnitTitle("Add")]
-    [Obsolete("Use the new \"Add (Math/Vector 2)\" node instead.")]
-    [RenamedFrom("Bolt.Vector2Add")]
-    [RenamedFrom("Unity.VisualScripting.Vector2Add")]
-    public sealed class DeprecatedVector2Add : Add<Vector2>
-    {
-        protected override Vector2 defaultB => Vector2.zero;
-
-        public override Vector2 Operation(Vector2 a, Vector2 b)
-        {
-            return a + b;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4937a1b8fe5c16936e108946f13c7e9756ef2d458c4974f8054ffca1bae3a029
+size 781

@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// When draging is occuring this will be called every time the cursor is moved.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [UnitOrder(17)]
-    public sealed class OnDrag : PointerEventUnit
-    {
-        protected override string hookName => EventHooks.OnDrag;
-        public override Type MessageListenerType => typeof(UnityOnDragMessageListener);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e1e17f8b0f265d86238dc047c06d92ab6102c9b9b9048e7049c7291a5480527d
+size 610

@@ -1,22 +1,3 @@
-﻿using System.Collections.Generic;
-
-namespace Unity.PlasticSCM.Editor.UI
-{
-    internal class SortOrderComparer<T> : IComparer<T>
-    {
-        internal SortOrderComparer(IComparer<T> comparer, bool isAscending)
-        {
-            mComparer = comparer;
-            mIsAscending = isAscending;
-        }
-
-        int IComparer<T>.Compare(T x, T y)
-        {
-            int result = mComparer.Compare(x, y);
-            return mIsAscending ? result : -result;
-        }
-
-        bool mIsAscending;
-        IComparer<T> mComparer;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ead8531d621455e827bc45f8c505e947939fda0ec2b9f0a0cb31570d3f51e0d9
+size 711

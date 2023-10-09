@@ -1,13 +1,3 @@
-# Add team members
-
-To invite team members to contribute to your project:
-
-
-1. Click the settings menu (gear icon) and click Invite Members to Workspace.
-
-![Invite members to project](images/InviteMembers.png)
-
-1. In your DevOps version control dashboard, click Add new user. 
-
-You can also send invitations and add different permission types for each user.
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:eaefc87efc8a9b5bbd430e18370ae301d90834cd4be15db9902d2c3e139e74f1
+size 528

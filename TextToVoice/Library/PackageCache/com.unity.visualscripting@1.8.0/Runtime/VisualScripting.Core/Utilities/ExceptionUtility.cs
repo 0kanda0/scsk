@@ -1,20 +1,3 @@
-using System;
-using System.Reflection;
-
-namespace Unity.VisualScripting
-{
-    public static class ExceptionUtility
-    {
-        public static Exception Relevant(this Exception ex)
-        {
-            if (ex is TargetInvocationException)
-            {
-                return ex.InnerException;
-            }
-            else
-            {
-                return ex;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c59f7450a5e45e67dfcc10196617129db367ea8975779c1e08eb5aba6909b36e
+size 569

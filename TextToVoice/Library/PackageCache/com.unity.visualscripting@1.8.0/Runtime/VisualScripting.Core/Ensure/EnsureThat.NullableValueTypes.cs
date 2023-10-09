@@ -1,20 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public partial class EnsureThat
-    {
-        public void IsNotNull<T>(T? value) where T : struct
-        {
-            if (!Ensure.IsActive)
-            {
-                return;
-            }
-
-            if (value == null)
-            {
-                throw new ArgumentNullException(paramName, ExceptionMessages.Common_IsNotNull_Failed);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4e69ca96ad449353c444fef03a1f0cd80656b5c976fb18e58f93f462db53343
+size 597

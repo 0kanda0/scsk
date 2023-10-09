@@ -1,18 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltFlow.ID)]
-    internal class Migration_1_0_2_to_1_0_3 : PluginMigration
-    {
-        public Migration_1_0_2_to_1_0_3(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion @from => "1.0.2";
-        public override SemanticVersion to => "1.0.3";
-
-        public override void Run()
-        {
-            RequireAction("Run the new unit options wizard from: \nTools > Bolt > Unit Options Wizard..." +
-                "\n\nYou will need to run it every time you change your codebase. " +
-                "To skip the wizard and keep the same settings, use: \nTools > Bolt > Update Unit Options");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c48da6343126a4d06f26906810b21e70c01cea772630b1f9435057326464f308
+size 852

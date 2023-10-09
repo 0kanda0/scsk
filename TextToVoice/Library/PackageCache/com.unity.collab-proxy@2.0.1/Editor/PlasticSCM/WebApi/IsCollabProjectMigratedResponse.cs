@@ -1,23 +1,3 @@
-﻿using Unity.Plastic.Newtonsoft.Json;
-using PlasticGui.WebApi.Responses;
-
-namespace Unity.PlasticSCM.Editor.WebApi
-{
-    public class IsCollabProjectMigratedResponse
-    {
-        [JsonProperty("error")]
-        public ErrorResponse.ErrorFields Error { get; set; }
-
-        [JsonProperty("IsMigrated")]
-        public bool IsMigrated { get; set; }
-
-        [JsonProperty("WebServerUri")]
-        public string WebServerUri { get; set; }
-
-        [JsonProperty("PlasticCloudOrganizationName")]
-        public string PlasticCloudOrganizationName { get; set; }
-
-        [JsonProperty("Credentials")]
-        public CredentialsResponse Credentials { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8474bdaf1b821728581d62fc99a6d7947fb4f63f56e8e954941e5dd3a8b9cfe
+size 837

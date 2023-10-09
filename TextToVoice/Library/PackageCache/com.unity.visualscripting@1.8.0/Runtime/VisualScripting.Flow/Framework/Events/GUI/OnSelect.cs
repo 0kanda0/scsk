@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the pointer selects the GUI element.
-    /// </summary>
-    [UnitCategory("Events/GUI")]
-    [UnitOrder(22)]
-    public sealed class OnSelect : GenericGuiEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnSelectMessageListener);
-        protected override string hookName => EventHooks.OnSelect;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b9be4ee8e60143ebd1849ac48578f4e016d0df2bbda7076eeb1748015842666f
+size 591

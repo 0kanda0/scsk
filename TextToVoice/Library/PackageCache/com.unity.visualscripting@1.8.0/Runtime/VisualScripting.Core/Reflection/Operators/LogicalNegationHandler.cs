@@ -1,18 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public sealed class LogicalNegationHandler : UnaryOperatorHandler
-    {
-        public LogicalNegationHandler() : base("Logical Negation", "Not", "~", "op_OnesComplement")
-        {
-            Handle<bool>(a => !a);
-            Handle<byte>(a => ~a);
-            Handle<sbyte>(a => ~a);
-            Handle<short>(a => ~a);
-            Handle<ushort>(a => ~a);
-            Handle<int>(a => ~a);
-            Handle<uint>(a => ~a);
-            Handle<long>(a => ~a);
-            Handle<ulong>(a => ~a);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:df624ddc71383ff64a964d8d3c02235650c0475342afa5d12ac901a1d2ca7d80
+size 726

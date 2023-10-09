@@ -1,36 +1,3 @@
-﻿using System.Collections.Generic;
-
-using UnityEditor;
-
-using Codice.Client.GameUI.Checkin;
-using GluonGui.Dialog;
-using GluonGui.WorkspaceWindow.Views.Checkin.Operations;
-using PlasticGui;
-using Unity.PlasticSCM.Editor.UI;
-
-namespace Unity.PlasticSCM.Editor.Views.PendingChanges.Dialogs
-{
-    internal class LaunchCheckinConflictsDialog : CheckinUIOperation.ICheckinConflictsDialog
-    {
-        internal LaunchCheckinConflictsDialog(EditorWindow window)
-        {
-            mWindow = window;
-        }
-
-        Result CheckinUIOperation.ICheckinConflictsDialog.Show(
-            IList<CheckinConflict> conflicts,
-            PlasticLocalization.Name dialogTitle,
-            PlasticLocalization.Name dialogExplanation,
-            PlasticLocalization.Name okButtonCaption)
-        {
-            ResponseType responseType = CheckinConflictsDialog.Show(
-                conflicts, dialogTitle, dialogExplanation,
-                okButtonCaption, mWindow);
-
-            return responseType == ResponseType.Ok ?
-                Result.Ok : Result.Cancel;
-        }
-
-        EditorWindow mWindow;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3adc22beefe0a3926108ca81416fcd7fd952678bb11f788cff9e358f51106168
+size 1276

@@ -1,22 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public interface ISearchResult
-    {
-        object result { get; }
-        float relevance { get; }
-    }
-
-    public struct SearchResult<T> : ISearchResult
-    {
-        public T result { get; }
-        public float relevance { get; }
-
-        object ISearchResult.result => result;
-
-        public SearchResult(T result, float relevance)
-        {
-            this.result = result;
-            this.relevance = relevance;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7f578c66ad2c0146791769ec246e897bacccc19215e6557adb0c499d97b91c96
+size 650

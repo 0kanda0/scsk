@@ -1,5 +1,3 @@
----
-title: open-hierarchy-window
----
-
-Go to **Window** &gt; **General** &gt; **Hierarchy**, or press Ctrl+4 (macOS: Cmd+4) to open the [Hierarchy window](https://docs.unity3d.com/Manual/Hierarchy.html).
+version https://git-lfs.github.com/spec/v1
+oid sha256:057f68ea6020c67a7ae6e5d8aea59e7b552707c0f479152db54ff1e823c66467
+size 372

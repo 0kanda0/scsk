@@ -1,30 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Selects a value from a set by switching over a string.
-    /// </summary>
-    [UnitCategory("Control")]
-    [UnitTitle("Select On String")]
-    [UnitShortTitle("Select")]
-    [UnitSubtitle("On String")]
-    [UnitOrder(7)]
-    public class SelectOnString : SelectUnit<string>
-    {
-        [Serialize]
-        [Inspectable, UnitHeaderInspectable("Ignore Case")]
-        [InspectorToggleLeft]
-        public bool ignoreCase { get; set; }
-
-        protected override bool Matches(string a, string b)
-        {
-            if (string.IsNullOrEmpty(a) && string.IsNullOrEmpty(b))
-            {
-                return true;
-            }
-
-            return string.Equals(a, b, ignoreCase ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2a4e34c55f3c0568db461b2883d6f43c79e940e59d859816704eafb89a350c74
+size 1011

@@ -1,19 +1,3 @@
-using System;
-using System.Reflection;
-
-namespace Unity.VisualScripting
-{
-    public abstract class StaticFunctionInvokerBase<TResult> : StaticInvokerBase
-    {
-        protected StaticFunctionInvokerBase(MethodInfo methodInfo) : base(methodInfo)
-        {
-            if (OptimizedReflection.safeMode)
-            {
-                if (methodInfo.ReturnType != typeof(TResult))
-                {
-                    throw new ArgumentException("Return type of method info doesn't match generic type.", nameof(methodInfo));
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:44960cd4dd0c83376fcd60a9cefc215f526c2167b9ca6d493153b4dc680c1f0d
+size 743

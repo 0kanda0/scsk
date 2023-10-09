@@ -1,32 +1,3 @@
-using UnityEditor;
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public interface ICanvasWindow
-    {
-        GraphReference reference { get; set; }
-
-        bool maximized { get; set; }
-
-        bool graphInspectorEnabled { get; set; }
-
-        bool variablesInspectorEnabled { get; set; }
-
-
-        void AddCursorRect(Rect rect, MouseCursor cursor);
-    }
-
-    public static class XCanvasWindow
-    {
-        public static bool IsFocused(this ICanvasWindow window)
-        {
-            return EditorWindow.focusedWindow == (EditorWindow)window;
-        }
-
-        public static void Focus(this ICanvasWindow window)
-        {
-            ((EditorWindow)window).Focus();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:085feda3a62b6feb0963ac5fb1c4b0c8b93900ebbdea6d7ccd7e7ab58053a9d9
+size 872

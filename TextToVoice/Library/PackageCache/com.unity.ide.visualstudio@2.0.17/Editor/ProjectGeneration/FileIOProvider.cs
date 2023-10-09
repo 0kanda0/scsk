@@ -1,36 +1,3 @@
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Unity Technologies.
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-using System.IO;
-using System.Text;
-
-namespace Microsoft.Unity.VisualStudio.Editor
-{
-	public interface IFileIO
-	{
-		bool Exists(string fileName);
-
-		string ReadAllText(string fileName);
-		void WriteAllText(string fileName, string content);
-	}
-
-	class FileIOProvider : IFileIO
-	{
-		public bool Exists(string fileName)
-		{
-			return File.Exists(fileName);
-		}
-
-		public string ReadAllText(string fileName)
-		{
-			return File.ReadAllText(fileName);
-		}
-
-		public void WriteAllText(string fileName, string content)
-		{
-			File.WriteAllText(fileName, content, Encoding.UTF8);
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b3d164a0979d9c451b8044eea787897eb2cfd7257d7836330c544c552b92f11
+size 1139

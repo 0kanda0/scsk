@@ -1,19 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    public interface IAboutable
-    {
-        string name { get; }
-        string description { get; }
-        Texture2D logo { get; }
-        string author { get; }
-        string authorLabel { get; }
-        Texture2D authorLogo { get; }
-        string copyrightHolder { get; }
-        int copyrightYear { get; }
-        string url { get; }
-        string authorUrl { get; }
-        SemanticVersion version { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d26a91ed04cc674f7f35a3617268b0eb71a253e7ee6970d16eb998796ac22faa
+size 649

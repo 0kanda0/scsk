@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Parameter, AllowMultiple = false, Inherited = true)]
-    public sealed class InspectorVariableNameAttribute : Attribute
-    {
-        public InspectorVariableNameAttribute(ActionDirection direction)
-        {
-            this.direction = direction;
-        }
-
-        public ActionDirection direction { get; private set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3561402774a218deffcc308e28022cba3056ed094439b6bf1d01a0a29c5b5c4f
+size 639

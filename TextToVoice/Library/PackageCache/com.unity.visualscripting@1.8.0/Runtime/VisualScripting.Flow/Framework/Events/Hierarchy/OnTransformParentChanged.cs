@@ -1,14 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Called when the parent property of the transform of the game object has changed.
-    /// </summary>
-    [UnitCategory("Events/Hierarchy")]
-    public sealed class OnTransformParentChanged : GameObjectEventUnit<EmptyEventArgs>
-    {
-        public override Type MessageListenerType => typeof(UnityOnTransformParentChangedMessageListener);
-        protected override string hookName => EventHooks.OnTransformParentChanged;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:15811a604f4a2e49180c982de7ccf8dd1bcc9aab7b76d3b3ce158baea4f5d0db
+size 673

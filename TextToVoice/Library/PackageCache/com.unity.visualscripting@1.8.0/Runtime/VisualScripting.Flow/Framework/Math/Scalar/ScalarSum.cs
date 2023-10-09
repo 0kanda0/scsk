@@ -1,26 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Returns the sum of two or more scalars.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Add")]
-    public sealed class ScalarSum : Sum<float>, IDefaultValue<float>
-    {
-        [DoNotSerialize]
-        public float defaultValue => 1;
-
-        public override float Operation(float a, float b)
-        {
-            return a + b;
-        }
-
-        public override float Operation(IEnumerable<float> values)
-        {
-            return values.Sum();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c34d2d292b1f333e5e55c7b2094a5986f445161cc6488ac2ea1e6fedc0345b89
+size 773

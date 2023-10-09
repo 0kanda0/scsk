@@ -1,12 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Editor(typeof(IStateTransition))]
-    public class StateTransitionEditor : GraphElementEditor<StateGraphContext>
-    {
-        public StateTransitionEditor(Metadata metadata) : base(metadata) { }
-
-        private IStateTransition transition => (IStateTransition)element;
-
-        protected new StateTransitionDescription description => (StateTransitionDescription)base.description;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4c5e51651de89531699491cca6a231271e0f370b7ef16e4a490fd45b852980f5
+size 598

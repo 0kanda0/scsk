@@ -1,7 +1,3 @@
-﻿#ContentArea {
-    background-color: rgba(48, 48, 48, 255);
-}
-
-#StatusBar {
-    background-color: rgba(25, 25, 25, 255);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:70d22043e5d464dcb543f4ef3f27a541915a8acb64f0987c08d0eec1f0cdba15
+size 295

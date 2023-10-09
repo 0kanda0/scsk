@@ -1,26 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [InitializeAfterPlugins]
-    public static class FlowEditorBindings
-    {
-        static FlowEditorBindings()
-        {
-            Flow.isInspectedBinding = IsInspected;
-        }
-
-        private static bool IsInspected(GraphPointer pointer)
-        {
-            Ensure.That(nameof(pointer)).IsNotNull(pointer);
-
-            foreach (var graphWindow in GraphWindow.tabsNoAlloc)
-            {
-                if (graphWindow.reference?.InstanceEquals(pointer) ?? false)
-                {
-                    return true;
-                }
-            }
-
-            return false;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:57ac93422e1b2533035d46294fba96021cba74791f6d9f64f4c5c35ed672fa36
+size 807

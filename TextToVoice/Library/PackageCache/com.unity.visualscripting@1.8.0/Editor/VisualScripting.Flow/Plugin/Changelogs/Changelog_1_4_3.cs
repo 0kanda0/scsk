@@ -1,24 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltFlow.ID)]
-    internal class Changelog_1_4_3 : PluginChangelog
-    {
-        public Changelog_1_4_3(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.3";
-
-        public override DateTime date => new DateTime(2019, 04, 29);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Issue where literal widget failed to render when literal type had failed to deserialize";
-                yield return "[Fixed] Unit header text rendering by disabling word wrapping";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:84589af98f9c4bb0da7a0a5ace5ac935cc8ad976dc5f5f231d7fc9e771b70010
+size 880

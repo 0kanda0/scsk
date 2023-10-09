@@ -1,22 +1,3 @@
-{
-    "name": "Unity.VisualScripting.Shared.Editor",
-    "references": [
-        "Unity.VisualScripting.Core.Editor",
-        "Unity.VisualScripting.Flow.Editor",
-        "Unity.VisualScripting.State.Editor",
-        "Unity.VisualScripting.Core",
-        "Unity.VisualScripting.Flow",
-        "Unity.VisualScripting.State"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:50dfd461a89d285c147a09e3a1b9c2463fe117ba0c3b1279da79fa7a5e025c8b
+size 790

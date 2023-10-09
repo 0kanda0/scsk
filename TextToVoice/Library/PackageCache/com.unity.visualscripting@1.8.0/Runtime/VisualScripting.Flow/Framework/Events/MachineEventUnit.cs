@@ -1,14 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public abstract class MachineEventUnit<TArgs> : EventUnit<TArgs>
-    {
-        protected sealed override bool register => true;
-
-        public override EventHook GetHook(GraphReference reference)
-        {
-            return new EventHook(hookName, reference.machine);
-        }
-
-        protected virtual string hookName => throw new InvalidImplementationException($"Missing event hook for '{this}'.");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0249d5bd1a79772c72934617700de2face7b9435179a0f255152c41e33195d7d
+size 620

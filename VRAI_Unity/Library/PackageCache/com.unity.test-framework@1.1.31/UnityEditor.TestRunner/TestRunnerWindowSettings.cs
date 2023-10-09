@@ -1,26 +1,3 @@
-namespace UnityEditor.TestTools.TestRunner
-{
-    internal class TestRunnerWindowSettings
-    {
-        public bool verticalSplit;
-
-        private readonly string m_PrefsKey;
-
-        public TestRunnerWindowSettings(string prefsKey)
-        {
-            m_PrefsKey = prefsKey;
-            verticalSplit = EditorPrefs.GetBool(m_PrefsKey + ".verticalSplit", true);
-        }
-
-        public void ToggleVerticalSplit()
-        {
-            verticalSplit = !verticalSplit;
-            Save();
-        }
-
-        private void Save()
-        {
-            EditorPrefs.SetBool(m_PrefsKey + ".verticalSplit", verticalSplit);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d01ead60475c3ed3d0791d5e04c78432da2998d2765f3082deff412a7b9b75da
+size 832

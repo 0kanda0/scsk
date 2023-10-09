@@ -1,5 +1,3 @@
----
-title: nodes-note-manual
----
-
-node is an [Input Manager](https://docs.unity3d.com/Manual/class-InputManager.html) node. For more information about how to use the Input Manager with Visual Scripting, see [Capture user input in an application](../../vs-capture-player-input.md). 
+version https://git-lfs.github.com/spec/v1
+oid sha256:fabe708d457b28366fc4d08a56d753de37f4d9b719fec19c9ab57c4aa07ee37b
+size 451

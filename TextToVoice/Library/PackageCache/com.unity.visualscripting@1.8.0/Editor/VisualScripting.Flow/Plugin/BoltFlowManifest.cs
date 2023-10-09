@@ -1,13 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltFlow.ID)]
-    public sealed class BoltFlowManifest : PluginManifest
-    {
-        private BoltFlowManifest(BoltFlow plugin) : base(plugin) { }
-
-        public override string name => "Visual Scripting Flow";
-        public override string author => "";
-        public override string description => "Flow-graph based visual scripting.";
-        public override SemanticVersion version => PackageVersionUtility.version;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:19ebb280e4a64cba35e7d99b9a9c6d56cb051c50fa52d79dc14bb7bb35b29f18
+size 646

@@ -1,34 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [FuzzyOption(typeof(InvokeMember))]
-    public class InvokeMemberOption : MemberUnitOption<InvokeMember>
-    {
-        public InvokeMemberOption() : base() { }
-
-        public InvokeMemberOption(InvokeMember unit) : base(unit) { }
-
-        protected override ActionDirection direction => ActionDirection.Any;
-
-        public override string SearchResultLabel(string query)
-        {
-            return base.SearchResultLabel(query) + $" ({unit.member.methodBase.DisplayParameterString(unit.member.targetType)})";
-        }
-
-        protected override string Label(bool human)
-        {
-            return base.Label(human) + $" ({unit.member.methodBase.SelectedParameterString(unit.member.targetType, human)})";
-        }
-
-        protected override string Haystack(bool human)
-        {
-            if (!human && member.isConstructor)
-            {
-                return base.Label(human);
-            }
-            else
-            {
-                return $"{targetType.SelectedName(human)}{(human ? ": " : ".")}{base.Label(human)}";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0a689e71d269b601c96a512b787fd5599c259cc2c2aa2c80292d80d70ca74a1
+size 1278

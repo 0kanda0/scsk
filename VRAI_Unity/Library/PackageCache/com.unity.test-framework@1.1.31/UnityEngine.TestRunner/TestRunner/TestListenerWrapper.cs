@@ -1,30 +1,3 @@
-using NUnit.Framework.Interfaces;
-
-namespace UnityEngine.TestTools.TestRunner
-{
-    internal class TestListenerWrapper : ITestListener
-    {
-        private readonly TestFinishedEvent m_TestFinishedEvent;
-        private readonly TestStartedEvent m_TestStartedEvent;
-
-        public TestListenerWrapper(TestStartedEvent testStartedEvent, TestFinishedEvent testFinishedEvent)
-        {
-            m_TestStartedEvent = testStartedEvent;
-            m_TestFinishedEvent = testFinishedEvent;
-        }
-
-        public void TestStarted(ITest test)
-        {
-            m_TestStartedEvent.Invoke(test);
-        }
-
-        public void TestFinished(ITestResult result)
-        {
-            m_TestFinishedEvent.Invoke(result);
-        }
-
-        public void TestOutput(TestOutput output)
-        {
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6e62297d844b17ec30584bdad08c50628c46c7c43e91ee20395116902b88fb27
+size 1009

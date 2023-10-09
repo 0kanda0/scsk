@@ -1,18 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Migration_1_2_4_to_1_3_0 : BoltCoreMigration
-    {
-        public Migration_1_2_4_to_1_3_0(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion @from => "1.2.4";
-        public override SemanticVersion to => "1.3.0";
-
-        public override void Run()
-        {
-            AddDefaultTypeOption(typeof(Touch));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c2316f89c108d679be9c3d562243935e089e0e06b060dd9d074d55384871e640
+size 620

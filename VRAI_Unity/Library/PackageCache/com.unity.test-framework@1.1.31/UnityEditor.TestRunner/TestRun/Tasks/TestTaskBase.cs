@@ -1,16 +1,3 @@
-using System.Collections;
-
-namespace UnityEditor.TestTools.TestRunner.TestRun.Tasks
-{
-    internal abstract class TestTaskBase
-    {
-        public bool SupportsResumingEnumerator;
-
-        protected TestTaskBase(bool supportsResumingEnumerator = false)
-        {
-            SupportsResumingEnumerator = supportsResumingEnumerator;
-        }
-
-        public abstract IEnumerator Execute(TestJobData testJobData);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:021f8fdd5e2d4f61f171c14f0b4d42820045866c095a2a14026d2874a0630625
+size 606

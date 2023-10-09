@@ -1,15 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Acknowledgement_FatcowIcons : PluginAcknowledgement
-    {
-        public Acknowledgement_FatcowIcons(Plugin plugin) : base(plugin) { }
-
-        public override string title => "FatCow Icons";
-        public override string author => "FatCow Web Hosting";
-        public override int? copyrightYear => 2017;
-        public override string url => "https://www.fatcow.com/free-icons";
-        public override string licenseName => "Creative Commons Attribution 3.0";
-        public override string licenseText => CommonLicenses.CCA3;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:32ea52181df6b042ce0f248ee6b7ae281c653b34089d24c6eba1c543132803d3
+size 787

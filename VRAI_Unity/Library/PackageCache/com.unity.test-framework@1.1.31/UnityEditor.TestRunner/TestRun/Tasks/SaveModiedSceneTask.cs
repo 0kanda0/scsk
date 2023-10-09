@@ -1,22 +1,3 @@
-using System;
-using System.Collections;
-using UnityEditor.SceneManagement;
-
-namespace UnityEditor.TestTools.TestRunner.TestRun.Tasks
-{
-    internal class SaveModiedSceneTask : TestTaskBase
-    {
-        internal Func<bool> SaveCurrentModifiedScenesIfUserWantsTo =
-            EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo;
-        public override IEnumerator Execute(TestJobData testJobData)
-        {
-            var cancelled = !SaveCurrentModifiedScenesIfUserWantsTo();
-            if (cancelled)
-            {
-                throw new TestRunCanceledException();
-            }
-
-            yield break;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:94afe8e5d8e712aa22d40b5c17b0e5f68d27aae112d22d15f512a8266d7a71e5
+size 828

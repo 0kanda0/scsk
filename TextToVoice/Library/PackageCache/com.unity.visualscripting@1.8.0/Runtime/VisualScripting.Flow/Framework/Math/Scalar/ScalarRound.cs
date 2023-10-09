@@ -1,27 +1,3 @@
-using UnityEngine;
-
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Rounds a decimal number to return an integer.
-    /// </summary>
-    [UnitCategory("Math/Scalar")]
-    [UnitTitle("Round")]
-    public sealed class ScalarRound : Round<float, int>
-    {
-        protected override int Floor(float input)
-        {
-            return Mathf.FloorToInt(input);
-        }
-
-        protected override int AwayFromZero(float input)
-        {
-            return Mathf.RoundToInt(input);
-        }
-
-        protected override int Ceiling(float input)
-        {
-            return Mathf.CeilToInt(input);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f680f2d368f96d62a05921f1cfb85909914c86f0d2ed751d0af10f418f7b049
+size 795

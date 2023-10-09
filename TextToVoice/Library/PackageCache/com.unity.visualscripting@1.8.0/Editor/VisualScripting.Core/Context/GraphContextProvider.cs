@@ -1,35 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public class GraphContextProvider : SingleDecoratorProvider<GraphReference, IGraphContext, GraphContextAttribute>
-    {
-        private static GraphContextProvider _instance;
-        public static GraphContextProvider instance => _instance ?? (_instance = new GraphContextProvider());
-
-        protected override bool cache => true;
-
-        protected override Type GetDecoratedType(GraphReference reference)
-        {
-            return reference.graph.GetType();
-        }
-
-        public override bool IsValid(GraphReference reference)
-        {
-            return reference.isValid;
-        }
-    }
-
-    public static class XGraphContextProvider
-    {
-        public static IGraphContext Context(this GraphReference reference)
-        {
-            return GraphContextProvider.instance.GetDecorator(reference);
-        }
-
-        public static T Context<T>(this GraphReference reference) where T : IGraphContext
-        {
-            return GraphContextProvider.instance.GetDecorator<T>(reference);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1fc0e1ef9b0d23bc61a83ef9149e15aae05453d0417fd5f6ea8f28f3621f1d29
+size 1244

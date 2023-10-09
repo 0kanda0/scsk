@@ -1,20 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting.FullSerializer
-{
-    /// <summary>
-    /// The serialization converter allows for customization of the serialization
-    /// process.
-    /// </summary>
-    public abstract class fsConverter : fsBaseConverter
-    {
-        /// <summary>
-        /// Can this converter serialize and deserialize the given object type?
-        /// </summary>
-        /// <param name="type">The given object type.</param>
-        /// <returns>
-        /// True if the converter can serialize it, false otherwise.
-        /// </returns>
-        public abstract bool CanProcess(Type type);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b01b32c31075ffe0af6636de64f9e3bb2503a244c5bf0232f8b313c2941e6a1
+size 792

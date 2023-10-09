@@ -1,14 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    static class TypeExtensions
-    {
-        public static SerializableType GenerateTypeHandle(this Type type)
-        {
-            return type == typeof(Unknown)
-                ? new SerializableType(Unknown.Identification)
-                : TypeSerializer.GenerateTypeHandle(type);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a63ce3ec54421d2dfbb63283d5b75beaf860a6a0504cd318423da18cbb85c934
+size 523

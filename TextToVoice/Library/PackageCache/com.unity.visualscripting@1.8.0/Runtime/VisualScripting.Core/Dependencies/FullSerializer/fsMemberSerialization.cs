@@ -1,25 +1,3 @@
-namespace Unity.VisualScripting.FullSerializer
-{
-    /// <summary>
-    /// Controls how the reflected converter handles member serialization.
-    /// </summary>
-    public enum fsMemberSerialization
-    {
-        /// <summary>
-        /// Only members with [SerializeField] or [fsProperty] attributes are
-        /// serialized.
-        /// </summary>
-        OptIn,
-
-        /// <summary>
-        /// Only members with [NotSerialized] or [fsIgnore] will not be
-        /// serialized.
-        /// </summary>
-        OptOut,
-
-        /// <summary>
-        /// The default member serialization behavior is applied.
-        /// </summary>
-        Default
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ec9fe833f29a31cf802196988643e1a9b2a266069fdc4c3a9603becf7936d16
+size 830

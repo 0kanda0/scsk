@@ -1,21 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(INesterState))]
-    public class NesterStateDescriptor<TNesterState> : StateDescriptor<TNesterState>
-        where TNesterState : class, INesterState
-    {
-        public NesterStateDescriptor(TNesterState state) : base(state) { }
-
-        [RequiresUnityAPI]
-        public override string Title()
-        {
-            return GraphNesterDescriptor.Title(state);
-        }
-
-        [RequiresUnityAPI]
-        public override string Summary()
-        {
-            return GraphNesterDescriptor.Summary(state);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0da00e0e588b1b7fab86eb6ce67ecc385a452ea97d7178f703508aa41c413844
+size 753

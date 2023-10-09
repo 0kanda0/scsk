@@ -1,18 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(WaitForFlow))]
-    public class WaitForFlowDescriptor : UnitDescriptor<WaitForFlow>
-    {
-        public WaitForFlowDescriptor(WaitForFlow unit) : base(unit) { }
-
-        protected override void DefinedPort(IUnitPort port, UnitPortDescription description)
-        {
-            base.DefinedPort(port, description);
-
-            if (port is ControlInput && unit.awaitedInputs.Contains((ControlInput)port))
-            {
-                description.showLabel = false;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b35a8b5331bf51ca39c19aaa6528ca47dabc3169c9acab2b6cabe609d198d50
+size 724

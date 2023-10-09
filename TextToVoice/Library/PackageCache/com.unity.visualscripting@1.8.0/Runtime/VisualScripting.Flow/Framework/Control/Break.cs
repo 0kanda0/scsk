@@ -1,30 +1,3 @@
-namespace Unity.VisualScripting
-{
-    /// <summary>
-    /// Stops the execution of the current loop.
-    /// </summary>
-    [UnitTitle("Break Loop")]
-    [UnitCategory("Control")]
-    [UnitOrder(13)]
-    public class Break : Unit
-    {
-        /// <summary>
-        /// The entry point for the break.
-        /// </summary>
-        [DoNotSerialize]
-        [PortLabelHidden]
-        public ControlInput enter { get; private set; }
-
-        protected override void Definition()
-        {
-            enter = ControlInput(nameof(enter), Operation);
-        }
-
-        public ControlOutput Operation(Flow flow)
-        {
-            flow.BreakLoop();
-
-            return null;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f76fc8e8a032dd36e64796f90a2c08971c13c707046b4f7971d8c25c8fde86d
+size 861

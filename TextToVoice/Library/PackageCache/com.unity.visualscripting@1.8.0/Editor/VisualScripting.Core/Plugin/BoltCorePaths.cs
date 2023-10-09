@@ -1,16 +1,3 @@
-using System.IO;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    public class BoltCorePaths : PluginPaths
-    {
-        public BoltCorePaths(Plugin plugin) : base(plugin) { }
-
-        public string variableResources => Path.Combine(persistentGenerated, "Variables/Resources");
-        public string propertyProviders => Path.Combine(transientGenerated, "Property Providers");
-        public string propertyProvidersEditor => Path.Combine(propertyProviders, "Editor");
-        public string assemblyDocumentations => Path.Combine(transientGenerated, "Documentation");
-        public string dotNetDocumentation => Path.Combine(package, "DotNetDocumentation");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1cef13bdebfa63fd402be5d678bde8e0f9aac68b03f567fe8ae9ad579705b87
+size 852

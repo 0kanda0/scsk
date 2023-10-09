@@ -1,15 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-#if MODULE_PHYSICS_EXISTS
-    /// <summary>
-    /// Called when a collider exits the trigger.
-    /// </summary>
-    public sealed class OnTriggerExit : TriggerEventUnit
-    {
-        public override Type MessageListenerType => typeof(UnityOnTriggerExitMessageListener);
-        protected override string hookName => EventHooks.OnTriggerExit;
-    }
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f1331fa876f8d25c788f37d3e0ce754732c6d0a3d400900c744a4b3b175137f9
+size 576

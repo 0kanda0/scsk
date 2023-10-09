@@ -1,13 +1,3 @@
-using System;
-
-namespace Unity.VisualScripting
-{
-    public interface ICloner
-    {
-        bool Handles(Type type);
-        object ConstructClone(Type type, object original);
-        void BeforeClone(Type type, object original);
-        void FillClone(Type type, ref object clone, object original, CloningContext context);
-        void AfterClone(Type type, object clone);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8221531564bb4aeb8407f8529f57dd8ec1f8c86ad5a658fedd6d4d9476ed79b7
+size 551

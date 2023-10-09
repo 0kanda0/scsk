@@ -1,23 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    [Plugin(BoltCore.ID)]
-    internal class Changelog_1_4_5 : PluginChangelog
-    {
-        public Changelog_1_4_5(Plugin plugin) : base(plugin) { }
-
-        public override SemanticVersion version => "1.4.5";
-
-        public override DateTime date => new DateTime(2019, 07, 15);
-
-        public override IEnumerable<string> changes
-        {
-            get
-            {
-                yield return "[Fixed] Certain variable types failing to construct and deserialize on AOT platforms";
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a70bb7420ba4d870521daa0daccef5d48e41f89e010e2d828faf243937d5631f
+size 775

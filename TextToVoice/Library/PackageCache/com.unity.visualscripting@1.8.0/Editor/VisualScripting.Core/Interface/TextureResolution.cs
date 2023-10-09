@@ -1,31 +1,3 @@
-namespace Unity.VisualScripting
-{
-    public struct TextureResolution
-    {
-        public int width;
-
-        public int height;
-
-        public TextureResolution(int width, int height)
-        {
-            this.width = width;
-            this.height = height;
-        }
-
-        public TextureResolution(int side)
-        {
-            width = side;
-            height = side;
-        }
-
-        public static implicit operator TextureResolution(int side)
-        {
-            return new TextureResolution(side);
-        }
-
-        public override string ToString()
-        {
-            return $"{width}x{height}";
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ae344619162252b420ff4800b87d080386ce1864c23187bcd772e614e2e5128
+size 807

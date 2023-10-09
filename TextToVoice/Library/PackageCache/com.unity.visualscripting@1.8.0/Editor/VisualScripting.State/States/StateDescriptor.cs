@@ -1,30 +1,3 @@
-namespace Unity.VisualScripting
-{
-    [Descriptor(typeof(IState))]
-    public class StateDescriptor<TState> : Descriptor<TState, StateDescription>
-        where TState : class, IState
-    {
-        public StateDescriptor(TState target) : base(target) { }
-
-        public TState state => target;
-
-        [Assigns]
-        public override string Title()
-        {
-            return state.GetType().HumanName();
-        }
-
-        [Assigns]
-        public override string Summary()
-        {
-            return state.GetType().Summary();
-        }
-
-        [Assigns]
-        [RequiresUnityAPI]
-        public override EditorTexture Icon()
-        {
-            return state.GetType().Icon();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d67728b25d9ca0c24c13e411cfc3c6b0d3d17b5cb3f5953679680d97e4e5b952
+size 878

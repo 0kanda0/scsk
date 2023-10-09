@@ -1,25 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.VisualScripting
-{
-    public abstract class PluginChangelog : IPluginLinked, IComparable<PluginChangelog>
-    {
-        protected PluginChangelog(Plugin plugin)
-        {
-            this.plugin = plugin;
-        }
-
-        public Plugin plugin { get; }
-
-        public abstract SemanticVersion version { get; }
-        public abstract DateTime date { get; }
-        public abstract IEnumerable<string> changes { get; }
-        public virtual string description => null;
-
-        public int CompareTo(PluginChangelog other)
-        {
-            return version.CompareTo(other.version);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa2fe317d66c89dfdab4d0e83189a18bdcad4987b456d1470305147248575b7b
+size 839
