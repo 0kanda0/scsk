@@ -1,28 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UI;
-using UnityEngine;
-
-public class VoiceVoxManager : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    /// <summary>
-    /// ChatGPT‚Ì•Ô“š•¶š—ñ‚ğ‰¹º‚Ö•ÏŠ·
-    /// </summary>
-    public AudioClip TextToSpeech(string outputText)
-    {
-        AudioClip hoge = null; //‰¼’u‚«
-        return hoge;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee06c7ed582e911eefbabc85258a3ccd412f6f3a478f390353389a7ce1cecb09
+size 525

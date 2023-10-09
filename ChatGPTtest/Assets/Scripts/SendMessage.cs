@@ -1,18 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using AAA.OpenAI;
-
-public class SendMessage : MonoBehaviour
-{
-    [SerializeField] private Text message;
-
-    public void OnClick()
-    {
-        var openAIApiKey = "OpenAIのAPIkey入力";
-        var chatGPTConnection = new ChatGPTConnection(openAIApiKey);
-        chatGPTConnection.RequestAsync("{{"+ message.text + "}}");
-       
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c887decb5894e6194befb8edeef9d791850f0d6608d797a89e33860c81037929
+size 443
