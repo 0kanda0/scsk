@@ -5,7 +5,7 @@ using UnityEngine;
 public class VRAIController : MonoBehaviour
 {
     [SerializeField] VoiceInputter voiceInputer;
-    [SerializeField] WhisperManager whisperManager;
+    //[SerializeField] WhisperSpeechToText whisperSpeechToText;
     [SerializeField] ChatGPTManager chatGPTManager;
     [SerializeField] VoiceVoxManager voiceVoxManager;
     [SerializeField] VoiceOutputter voiceOutputer;
@@ -23,14 +23,14 @@ public class VRAIController : MonoBehaviour
     }
 
     /// <summary>
-    /// ƒ}ƒCƒN‚Ì‰¹º“ü—Í ¨ “ü—Í‚ğ•¶š—ñ‚Ö•ÏŠ· ¨ •Ô“šì¬ ¨ •Ô“š‚ğ‰¹º‚Ö•ÏŠ· ¨ ‰¹º‚ğo—Í
+    /// ï¿½}ï¿½Cï¿½Nï¿½Ì‰ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Í‚ğ•¶ï¿½ï¿½ï¿½Ö•ÏŠï¿½ ï¿½ï¿½ ï¿½Ô“ï¿½ï¿½ì¬ ï¿½ï¿½ ï¿½Ô“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö•ÏŠï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½oï¿½ï¿½
     /// </summary>
     void Talk()
     {
         AudioClip inputAudio = voiceInputer.InputVoice();
-        string inputText = whisperManager.SpeechToText(inputAudio);
-        string outputText = chatGPTManager.MakeResponse(inputText);
-        AudioClip voiceVox = voiceVoxManager.TextToSpeech(outputText);
-        voiceOutputer.OutputVoice(voiceVox);
+        //string inputText = whisperSpeechToText.SpeechToText(inputAudio);
+        //string outputText = chatGPTManager.MakeResponse(inputText);
+        //AudioClip voiceVox = voiceVoxManager.TextToSpeech(outputText);
+        //voiceOutputer.OutputVoice(voiceVox);
     }
 }
