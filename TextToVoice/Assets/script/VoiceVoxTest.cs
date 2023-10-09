@@ -6,12 +6,23 @@ public class VoiceVoxTest : MonoBehaviour
     [SerializeField]
     private AudioSource _audioSource;
 
-
-    //ここで発言を格納・事前にcmdでローカルサーバ立ち上げの必要あり
-    public string AIresponse = "こんにちは";
-    //話者番号格納
+    public string AIresponse = "縺ゅｊ縺後→縺�";
     public int speaker = 8;
 
+    private VoiceVoxApiClient _voiceVoxClient;
+
+    private void Awake()
+    {
+        _voiceVoxClient = new VoiceVoxApiClient();
+    }
+
+    private void OnValidate()
+    {
+        if (Application.isPlaying)
+        {
+            StartCoroutine(SpeakTest(AIresponse));
+        }
+    }
 
     void Start()
     {
@@ -20,17 +31,13 @@ public class VoiceVoxTest : MonoBehaviour
 
     IEnumerator SpeakTest(string text)
     {
-        // VOICEVOXのREST-APIクライアント
-        VoiceVoxApiClient client = new VoiceVoxApiClient();
+        _voiceVoxClient.ClearCache();
 
-        // テキストからAudioClipを生成（話者は「8:春日部つむぎ」）
-        yield return client.TextToAudioClip(8, text);
+        yield return _voiceVoxClient.TextToAudioClip(speaker, text);
 
-        if (client.AudioClip != null)
+        if (_voiceVoxClient.AudioClip != null)
         {
-            // AudioClipを取得し、AudioSourceにアタッチ
-            _audioSource.clip = client.AudioClip;
-            // AudioSourceで再生
+            _audioSource.clip = _voiceVoxClient.AudioClip;
             _audioSource.Play();
         }
     }

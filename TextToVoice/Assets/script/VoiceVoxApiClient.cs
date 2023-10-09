@@ -6,50 +6,57 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 /// <summary>
-/// VOICEVOX‚ÌREST-APIƒNƒ‰ƒCƒAƒ“ƒg
+/// VOICEVOXï¿½ï¿½REST-APIï¿½Nï¿½ï¿½ï¿½Cï¿½Aï¿½ï¿½ï¿½g
 /// </summary>
 public class VoiceVoxApiClient
 {
-    /// <summary> Šî–{ URL </summary>
-    private const string BASE = "http://192.168.1.7:50021";
-    /// <summary> ‰¹ºƒNƒGƒŠæ“¾ URL </summary>
+    /// <summary> ï¿½ï¿½{ URL </summary>
+    private const string BASE = "http://127.0.0.1:50021";
+    /// <summary> ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Gï¿½ï¿½ï¿½æ“¾ URL </summary>
     private const string AUDIO_QUERY_URL = BASE + "/audio_query";
-    /// <summary> ‰¹º‡¬ URL </summary>
+    /// <summary> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ URL </summary>
     private const string SYNTHESIS_URL = BASE + "/synthesis";
 
-    /// <summary> ‰¹ºƒNƒGƒŠiByte”z—ñj </summary>
+    /// <summary> ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Gï¿½ï¿½ï¿½iByteï¿½zï¿½ï¿½j </summary>
     private byte[] _audioQueryBytes;
-    /// <summary> ‰¹ºƒNƒGƒŠiJson•¶š—ñj </summary>
+    /// <summary> ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Gï¿½ï¿½ï¿½iJsonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½j </summary>
     private string _audioQuery;
-    /// <summary> ‰¹ºƒNƒŠƒbƒv </summary>
+    /// <summary> ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½bï¿½v </summary>
     private AudioClip _audioClip;
 
-    /// <summary> ‰¹ºƒNƒGƒŠiJson•¶š—ñj </summary>
+    /// <summary> ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Gï¿½ï¿½ï¿½iJsonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½j </summary>
     public string AudioQuery { get => _audioQuery; }
-    /// <summary> ‰¹ºƒNƒŠƒbƒv </summary>
+    /// <summary> ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½bï¿½v </summary>
     public AudioClip AudioClip { get => _audioClip; }
 
+    public void ClearCache()
+    {
+        _audioQuery = "";
+        _audioQueryBytes = null;
+        _audioClip = null;
+    }
+
     /// <summary>
-    /// w’è‚µ‚½ƒeƒLƒXƒg‚ğ‰¹º‡¬AAudioClip‚Æ‚µ‚Äo—Í
+    /// ï¿½wï¿½è‚µï¿½ï¿½ï¿½eï¿½Lï¿½Xï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½AAudioClipï¿½Æ‚ï¿½ï¿½Äoï¿½ï¿½
     /// </summary>
-    /// <param name="speakerId">˜bÒID</param>
-    /// <param name="text">ƒeƒLƒXƒg</param>
+    /// <param name="speakerId">ï¿½bï¿½ï¿½ID</param>
+    /// <param name="text">ï¿½eï¿½Lï¿½Xï¿½g</param>
     /// <returns></returns>
     [Obsolete]
     public IEnumerator TextToAudioClip(int speakerId, string text)
     {
-        // ‰¹ºƒNƒGƒŠ‚ğ¶¬
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Gï¿½ï¿½ï¿½ğ¶ï¿½
         yield return PostAudioQuery(speakerId, text);
 
-        // ‰¹ºƒNƒGƒŠ‚©‚ç‰¹º‡¬
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Gï¿½ï¿½ï¿½ï¿½ï¿½ç‰¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         yield return PostSynthesis(speakerId, _audioQueryBytes);
     }
 
     /// <summary>
-    /// ‰¹º‡¬—p‚ÌƒNƒGƒŠ¶¬
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½ÌƒNï¿½Gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
-    /// <param name="speakerId">˜bÒID</param>
-    /// <param name="text">ƒeƒLƒXƒg</param>
+    /// <param name="speakerId">ï¿½bï¿½ï¿½ID</param>
+    /// <param name="text">ï¿½eï¿½Lï¿½Xï¿½g</param>
     /// <returns></returns>
     public IEnumerator PostAudioQuery(int speakerId, string text)
     {
@@ -57,30 +64,30 @@ public class VoiceVoxApiClient
         _audioQueryBytes = null;
         // URL
         string webUrl = $"{AUDIO_QUERY_URL}?speaker={speakerId}&text={text}";
-        // POST’ÊM
+        // POSTï¿½ÊM
         using (UnityWebRequest request = new UnityWebRequest(webUrl, "POST"))
         {
             request.downloadHandler = new DownloadHandlerBuffer();
-            // ƒŠƒNƒGƒXƒgiƒŒƒXƒ|ƒ“ƒX‚ª‚ ‚é‚Ü‚Å‘Ò‹@j
+            // ï¿½ï¿½ï¿½Nï¿½Gï¿½Xï¿½gï¿½iï¿½ï¿½ï¿½Xï¿½|ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚Å‘Ò‹@ï¿½j
             yield return request.SendWebRequest();
 
             if (request.result == UnityWebRequest.Result.ConnectionError)
             {
-                // Ú‘±ƒGƒ‰[
+                // ï¿½Ú‘ï¿½ï¿½Gï¿½ï¿½ï¿½[
                 Debug.Log("AudioQuery:" + request.error);
             }
             else
             {
                 if (request.responseCode == 200)
                 {
-                    // ƒŠƒNƒGƒXƒg¬Œ÷
+                    // ï¿½ï¿½ï¿½Nï¿½Gï¿½Xï¿½gï¿½ï¿½ï¿½ï¿½
                     _audioQuery = request.downloadHandler.text;
                     _audioQueryBytes = request.downloadHandler.data;
                     Debug.Log("AudioQuery:" + request.downloadHandler.text);
                 }
                 else
                 {
-                    // ƒŠƒNƒGƒXƒg¸”s
+                    // ï¿½ï¿½ï¿½Nï¿½Gï¿½Xï¿½gï¿½ï¿½ï¿½s
                     Debug.Log("AudioQuery:" + request.responseCode);
                 }
             }
@@ -88,10 +95,10 @@ public class VoiceVoxApiClient
     }
 
     /// <summary>
-    /// ‰¹º‡¬
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
-    /// <param name="speakerID">˜bÒID</param>
-    /// <param name="audioQuery">‰¹ºƒNƒGƒŠ</param>
+    /// <param name="speakerID">ï¿½bï¿½ï¿½ID</param>
+    /// <param name="audioQuery">ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Gï¿½ï¿½</param>
     /// <returns></returns>
     [Obsolete]
     public IEnumerator PostSynthesis(int speakerID, string audioQuery)
@@ -100,10 +107,10 @@ public class VoiceVoxApiClient
     }
 
     /// <summary>
-    /// ‰¹º‡¬
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
-    /// <param name="speakerId">˜bÒID</param>
-    /// <param name="audioQuery">‰¹ºƒNƒGƒŠ(Byte”z—ñ)</param>
+    /// <param name="speakerId">ï¿½bï¿½ï¿½ID</param>
+    /// <param name="audioQuery">ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½Gï¿½ï¿½(Byteï¿½zï¿½ï¿½)</param>
     /// <returns></returns>
     [Obsolete]
     private IEnumerator PostSynthesis(int speakerId, byte[] audioQuery)
@@ -111,23 +118,23 @@ public class VoiceVoxApiClient
         _audioClip = null;
         // URL
         string webUrl = $"{SYNTHESIS_URL}?speaker={speakerId}";
-        // ƒwƒbƒ_[î•ñ
+        // ï¿½wï¿½bï¿½_ï¿½[ï¿½ï¿½ï¿½
         Dictionary<string, string> headers = new Dictionary<string, string>();
         headers.Add("Content-Type", "application/json");
 
         using (WWW www = new WWW(webUrl, audioQuery, headers))
         {
-            // ƒŒƒXƒ|ƒ“ƒX‚ª•Ô‚é‚Ü‚Å‘Ò‹@
+            // ï¿½ï¿½ï¿½Xï¿½|ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½Ô‚ï¿½Ü‚Å‘Ò‹@
             yield return www;
 
             if (!string.IsNullOrEmpty(www.error))
             {
-                // ƒGƒ‰[
+                // ï¿½Gï¿½ï¿½ï¿½[
                 Debug.Log("Synthesis : " + www.error);
             }
             else
             {
-                // ƒŒƒXƒ|ƒ“ƒXŒ‹‰Ê‚ğAudioClip‚Åæ“¾
+                // ï¿½ï¿½ï¿½Xï¿½|ï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½Ê‚ï¿½AudioClipï¿½Åæ“¾
                 _audioClip = www.GetAudioClip(false, false, AudioType.WAV);
             }
         }
